@@ -1,0 +1,7 @@
+.ruby-version
+.ruby-gemset
+.rvmrc
+pkg
+Gemfile.lock
+.idea
+*gem
