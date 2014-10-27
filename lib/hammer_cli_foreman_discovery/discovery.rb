@@ -1,4 +1,5 @@
 module HammerCLIForemanDiscovery
+
   class DiscoveredHost < HammerCLIForeman::Command
 
     resource :discovered_hosts
@@ -15,6 +16,24 @@ module HammerCLIForemanDiscovery
         end
 
         build_options
+    end
+
+    class InfoCommand < HammerCLIForeman::InfoCommand
+      output ListCommand.output_definition do
+        field :ip, _('Ip')
+        field :facts_hash, _('Facts')
+      end
+
+      build_options
+    end
+
+    class ProvisionCommand < HammerCLIForeman::UpdateCommand
+      command_name "provision"
+
+      success_message _("Host created")
+      failure_message _("Could not create the host")
+
+      build_options
     end
 
     autoload_subcommands
