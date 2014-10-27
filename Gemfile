@@ -1,3 +1,15 @@
 source "https://rubygems.org"
 
 gemspec
+
+gem 'gettext', '~> 2.0'
+
+group :test do
+  gem 'rake', '~> 10.1.0'
+  gem 'thor'
+  gem 'minitest', '4.7.4'
+  gem 'minitest-spec-context'
+  gem 'simplecov', '< 0.9.0' # 0.9.0 is not compatible with Ruby 1.8.x
+  gem 'mocha'
+  gem 'ci_reporter', '>= 1.6.3', "< 2.0.0", :require => false
+end
