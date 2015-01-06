@@ -12,9 +12,12 @@ module HammerCLIForemanDiscovery
         field :name, _("Name")
         field :mac, _("MAC")
         field :last_report, _('Last report'), Fields::Date
+        field :cpus, _('CPUs')
+        field :memory, _('Memory')
+        field :disk_count, _('Disk count')
+        field :disks_size, _('Disks size')
         field nil, _("Subnet"), Fields::SingleReference, :key => :subnet
-        field nil, _("Organization"), Fields::SingleReference, :key => :organization
-        field nil, _("Location"), Fields::SingleReference, :key => :location
+        field :last_report, _('Last Report'), Fields::Date
       end
 
       build_options
@@ -24,6 +27,8 @@ module HammerCLIForemanDiscovery
       output ListCommand.output_definition do
         field :ip, _('IP')
         field :model, _('Model')
+        field nil, _("Organization"), Fields::SingleReference, :key => :organization
+        field nil, _("Location"), Fields::SingleReference, :key => :location
         field :facts_hash, _('Facts')
       end
 
@@ -102,7 +107,6 @@ module HammerCLIForemanDiscovery
 
       build_options
     end
-
     autoload_subcommands
   end
 
