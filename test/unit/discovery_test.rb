@@ -44,9 +44,8 @@ describe HammerCLIForemanDiscovery::DiscoveredHost do
     context "output" do
       with_params ["--id=1"] do
         it_should_print_n_records 1
-        it_should_print_columns ["ID", "Name", "MAC", "Last report", "Subnet","CPUs", "Memory", "Disk count", "Disks size"]
-
-        it_should_print_columns ["IP", "Model", "Facts"]
+        it_should_print_columns ["ID", "Name", "MAC", "Last report", "Subnet", "CPUs", "Memory", "Disk count", "Disks size", "Organization", "Location"]
+        it_should_print_columns ["IP", "Model"]
       end
     end
 
@@ -110,6 +109,27 @@ describe HammerCLIForemanDiscovery::DiscoveredHost do
     context "parameters" do
       it_should_accept "name", ["--name=host"]
       it_should_accept "id", ["--id=1"]
+    end
+  end
+
+  context "FactsCommand" do
+
+    let(:cmd) { HammerCLIForemanDiscovery::DiscoveredHost::FactsCommand.new("", ctx) }
+
+    before(:each) do
+      DiscoveryResourceMock.facts_index
+    end
+
+    context "parameters" do
+      it_should_accept "name", ["--name=host"]
+      it_should_accept "id", ["--id=1"]
+    end
+
+    context "output" do
+      with_params ["--name=my5name.mydomain.net"] do
+        it_should_print_column "Fact"
+        it_should_print_column "Value"
+      end
     end
   end
 

@@ -1,5 +1,6 @@
 require 'hammer_cli'
 require 'hammer_cli_foreman'
+
 module HammerCLIForemanDiscovery
 
   class DiscoveredHost < HammerCLIForeman::Command
@@ -29,7 +30,27 @@ module HammerCLIForemanDiscovery
         field :model, _('Model')
         field nil, _("Organization"), Fields::SingleReference, :key => :organization
         field nil, _("Location"), Fields::SingleReference, :key => :location
-        field :facts_hash, _('Facts')
+      end
+
+      build_options
+    end
+
+    class FactsCommand < HammerCLIForeman::InfoCommand
+      command_name "facts"
+
+      output do
+        field :fact, _("Fact")
+        field :value, _("Value")
+      end
+
+      def extend_data(facts_collection)
+        facts_collection.values.first.collect do |fact, value|
+            { :fact => fact, :value => value }
+        end
+      end
+
+      def adapter
+        :table
       end
 
       build_options
