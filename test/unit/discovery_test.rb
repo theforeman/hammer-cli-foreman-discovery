@@ -53,6 +53,17 @@ describe HammerCLIForemanDiscovery::DiscoveredHost do
 
   end
 
+  context "DeleteCommand" do
+
+    let(:cmd) { HammerCLIForemanDiscovery::DiscoveredHost::DeleteCommand.new("", ctx) }
+
+    context "parameters" do
+      it_should_accept "name", ["--name=host"]
+      it_should_accept "id", ["--id=1"]
+    end
+
+  end
+
   context "ProvisionCommand" do
     let(:cmd) { HammerCLIForemanDiscovery::DiscoveredHost::ProvisionCommand.new("", ctx) }
 
@@ -73,6 +84,17 @@ describe HammerCLIForemanDiscovery::DiscoveredHost do
         it_should_call_action_and_test_params(:update) { |par| par["discovered_host"]["provision_method"] == "build" }
       end
     end
+  end
+
+  context "AutoProvisionCommand" do
+
+    let(:cmd) { HammerCLIForemanDiscovery::DiscoveredHost::AutoProvisionCommand.new("", ctx) }
+
+    context "parameters" do
+      it_should_accept "name", ["--name=host"]
+      it_should_accept "id", ["--id=1"]
+    end
+
   end
 
   context "RebootCommand" do

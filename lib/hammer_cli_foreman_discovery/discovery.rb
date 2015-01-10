@@ -30,6 +30,13 @@ module HammerCLIForemanDiscovery
       build_options
     end
 
+    class DeleteCommand < HammerCLIForeman::DeleteCommand
+      success_message _("Host deleted")
+      failure_message _("Could not delete the host")
+
+      build_options
+    end
+
     class ProvisionCommand < HammerCLIForeman::UpdateCommand
       command_name "provision"
 
@@ -83,6 +90,16 @@ module HammerCLIForemanDiscovery
       build_options
     end
 
+    class AutoProvisionCommand < HammerCLIForeman::SingleResourceCommand
+      action :auto_provision
+      command_name "auto-provision"
+      desc _("Auto provision a host")
+      success_message _("Host created")
+      failure_message _("Could not create the host")
+
+      build_options
+    end
+
     class RebootCommand < HammerCLIForeman::SingleResourceCommand
       action :reboot
       command_name "reboot"
@@ -95,7 +112,7 @@ module HammerCLIForemanDiscovery
 
     class RefreshFactsCommand < HammerCLIForeman::SingleResourceCommand
       action :refresh_facts
-      command_name "refresh_facts"
+      command_name "refresh-facts"
       desc _("Refresh the facts of a host")
       success_message _("Host facts refreshed")
       failure_message _("Could not refresh the facts of the host")
