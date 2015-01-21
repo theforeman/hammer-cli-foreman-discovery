@@ -8,10 +8,10 @@ module HammerCLIForemanDiscovery
 
     class ListCommand < HammerCLIForeman::ListCommand
       output do
-        field :id, _("Id")
+        field :id, _("ID")
         field :name, _("Name")
-        field :mac, _("Mac")
-        field :last_report, _('Last Report'), Fields::Date
+        field :mac, _("MAC")
+        field :last_report, _('Last report'), Fields::Date
         field nil, _("Subnet"), Fields::SingleReference, :key => :subnet
         field nil, _("Organization"), Fields::SingleReference, :key => :organization
         field nil, _("Location"), Fields::SingleReference, :key => :location
@@ -22,7 +22,7 @@ module HammerCLIForemanDiscovery
 
     class InfoCommand < HammerCLIForeman::InfoCommand
       output ListCommand.output_definition do
-        field :ip, _('Ip')
+        field :ip, _('IP')
         field :model, _('Model')
         field :facts_hash, _('Facts')
       end
@@ -52,9 +52,9 @@ module HammerCLIForemanDiscovery
         bool_format[:format] = HammerCLI::Options::Normalizers::Bool.new
         option "--enabled", "ENABLED", " ", bool_format
 
-        option "--parameters", "PARAMS", _("Host parameters."),
+        option "--parameters", "PARAMS", _("Host parameters"),
                     :format => HammerCLI::Options::Normalizers::KeyValueList.new
-        option "--interface", "INTERFACE", _("Interface parameters."), :multivalued => true,
+        option "--interface", "INTERFACE", _("Interface parameters"), :multivalued => true,
                     :format => HammerCLI::Options::Normalizers::KeyValueList.new
         option "--provision-method", "METHOD", " ",
                     :format => HammerCLI::Options::Normalizers::Enum.new(['build', 'image'])
@@ -63,7 +63,7 @@ module HammerCLIForemanDiscovery
       end
 
       def ask_password
-        prompt = "Enter the root password for the host: "
+        prompt = _("Enter the root password for the host:") + '_'
         ask(prompt) { |q| q.echo = false }
       end
 
@@ -87,7 +87,7 @@ module HammerCLIForemanDiscovery
       action :reboot
       command_name "reboot"
       desc _("Reboot a host")
-      success_message _("Host reboot started.")
+      success_message _("Host reboot started")
       failure_message _("Could not reboot the host")
 
       build_options
@@ -106,5 +106,5 @@ module HammerCLIForemanDiscovery
     autoload_subcommands
   end
 
-  HammerCLI::MainCommand.subcommand 'discovery', "Discovery related actions.", DiscoveredHost
+  HammerCLI::MainCommand.subcommand 'discovery', _("Discovery related actions."), DiscoveredHost
 end
