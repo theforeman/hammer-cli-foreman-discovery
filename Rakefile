@@ -7,3 +7,20 @@ Rake::TestTask.new do |t|
   t.test_files = Dir.glob('test/**/*_test.rb')
   t.verbose = true
 end
+
+namespace :gettext do
+  desc "Update pot file"
+  task :find do
+    require "hammer_cli_foreman_discovery/version"
+    require "hammer_cli_foreman_discovery/i18n"
+    require 'gettext/tools'
+
+    domain = HammerCLIForemanDiscovery::I18n::LocaleDomain.new
+    GetText.update_pofiles(domain.domain_name, domain.translated_files, "#{domain.domain_name} #{HammerCLIForemanDiscovery.version.to_s}", :po_root => domain.locale_dir)
+  end
+end
+
+namespace :pkg do
+  desc 'Generate package source gem'
+  task :generate_source => :build
+end
