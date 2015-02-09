@@ -12,4 +12,17 @@ module DiscoveryResourceMock
         [:discovered_hosts, :show, { "id" => 2, "name" => "mac52540068f9d6" }]
     )
   end
+
+  def self.facts_index
+    ResourceMocks.mock_action_call(:discovered_hosts, :show, {
+        "facts_hash" => {
+                            "network_br180"=>"10.32.83.0",
+                            "mtu_usb0"=>"1500",
+                            "physicalprocessorcount"=>"1",
+                            "rubyversion"=>"1.8.7"
+                        },
+        "id" => 2,
+        "name" => "mac52540068f9d6"
+    })
+  end
 end
