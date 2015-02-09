@@ -44,7 +44,7 @@ module HammerCLIForemanDiscovery
       end
 
       def extend_data(facts_collection)
-        facts_collection.values.first.collect do |fact, value|
+        facts_collection['facts_hash'].collect do |fact, value|
             { :fact => fact, :value => value }
         end
       end
