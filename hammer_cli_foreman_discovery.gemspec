@@ -17,8 +17,8 @@ Gem::Specification.new do |s|
 Contains the code for managing host discovery in foreman(results and progress) in the Hammer CLI.
 DESC
 
-  s.files = Dir['{lib,locale,config}/**/*', 'README*']
-  s.extra_rdoc_files = Dir['README*']
+  s.files = Dir['{lib,locale,config}/**/*', 'LICENSE', 'README*']
+  s.extra_rdoc_files = Dir['LICENSE', 'README*']
   s.require_paths = ["lib"]
 
   s.add_dependency "hammer_cli_foreman", ">= 0.1.2"
