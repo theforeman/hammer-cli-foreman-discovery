@@ -6,10 +6,10 @@
 # Claer <transiblu@claer.hammock.fr>, 2015
 msgid ""
 msgstr ""
-"Project-Id-Version: hammer_cli_foreman_discovery 0.0.1\n"
+"Project-Id-Version: hammer_cli_foreman_discovery 0.0.2\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-01-21 12:11+0200\n"
-"PO-Revision-Date: 2015-01-22 09:16+0000\n"
+"PO-Revision-Date: 2015-02-13 10:23+0000\n"
 "Last-Translator: Claer <transiblu@claer.hammock.fr>\n"
 "Language-Team: French (http://www.transifex.com/projects/p/foreman/language/fr/)\n"
 "MIME-Version: 1.0\n"
