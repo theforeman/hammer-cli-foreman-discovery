@@ -148,5 +148,4 @@ module HammerCLIForemanDiscovery
     autoload_subcommands
   end
 
-  HammerCLI::MainCommand.subcommand 'discovery', _("Discovery related actions."), DiscoveredHost
 end

@@ -25,4 +25,15 @@ module DiscoveryResourceMock
       "name" => "mac52540068f9d6"
     })
   end
+
+  def self.discovery_rules_index
+    ResourceMocks.mock_action_call(:discovery_rules, :index, [ { } ])
+  end
+
+  def self.discovery_rules_show
+    ResourceMocks.mock_action_calls(
+        [:discovery_rules, :index, [{ "id" => 2, "name" => "rule_two" }]],
+        [:discovery_rules, :show, { "id" => 2, "name" => "rule_2" }]
+    )
+  end
 end
