@@ -3,6 +3,7 @@
 .rvmrc
 pkg
 Gemfile.lock
+Gemfile.local
 .idea
 *gem
 coverage
