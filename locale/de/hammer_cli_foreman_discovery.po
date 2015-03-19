@@ -1,16 +1,16 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-#
+# 
 # Translators:
 # Ettore Atalan <atalanttore@googlemail.com>, 2015
 msgid ""
 msgstr ""
 "Project-Id-Version: hammer_cli_foreman_discovery 0.0.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-01-21 12:11+0200\n"
-"PO-Revision-Date: 2015-02-13 10:23+0000\n"
-"Last-Translator: Ettore Atalan <atalanttore@googlemail.com>\n"
+"POT-Creation-Date: 2015-03-04 09:52+0200\n"
+"PO-Revision-Date: 2015-03-17 10:44+0000\n"
+"Last-Translator: Lukáš Zapletal\n"
 "Language-Team: German (http://www.transifex.com/projects/p/foreman/language/de/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -18,82 +18,186 @@ msgstr ""
 "Language: de\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: lib/hammer_cli_foreman_discovery/discovery.rb:11
-msgid "Id"
-msgstr "Kennung"
+#: lib/hammer_cli_foreman_discovery/discovery_references.rb:6
+msgid "Hosts"
+msgstr ""
 
 #: lib/hammer_cli_foreman_discovery/discovery.rb:12
+#: lib/hammer_cli_foreman_discovery/discovery_rule.rb:28
+msgid "ID"
+msgstr "Kennung"
+
+#: lib/hammer_cli_foreman_discovery/discovery.rb:13
+#: lib/hammer_cli_foreman_discovery/discovery_rule.rb:29
 msgid "Name"
 msgstr "Name"
 
-#: lib/hammer_cli_foreman_discovery/discovery.rb:13
-msgid "Mac"
+#: lib/hammer_cli_foreman_discovery/discovery.rb:14
+msgid "MAC"
 msgstr "MAC"
 
-#: lib/hammer_cli_foreman_discovery/discovery.rb:14
-msgid "Last Report"
+#: lib/hammer_cli_foreman_discovery/discovery.rb:15
+msgid "Last report"
 msgstr "Letzter Bericht"
 
-#: lib/hammer_cli_foreman_discovery/discovery.rb:15
+#: lib/hammer_cli_foreman_discovery/discovery.rb:16
+msgid "CPUs"
+msgstr ""
+
+#: lib/hammer_cli_foreman_discovery/discovery.rb:17
+msgid "Memory"
+msgstr ""
+
+#: lib/hammer_cli_foreman_discovery/discovery.rb:18
+msgid "Disk count"
+msgstr ""
+
+#: lib/hammer_cli_foreman_discovery/discovery.rb:19
+msgid "Disks size"
+msgstr ""
+
+#: lib/hammer_cli_foreman_discovery/discovery.rb:20
 msgid "Subnet"
 msgstr "Subnetz"
 
-#: lib/hammer_cli_foreman_discovery/discovery.rb:16
-msgid "Organization"
-msgstr "Organisation"
+#: lib/hammer_cli_foreman_discovery/discovery.rb:21
+msgid "Last Report"
+msgstr ""
 
-#: lib/hammer_cli_foreman_discovery/discovery.rb:17
-msgid "Location"
-msgstr "Ort"
-
-#: lib/hammer_cli_foreman_discovery/discovery.rb:25
-msgid "Ip"
+#: lib/hammer_cli_foreman_discovery/discovery.rb:29
+msgid "IP"
 msgstr "IP"
 
-#: lib/hammer_cli_foreman_discovery/discovery.rb:26
+#: lib/hammer_cli_foreman_discovery/discovery.rb:30
 msgid "Model"
 msgstr "Modell"
 
-#: lib/hammer_cli_foreman_discovery/discovery.rb:27
-msgid "Facts"
-msgstr "Fakten"
+#: lib/hammer_cli_foreman_discovery/discovery.rb:31
+msgid "Organization"
+msgstr "Organisation"
 
-#: lib/hammer_cli_foreman_discovery/discovery.rb:36
+#: lib/hammer_cli_foreman_discovery/discovery.rb:32
+msgid "Location"
+msgstr "Ort"
+
+#: lib/hammer_cli_foreman_discovery/discovery.rb:42
+msgid "Fact"
+msgstr ""
+
+#: lib/hammer_cli_foreman_discovery/discovery.rb:43
+msgid "Value"
+msgstr ""
+
+#: lib/hammer_cli_foreman_discovery/discovery.rb:60
+msgid "Host deleted"
+msgstr ""
+
+#: lib/hammer_cli_foreman_discovery/discovery.rb:61
+msgid "Could not delete the host"
+msgstr ""
+
+#: lib/hammer_cli_foreman_discovery/discovery.rb:69
+#: lib/hammer_cli_foreman_discovery/discovery.rb:123
 msgid "Host created"
 msgstr "Host erstellt"
 
-#: lib/hammer_cli_foreman_discovery/discovery.rb:37
+#: lib/hammer_cli_foreman_discovery/discovery.rb:70
+#: lib/hammer_cli_foreman_discovery/discovery.rb:124
 msgid "Could not create the host"
 msgstr "Host konnte nicht erstellt werden"
 
-#: lib/hammer_cli_foreman_discovery/discovery.rb:55
-msgid "Host parameters."
-msgstr "Hostparameter."
-
-#: lib/hammer_cli_foreman_discovery/discovery.rb:57
-msgid "Interface parameters."
-msgstr "Schnittstellenparameter."
-
-#: lib/hammer_cli_foreman_discovery/discovery.rb:89
-msgid "Reboot a host"
-msgstr "Host neustarten"
+#: lib/hammer_cli_foreman_discovery/discovery.rb:88
+msgid "Host parameters"
+msgstr "Hostparameter"
 
 #: lib/hammer_cli_foreman_discovery/discovery.rb:90
-msgid "Host reboot started."
-msgstr "Host wird neu gestartet."
-
-#: lib/hammer_cli_foreman_discovery/discovery.rb:91
-msgid "Could not reboot the host"
-msgstr ""
+msgid "Interface parameters"
+msgstr "Schnittstellenparameter"
 
 #: lib/hammer_cli_foreman_discovery/discovery.rb:99
+msgid "Enter the root password for the host:"
+msgstr "Geben Sie das Root-Passwort für den Host ein:"
+
+#: lib/hammer_cli_foreman_discovery/discovery.rb:122
+msgid "Auto provision a host"
+msgstr ""
+
+#: lib/hammer_cli_foreman_discovery/discovery.rb:132
+msgid "Reboot a host"
+msgstr "Host neu starten"
+
+#: lib/hammer_cli_foreman_discovery/discovery.rb:133
+msgid "Host reboot started"
+msgstr "Host wird neu gestartet"
+
+#: lib/hammer_cli_foreman_discovery/discovery.rb:134
+msgid "Could not reboot the host"
+msgstr "Host konnte nicht neu gestartet werden"
+
+#: lib/hammer_cli_foreman_discovery/discovery.rb:142
 msgid "Refresh the facts of a host"
-msgstr ""
+msgstr "Aktualisieren Sie die Daten eines Hosts"
 
-#: lib/hammer_cli_foreman_discovery/discovery.rb:100
+#: lib/hammer_cli_foreman_discovery/discovery.rb:143
 msgid "Host facts refreshed"
+msgstr "Hostdaten aktualisiert"
+
+#: lib/hammer_cli_foreman_discovery/discovery.rb:144
+msgid "Could not refresh the facts of the host"
+msgstr "Daten des Hosts konnten nicht aktualisiert werden"
+
+#: lib/hammer_cli_foreman_discovery/discovery.rb:151
+msgid "Discovery related actions."
 msgstr ""
 
-#: lib/hammer_cli_foreman_discovery/discovery.rb:101
-msgid "Could not refresh the facts of the host"
+#: lib/hammer_cli_foreman_discovery/discovery_rule.rb:30
+msgid "Priority"
+msgstr ""
+
+#: lib/hammer_cli_foreman_discovery/discovery_rule.rb:31
+msgid "Search"
+msgstr ""
+
+#: lib/hammer_cli_foreman_discovery/discovery_rule.rb:32
+msgid "Host Group"
+msgstr ""
+
+#: lib/hammer_cli_foreman_discovery/discovery_rule.rb:33
+msgid "Hosts Limit"
+msgstr ""
+
+#: lib/hammer_cli_foreman_discovery/discovery_rule.rb:34
+msgid "Enabled"
+msgstr ""
+
+#: lib/hammer_cli_foreman_discovery/discovery_rule.rb:43
+msgid "Hostname template"
+msgstr ""
+
+#: lib/hammer_cli_foreman_discovery/discovery_rule.rb:51
+msgid "Rule created"
+msgstr ""
+
+#: lib/hammer_cli_foreman_discovery/discovery_rule.rb:52
+msgid "Could not create the rule"
+msgstr ""
+
+#: lib/hammer_cli_foreman_discovery/discovery_rule.rb:59
+msgid "Rule updated"
+msgstr ""
+
+#: lib/hammer_cli_foreman_discovery/discovery_rule.rb:60
+msgid "Could not update the rule"
+msgstr ""
+
+#: lib/hammer_cli_foreman_discovery/discovery_rule.rb:67
+msgid "Rule deleted"
+msgstr ""
+
+#: lib/hammer_cli_foreman_discovery/discovery_rule.rb:68
+msgid "Could not delete the rule"
+msgstr ""
+
+#: lib/hammer_cli_foreman_discovery/discovery_rule.rb:76
+msgid "Discovery rule actions."
 msgstr ""
