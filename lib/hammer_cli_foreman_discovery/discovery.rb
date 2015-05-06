@@ -2,6 +2,9 @@ require 'hammer_cli'
 require 'hammer_cli_foreman'
 
 module HammerCLIForemanDiscovery
+  def self.exception_handler_class
+       HammerCLIForeman::ExceptionHandler
+  end
 
   class DiscoveredHost < HammerCLIForeman::Command
 
