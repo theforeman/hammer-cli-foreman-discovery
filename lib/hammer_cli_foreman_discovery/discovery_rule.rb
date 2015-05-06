@@ -3,6 +3,9 @@ require 'hammer_cli_foreman'
 require 'hammer_cli_foreman_discovery/discovery_references'
 
 module HammerCLIForemanDiscovery
+  def self.exception_handler_class
+    HammerCLIForeman::ExceptionHandler
+  end
 
   module CommonDiscoveryRuleUpdateOptions
 
