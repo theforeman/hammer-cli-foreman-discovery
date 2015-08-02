@@ -30,7 +30,7 @@ module HammerCLIForemanDiscovery
     class InfoCommand < HammerCLIForeman::InfoCommand
       output ListCommand.output_definition do
         field :ip, _('IP')
-        field :model, _('Model')
+        field :model_name, _('Model')
         field nil, _("Organization"), Fields::SingleReference, :key => :organization
         field nil, _("Location"), Fields::SingleReference, :key => :location
       end
