@@ -2,7 +2,7 @@ source "https://rubygems.org"
 
 gemspec
 
-gem 'gettext', '~> 2.0'
+gem 'gettext', '>= 3.1.3', '< 4.0.0'
 
 group :test do
   gem 'rake', '~> 10.1.0'
