@@ -2,7 +2,7 @@
 host = https://www.transifex.com
 
 [foreman.hammer_cli_foreman_discovery]
-file_filter = locale/<lang>/hammer_cli_foreman_discovery.po
+file_filter = locale/<lang>/hammer_cli_foreman_discovery.edit.po
 source_file = locale/hammer_cli_foreman_discovery.pot
 source_lang = en
 type = PO

@@ -7,3 +7,7 @@ Gemfile.local
 .idea
 *gem
 coverage
+
+# Locale files
+locale/*/*.edit.po
+locale/*/*.po.time_stamp
