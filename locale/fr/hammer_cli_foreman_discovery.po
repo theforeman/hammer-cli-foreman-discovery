@@ -4,150 +4,221 @@
 #
 # Translators:
 # Claer <transiblu@claer.hammock.fr>, 2015
+# Sam Friedmann <sfriedma@redhat.com>, 2015. #zanata
+# jcarbone <jcarbone@redhat.com>, 2015. #zanata
 msgid ""
 msgstr ""
-"Project-Id-Version: Foreman\n"
+"Project-Id-Version: hammer_cli_foreman_discovery 0.0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2015-03-21 22:02+0000\n"
-"Last-Translator: Claer <transiblu@claer.hammock.fr>\n"
-"Language-Team: French (http://www.transifex.com/foreman/foreman/language/fr/)\n"
+"POT-Creation-Date: 2015-03-19 15:06+0200\n"
+"PO-Revision-Date: 2015-04-28 08:25+0000\n"
+"Last-Translator: jcarbone <jcarbone@redhat.com>\n"
+"Language-Team: French (http://www.transifex.com/projects/p/foreman/language/"
+"fr/)\n"
+"Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: fr\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Generator: Zanata 3.6.0\n"
 
-msgid "Manipulate discovered hosts."
-msgstr "Manipuler les hôtes détectés."
-
-msgid "Manipulate discovered rules."
-msgstr "Manipuler les règles détectées."
-
-msgid "ID"
-msgstr "ID"
-
-msgid "Name"
-msgstr "Nom"
-
-msgid "MAC"
-msgstr "MAC"
-
-msgid "Last report"
-msgstr "Dernier rapport"
-
-msgid "CPUs"
-msgstr "CPUs"
-
-msgid "Memory"
-msgstr "Mémoire"
-
-msgid "Disk count"
-msgstr "Nombre de disques"
-
-msgid "Disks size"
-msgstr "Taille des disques"
-
-msgid "Subnet"
-msgstr "Sous-Réseau"
-
-msgid "Last Report"
-msgstr "Dernier rapport"
-
-msgid "IP"
-msgstr "IP"
-
-msgid "Model"
-msgstr "Modèle"
-
-msgid "Organization"
-msgstr "Organisation"
-
-msgid "Location"
-msgstr "Localisation"
-
-msgid "Fact"
-msgstr "Fact"
-
-msgid "Value"
-msgstr "Valeur"
-
-msgid "Host deleted"
-msgstr "Hôte supprimé"
-
-msgid "Could not delete the host"
-msgstr "Impossible de supprimer l'hôte"
-
-msgid "Host created"
-msgstr "Hôte créé"
-
-msgid "Could not create the host"
-msgstr "Impossible de créer l'hôte"
-
-msgid "Host parameters"
-msgstr "Paramètres de l'hôte"
-
-msgid "Interface parameters"
-msgstr "Paramètres d'interface"
-
-msgid "Enter the root password for the host:"
-msgstr "Saisir le mot de passe root de l'hôte :"
-
-msgid "Auto provision a host"
-msgstr "Provisionner un hôte automatiquement"
-
-msgid "Reboot a host"
-msgstr "Redémarrage d'un hôte"
-
-msgid "Host reboot started"
-msgstr "Redémarrage de l'hôte lancé"
-
-msgid "Could not reboot the host"
-msgstr "Impossible de redémarrer l'hôte"
-
-msgid "Refresh the facts of a host"
-msgstr "Rafraichir les facts d'un hôte"
-
-msgid "Host facts refreshed"
-msgstr "Facts de l'hôte rafraichis"
-
-msgid "Could not refresh the facts of the host"
-msgstr "Impossible de rafraichir les facts de l'hôte"
-
+# translation auto-copied from project Satellite6 Foreman, version 6.1, document foreman
+#: lib/hammer_cli_foreman_discovery/discovery_references.rb:6
 msgid "Hosts"
 msgstr "Hôtes"
 
+# translation auto-copied from project subscription-manager, version 1.10.10, document keys
+#: lib/hammer_cli_foreman_discovery/discovery.rb:12
+#: lib/hammer_cli_foreman_discovery/discovery_rule.rb:23
+msgid "ID"
+msgstr "ID"
+
+#: lib/hammer_cli_foreman_discovery/discovery.rb:13
+#: lib/hammer_cli_foreman_discovery/discovery_rule.rb:24
+msgid "Name"
+msgstr "Nom"
+
+# translation auto-copied from project Satellite6 Hammer CLI Foreman, version 6.1, document hammer-cli-foreman
+#: lib/hammer_cli_foreman_discovery/discovery.rb:14
+msgid "MAC"
+msgstr "MAC"
+
+# translation auto-copied from project Satellite6 Hammer CLI Foreman, version 6.1, document hammer-cli-foreman
+#: lib/hammer_cli_foreman_discovery/discovery.rb:15
+msgid "Last report"
+msgstr "Dernier rapport"
+
+# translation auto-copied from project Satellite6 Foreman, version 6.1, document foreman, author jcarbone
+#: lib/hammer_cli_foreman_discovery/discovery.rb:16
+msgid "CPUs"
+msgstr "CPU"
+
+# translation auto-copied from project Satellite6 Foreman Docker, version 6.1, document foreman_docker
+#: lib/hammer_cli_foreman_discovery/discovery.rb:17
+msgid "Memory"
+msgstr "Mémoire"
+
+# translation auto-copied from project Satellite6 Foreman Discovery, version 6.1, document foreman_discovery, author jcarbone
+#: lib/hammer_cli_foreman_discovery/discovery.rb:18
+msgid "Disk count"
+msgstr "Nombre de disques"
+
+# translation auto-copied from project Satellite6 Foreman Discovery, version 6.1, document foreman_discovery, author jcarbone
+#: lib/hammer_cli_foreman_discovery/discovery.rb:19
+msgid "Disks size"
+msgstr "Taille des disques"
+
+#: lib/hammer_cli_foreman_discovery/discovery.rb:20
+msgid "Subnet"
+msgstr "Sous-Réseau"
+
+#: lib/hammer_cli_foreman_discovery/discovery.rb:21
+msgid "Last Report"
+msgstr "Dernier rapport"
+
+# translation auto-copied from project Satellite6 Hammer CLI Foreman, version 6.1, document hammer-cli-foreman
+#: lib/hammer_cli_foreman_discovery/discovery.rb:29
+msgid "IP"
+msgstr "IP"
+
+#: lib/hammer_cli_foreman_discovery/discovery.rb:30
+msgid "Model"
+msgstr "Modèle"
+
+#: lib/hammer_cli_foreman_discovery/discovery.rb:31
+msgid "Organization"
+msgstr "Organisation"
+
+#: lib/hammer_cli_foreman_discovery/discovery.rb:32
+msgid "Location"
+msgstr "Emplacement"
+
+# translation auto-copied from project Satellite6 Foreman Discovery, version 6.1, document foreman_discovery
+#: lib/hammer_cli_foreman_discovery/discovery.rb:42
+msgid "Fact"
+msgstr "Fact"
+
+# translation auto-copied from project Red Hat Satelllite Provisioning Guide, version 6.1, document Configuring_Satellite_Services, author jcarbone
+#: lib/hammer_cli_foreman_discovery/discovery.rb:43
+msgid "Value"
+msgstr "Valeur"
+
+# translation auto-copied from project Satellite6 Hammer CLI Foreman, version 6.1, document hammer-cli-foreman
+#: lib/hammer_cli_foreman_discovery/discovery.rb:60
+msgid "Host deleted"
+msgstr "Hôte supprimé"
+
+# translation auto-copied from project Satellite6 Hammer CLI Foreman, version 6.1, document hammer-cli-foreman
+#: lib/hammer_cli_foreman_discovery/discovery.rb:61
+msgid "Could not delete the host"
+msgstr "Impossible de supprimer l'hôte"
+
+#: lib/hammer_cli_foreman_discovery/discovery.rb:69
+#: lib/hammer_cli_foreman_discovery/discovery.rb:123
+msgid "Host created"
+msgstr "Hôte créé"
+
+#: lib/hammer_cli_foreman_discovery/discovery.rb:70
+#: lib/hammer_cli_foreman_discovery/discovery.rb:124
+msgid "Could not create the host"
+msgstr "Impossible de créer l'hôte"
+
+#: lib/hammer_cli_foreman_discovery/discovery.rb:88
+msgid "Host parameters"
+msgstr "Paramètres d'hôtes"
+
+#: lib/hammer_cli_foreman_discovery/discovery.rb:90
+msgid "Interface parameters"
+msgstr "Paramètres d'interface"
+
+#: lib/hammer_cli_foreman_discovery/discovery.rb:99
+msgid "Enter the root password for the host:"
+msgstr "Saisissez le mot de passe root pour l'hôte :"
+
+#: lib/hammer_cli_foreman_discovery/discovery.rb:122
+msgid "Auto provision a host"
+msgstr "Provisionner automatiquement un hôte"
+
+#: lib/hammer_cli_foreman_discovery/discovery.rb:132
+msgid "Reboot a host"
+msgstr "Redémarrage d'un hôte"
+
+#: lib/hammer_cli_foreman_discovery/discovery.rb:133
+msgid "Host reboot started"
+msgstr "Redémarrage de l'hôte lancé"
+
+#: lib/hammer_cli_foreman_discovery/discovery.rb:134
+msgid "Could not reboot the host"
+msgstr "Impossible de redémarrer l'hôte"
+
+#: lib/hammer_cli_foreman_discovery/discovery.rb:142
+msgid "Refresh the facts of a host"
+msgstr "Actualiser les facts d'un hôte"
+
+#: lib/hammer_cli_foreman_discovery/discovery.rb:143
+msgid "Host facts refreshed"
+msgstr "Facts de l'hôte actualisés"
+
+#: lib/hammer_cli_foreman_discovery/discovery.rb:144
+msgid "Could not refresh the facts of the host"
+msgstr "Impossible d'actualiser les facts de l'hôte"
+
+# translation auto-copied from project Satellite6 Hammer CLI Foreman, version 6.1, document hammer-cli-foreman
+#: lib/hammer_cli_foreman_discovery/discovery_rule.rb:25
 msgid "Priority"
 msgstr "Priorité"
 
+# translation auto-copied from project RH Access Plugin - django, version 1.0, document django, author Sam Friedmann
+#: lib/hammer_cli_foreman_discovery/discovery_rule.rb:26
 msgid "Search"
-msgstr "Rechercher"
+msgstr "Recherche"
 
+# translation auto-copied from project Red Hat Satelllite Provisioning Guide, version 6.1, document Glossary, author jcarbone
+#: lib/hammer_cli_foreman_discovery/discovery_rule.rb:27
 msgid "Host Group"
 msgstr "Groupe d'hôtes"
 
+#: lib/hammer_cli_foreman_discovery/discovery_rule.rb:28
 msgid "Hosts Limit"
-msgstr "Limite d'hôtes"
+msgstr "Limite des hôtes"
 
+# translation auto-copied from project Satellite6 Hammer CLI Foreman, version 6.1, document hammer-cli-foreman
+#: lib/hammer_cli_foreman_discovery/discovery_rule.rb:29
 msgid "Enabled"
 msgstr "Activé"
 
+#: lib/hammer_cli_foreman_discovery/discovery_rule.rb:38
 msgid "Hostname template"
-msgstr "Modèle d'hôte"
+msgstr "Modèle du nom d'hôte"
 
+#: lib/hammer_cli_foreman_discovery/discovery_rule.rb:46
 msgid "Rule created"
 msgstr "Règle créée"
 
+#: lib/hammer_cli_foreman_discovery/discovery_rule.rb:47
 msgid "Could not create the rule"
 msgstr "Impossible de créer la règle"
 
+#: lib/hammer_cli_foreman_discovery/discovery_rule.rb:54
 msgid "Rule updated"
-msgstr "Règle mis à jour"
+msgstr "Règle mise à jour"
 
+#: lib/hammer_cli_foreman_discovery/discovery_rule.rb:55
 msgid "Could not update the rule"
 msgstr "Impossible de mettre à jour la règle"
 
+#: lib/hammer_cli_foreman_discovery/discovery_rule.rb:62
 msgid "Rule deleted"
 msgstr "Règle supprimée"
 
+#: lib/hammer_cli_foreman_discovery/discovery_rule.rb:63
 msgid "Could not delete the rule"
 msgstr "Impossible de supprimer la règle"
+
+#: lib/hammer_cli_foreman_discovery.rb:7
+msgid "Manipulate discovered hosts."
+msgstr "Manipuler les hôtes détectés"
+
+#: lib/hammer_cli_foreman_discovery.rb:11
+msgid "Manipulate discovered rules."
+msgstr "Manipuler les règles détectées"

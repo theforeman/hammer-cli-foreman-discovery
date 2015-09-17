@@ -3,150 +3,220 @@
 # This file is distributed under the same license as the PACKAGE package.
 #
 # Translators:
+# eukim <eukim@redhat.com>, 2015. #zanata
 msgid ""
 msgstr ""
-"Project-Id-Version: Foreman\n"
+"Project-Id-Version: hammer_cli_foreman_discovery 0.0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2015-03-22 13:12+0000\n"
-"Last-Translator: Lukáš Zapletal\n"
-"Language-Team: Korean (http://www.transifex.com/foreman/foreman/language/ko/)\n"
+"POT-Creation-Date: 2015-03-19 15:06+0200\n"
+"PO-Revision-Date: 2015-04-28 12:50+0000\n"
+"Last-Translator: eukim <eukim@redhat.com>\n"
+"Language-Team: Korean (http://www.transifex.com/projects/p/foreman/language/"
+"ko/)\n"
+"Language: ko\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: ko\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Zanata 3.6.0\n"
 
-msgid "Manipulate discovered hosts."
-msgstr ""
-
-msgid "Manipulate discovered rules."
-msgstr ""
-
-msgid "ID"
-msgstr ""
-
-msgid "Name"
-msgstr "이름 "
-
-msgid "MAC"
-msgstr "MAC"
-
-msgid "Last report"
-msgstr "마지막 보고 "
-
-msgid "CPUs"
-msgstr "CPU"
-
-msgid "Memory"
-msgstr "메모리 "
-
-msgid "Disk count"
-msgstr ""
-
-msgid "Disks size"
-msgstr ""
-
-msgid "Subnet"
-msgstr "서브넷 "
-
-msgid "Last Report"
-msgstr ""
-
-msgid "IP"
-msgstr "IP "
-
-msgid "Model"
-msgstr "모델 "
-
-msgid "Organization"
-msgstr "조직 "
-
-msgid "Location"
-msgstr "위치 "
-
-msgid "Fact"
-msgstr "정보 "
-
-msgid "Value"
-msgstr "값 "
-
-msgid "Host deleted"
-msgstr "호스트가 삭제되었습니다 "
-
-msgid "Could not delete the host"
-msgstr "호스트를 삭제할 수 없습니다 "
-
-msgid "Host created"
-msgstr "호스트가 생성되었습니다 "
-
-msgid "Could not create the host"
-msgstr "호스트를 생성할 수 없습니다 "
-
-msgid "Host parameters"
-msgstr ""
-
-msgid "Interface parameters"
-msgstr ""
-
-msgid "Enter the root password for the host:"
-msgstr ""
-
-msgid "Auto provision a host"
-msgstr ""
-
-msgid "Reboot a host"
-msgstr "호스트 재부팅 "
-
-msgid "Host reboot started"
-msgstr ""
-
-msgid "Could not reboot the host"
-msgstr ""
-
-msgid "Refresh the facts of a host"
-msgstr ""
-
-msgid "Host facts refreshed"
-msgstr ""
-
-msgid "Could not refresh the facts of the host"
-msgstr ""
-
+# translation auto-copied from project Satellite6 Foreman, version 6.1, document foreman
+#: lib/hammer_cli_foreman_discovery/discovery_references.rb:6
 msgid "Hosts"
 msgstr "호스트"
 
+# translation auto-copied from project subscription-manager, version 1.10.10, document keys
+#: lib/hammer_cli_foreman_discovery/discovery.rb:12
+#: lib/hammer_cli_foreman_discovery/discovery_rule.rb:23
+msgid "ID"
+msgstr "ID"
+
+#: lib/hammer_cli_foreman_discovery/discovery.rb:13
+#: lib/hammer_cli_foreman_discovery/discovery_rule.rb:24
+msgid "Name"
+msgstr "이름 "
+
+# translation auto-copied from project Satellite6 Hammer CLI Foreman, version 6.1, document hammer-cli-foreman
+#: lib/hammer_cli_foreman_discovery/discovery.rb:14
+msgid "MAC"
+msgstr "MAC"
+
+# translation auto-copied from project Satellite6 Hammer CLI Foreman, version 6.1, document hammer-cli-foreman
+#: lib/hammer_cli_foreman_discovery/discovery.rb:15
+msgid "Last report"
+msgstr "마지막 보고 "
+
+# translation auto-copied from project Satellite6 Foreman Docker, version 6.1, document foreman_docker
+#: lib/hammer_cli_foreman_discovery/discovery.rb:16
+msgid "CPUs"
+msgstr "CPU"
+
+# translation auto-copied from project Satellite6 Foreman Docker, version 6.1, document foreman_docker
+#: lib/hammer_cli_foreman_discovery/discovery.rb:17
+msgid "Memory"
+msgstr "메모리 "
+
+# translation auto-copied from project Satellite6 Foreman Discovery, version 6.1, document foreman_discovery, author eukim
+#: lib/hammer_cli_foreman_discovery/discovery.rb:18
+msgid "Disk count"
+msgstr "디스크 수 "
+
+# translation auto-copied from project Satellite6 Foreman Discovery, version 6.1, document foreman_discovery, author eukim
+#: lib/hammer_cli_foreman_discovery/discovery.rb:19
+msgid "Disks size"
+msgstr "디스크 크기 "
+
+#: lib/hammer_cli_foreman_discovery/discovery.rb:20
+msgid "Subnet"
+msgstr "서브넷 "
+
+#: lib/hammer_cli_foreman_discovery/discovery.rb:21
+msgid "Last Report"
+msgstr "마지막 보고 "
+
+# translation auto-copied from project Satellite6 Hammer CLI Foreman, version 6.1, document hammer-cli-foreman
+#: lib/hammer_cli_foreman_discovery/discovery.rb:29
+msgid "IP"
+msgstr "IP "
+
+#: lib/hammer_cli_foreman_discovery/discovery.rb:30
+msgid "Model"
+msgstr "모델 "
+
+#: lib/hammer_cli_foreman_discovery/discovery.rb:31
+msgid "Organization"
+msgstr "조직 "
+
+#: lib/hammer_cli_foreman_discovery/discovery.rb:32
+msgid "Location"
+msgstr "위치 "
+
+# translation auto-copied from project Satellite6 Hammer CLI Foreman, version 6.1, document hammer-cli-foreman, author eukim
+#: lib/hammer_cli_foreman_discovery/discovery.rb:42
+msgid "Fact"
+msgstr "팩트 "
+
+# translation auto-copied from project Red Hat Satelllite Provisioning Guide, version 6.1, document Configuring_Satellite_Services, author eukim
+#: lib/hammer_cli_foreman_discovery/discovery.rb:43
+msgid "Value"
+msgstr "값 "
+
+# translation auto-copied from project Satellite6 Hammer CLI Foreman, version 6.1, document hammer-cli-foreman
+#: lib/hammer_cli_foreman_discovery/discovery.rb:60
+msgid "Host deleted"
+msgstr "호스트가 삭제되었습니다 "
+
+# translation auto-copied from project Satellite6 Hammer CLI Foreman, version 6.1, document hammer-cli-foreman
+#: lib/hammer_cli_foreman_discovery/discovery.rb:61
+msgid "Could not delete the host"
+msgstr "호스트를 삭제할 수 없습니다 "
+
+#: lib/hammer_cli_foreman_discovery/discovery.rb:69
+#: lib/hammer_cli_foreman_discovery/discovery.rb:123
+msgid "Host created"
+msgstr "호스트가 생성되었습니다 "
+
+#: lib/hammer_cli_foreman_discovery/discovery.rb:70
+#: lib/hammer_cli_foreman_discovery/discovery.rb:124
+msgid "Could not create the host"
+msgstr "호스트를 생성할 수 없습니다 "
+
+#: lib/hammer_cli_foreman_discovery/discovery.rb:88
+msgid "Host parameters"
+msgstr "호스트 매개 변수 "
+
+#: lib/hammer_cli_foreman_discovery/discovery.rb:90
+msgid "Interface parameters"
+msgstr "인터페이스 매개 변수 "
+
+#: lib/hammer_cli_foreman_discovery/discovery.rb:99
+msgid "Enter the root password for the host:"
+msgstr "호스트의 root 암호를 입력하십시오: "
+
+#: lib/hammer_cli_foreman_discovery/discovery.rb:122
+msgid "Auto provision a host"
+msgstr "호스트를 자동 프로비저닝"
+
+#: lib/hammer_cli_foreman_discovery/discovery.rb:132
+msgid "Reboot a host"
+msgstr "호스트 재부팅 "
+
+#: lib/hammer_cli_foreman_discovery/discovery.rb:133
+msgid "Host reboot started"
+msgstr "호스트 재부팅을 시작했습니다"
+
+#: lib/hammer_cli_foreman_discovery/discovery.rb:134
+msgid "Could not reboot the host"
+msgstr "호스트를 재부팅할 수 없습니다 "
+
+#: lib/hammer_cli_foreman_discovery/discovery.rb:142
+msgid "Refresh the facts of a host"
+msgstr "호스트의 팩트를 새로고침 "
+
+#: lib/hammer_cli_foreman_discovery/discovery.rb:143
+msgid "Host facts refreshed"
+msgstr "호스트 팩트가 새로고침되었습니다 "
+
+#: lib/hammer_cli_foreman_discovery/discovery.rb:144
+msgid "Could not refresh the facts of the host"
+msgstr "호스트 팩트를 새로고침할 수 없습니다 "
+
+# translation auto-copied from project Satellite6 Hammer CLI Foreman, version 6.1, document hammer-cli-foreman
+#: lib/hammer_cli_foreman_discovery/discovery_rule.rb:25
 msgid "Priority"
 msgstr "우선 순위 "
 
+# translation auto-copied from project RH Access Plugin - django, version 1.0, document django, author eukim
+#: lib/hammer_cli_foreman_discovery/discovery_rule.rb:26
 msgid "Search"
 msgstr "검색 "
 
+# translation auto-copied from project Red Hat Satelllite Provisioning Guide, version 6.1, document Glossary, author eukim
+#: lib/hammer_cli_foreman_discovery/discovery_rule.rb:27
 msgid "Host Group"
-msgstr "호스트 그룹 "
+msgstr "호스트 그룹 (Host Group) "
 
+#: lib/hammer_cli_foreman_discovery/discovery_rule.rb:28
 msgid "Hosts Limit"
-msgstr ""
+msgstr "호스트 제한"
 
+# translation auto-copied from project Satellite6 Hammer CLI Foreman, version 6.1, document hammer-cli-foreman
+#: lib/hammer_cli_foreman_discovery/discovery_rule.rb:29
 msgid "Enabled"
 msgstr "활성화됨 "
 
+#: lib/hammer_cli_foreman_discovery/discovery_rule.rb:38
 msgid "Hostname template"
-msgstr ""
+msgstr "호스트 이름 템플릿"
 
+#: lib/hammer_cli_foreman_discovery/discovery_rule.rb:46
 msgid "Rule created"
-msgstr ""
+msgstr "규칙이 생성되었습니다 "
 
+#: lib/hammer_cli_foreman_discovery/discovery_rule.rb:47
 msgid "Could not create the rule"
-msgstr ""
+msgstr "규칙을 생성할 수 없습니다 "
 
+#: lib/hammer_cli_foreman_discovery/discovery_rule.rb:54
 msgid "Rule updated"
-msgstr ""
+msgstr "규칙이 업데이트되었습니다 "
 
+#: lib/hammer_cli_foreman_discovery/discovery_rule.rb:55
 msgid "Could not update the rule"
-msgstr ""
+msgstr "규칙을 업데이트할 수 없습니다 "
 
+#: lib/hammer_cli_foreman_discovery/discovery_rule.rb:62
 msgid "Rule deleted"
-msgstr ""
+msgstr "규칙이 삭제되었습니다 "
 
+#: lib/hammer_cli_foreman_discovery/discovery_rule.rb:63
 msgid "Could not delete the rule"
-msgstr ""
+msgstr "규칙을 삭제할 수 없습니다 "
+
+#: lib/hammer_cli_foreman_discovery.rb:7
+msgid "Manipulate discovered hosts."
+msgstr "검색된 호스트를 조정합니다."
+
+#: lib/hammer_cli_foreman_discovery.rb:11
+msgid "Manipulate discovered rules."
+msgstr "검색된 규칙을 조정합니다."

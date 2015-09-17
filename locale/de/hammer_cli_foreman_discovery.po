@@ -3,152 +3,220 @@
 # This file is distributed under the same license as the PACKAGE package.
 #
 # Translators:
-# Christina Gurski <Gurski_christina@yahoo.de>, 2015
-# Ettore Atalan <atalanttore@googlemail.com>, 2015
+# hpeters <hpeters@redhat.com>, 2015. #zanata
 msgid ""
 msgstr ""
-"Project-Id-Version: Foreman\n"
+"Project-Id-Version: hammer_cli_foreman_discovery 0.0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2015-06-18 19:38+0000\n"
-"Last-Translator: Christina Gurski <Gurski_christina@yahoo.de>\n"
-"Language-Team: German (http://www.transifex.com/foreman/foreman/language/de/)\n"
+"POT-Creation-Date: 2015-03-19 15:06+0200\n"
+"PO-Revision-Date: 2015-04-27 11:52+0000\n"
+"Last-Translator: hpeters <hpeters@redhat.com>\n"
+"Language-Team: German (http://www.transifex.com/projects/p/foreman/language/"
+"de/)\n"
+"Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: de\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Zanata 3.6.0\n"
 
-msgid "Manipulate discovered hosts."
-msgstr "Entdeckte Hosts bearbeiten"
-
-msgid "Manipulate discovered rules."
-msgstr "Entdeckte Regeln bearbeiten"
-
-msgid "ID"
-msgstr "Kennung"
-
-msgid "Name"
-msgstr "Name"
-
-msgid "MAC"
-msgstr "MAC"
-
-msgid "Last report"
-msgstr "Letzter Bericht"
-
-msgid "CPUs"
-msgstr "CPUs"
-
-msgid "Memory"
-msgstr "Speicher"
-
-msgid "Disk count"
-msgstr "Festplattenanzahl"
-
-msgid "Disks size"
-msgstr "Festplattengröße"
-
-msgid "Subnet"
-msgstr "Subnetz"
-
-msgid "Last Report"
-msgstr "Letzter Bericht"
-
-msgid "IP"
-msgstr "IP"
-
-msgid "Model"
-msgstr "Modell"
-
-msgid "Organization"
-msgstr "Organisation"
-
-msgid "Location"
-msgstr "Ort"
-
-msgid "Fact"
-msgstr "Fakt"
-
-msgid "Value"
-msgstr "Wert"
-
-msgid "Host deleted"
-msgstr "Host gelöscht"
-
-msgid "Could not delete the host"
-msgstr "Host konnte nicht gelöscht werden"
-
-msgid "Host created"
-msgstr "Host erstellt"
-
-msgid "Could not create the host"
-msgstr "Host konnte nicht erstellt werden"
-
-msgid "Host parameters"
-msgstr "Hostparameter"
-
-msgid "Interface parameters"
-msgstr "Schnittstellenparameter"
-
-msgid "Enter the root password for the host:"
-msgstr "Geben Sie das Root-Passwort für den Host ein:"
-
-msgid "Auto provision a host"
-msgstr "Host automatisch bereitstellen"
-
-msgid "Reboot a host"
-msgstr "Host neu starten"
-
-msgid "Host reboot started"
-msgstr "Host wird neu gestartet"
-
-msgid "Could not reboot the host"
-msgstr "Host konnte nicht neu gestartet werden"
-
-msgid "Refresh the facts of a host"
-msgstr "Aktualisieren Sie die Daten eines Hosts"
-
-msgid "Host facts refreshed"
-msgstr "Hostdaten aktualisiert"
-
-msgid "Could not refresh the facts of the host"
-msgstr "Daten des Hosts konnten nicht aktualisiert werden"
-
+# translation auto-copied from project Satellite6 Foreman, version 6.1, document foreman
+#: lib/hammer_cli_foreman_discovery/discovery_references.rb:6
 msgid "Hosts"
 msgstr "Hosts"
 
+# translation auto-copied from project Satellite6 Hammer CLI Katello, version 6.1, document hammer-cli-katello
+#: lib/hammer_cli_foreman_discovery/discovery.rb:12
+#: lib/hammer_cli_foreman_discovery/discovery_rule.rb:23
+msgid "ID"
+msgstr "ID"
+
+#: lib/hammer_cli_foreman_discovery/discovery.rb:13
+#: lib/hammer_cli_foreman_discovery/discovery_rule.rb:24
+msgid "Name"
+msgstr "Name"
+
+# translation auto-copied from project Satellite6 Hammer CLI Foreman, version 6.1, document hammer-cli-foreman
+#: lib/hammer_cli_foreman_discovery/discovery.rb:14
+msgid "MAC"
+msgstr "MAC-Adresse"
+
+# translation auto-copied from project Satellite6 Hammer CLI Foreman, version 6.1, document hammer-cli-foreman
+#: lib/hammer_cli_foreman_discovery/discovery.rb:15
+msgid "Last report"
+msgstr "Letzter Bericht"
+
+# translation auto-copied from project Satellite6 Foreman Docker, version 6.1, document foreman_docker
+#: lib/hammer_cli_foreman_discovery/discovery.rb:16
+msgid "CPUs"
+msgstr "CPUs"
+
+# translation auto-copied from project Satellite6 Foreman Docker, version 6.1, document foreman_docker
+#: lib/hammer_cli_foreman_discovery/discovery.rb:17
+msgid "Memory"
+msgstr "Speicher"
+
+# translation auto-copied from project Satellite6 Foreman Discovery, version 6.1, document foreman_discovery, author hpeters
+#: lib/hammer_cli_foreman_discovery/discovery.rb:18
+msgid "Disk count"
+msgstr "Festplattenanzahl"
+
+# translation auto-copied from project Satellite6 Foreman Discovery, version 6.1, document foreman_discovery, author hpeters
+#: lib/hammer_cli_foreman_discovery/discovery.rb:19
+msgid "Disks size"
+msgstr "Festplattengröße"
+
+#: lib/hammer_cli_foreman_discovery/discovery.rb:20
+msgid "Subnet"
+msgstr "Subnetz"
+
+#: lib/hammer_cli_foreman_discovery/discovery.rb:21
+msgid "Last Report"
+msgstr "Letzter Bericht"
+
+# translation auto-copied from project Satellite6 Hammer CLI Foreman, version 6.1, document hammer-cli-foreman
+#: lib/hammer_cli_foreman_discovery/discovery.rb:29
+msgid "IP"
+msgstr "IP-Adresse"
+
+#: lib/hammer_cli_foreman_discovery/discovery.rb:30
+msgid "Model"
+msgstr "Modell"
+
+#: lib/hammer_cli_foreman_discovery/discovery.rb:31
+msgid "Organization"
+msgstr "Organisation"
+
+#: lib/hammer_cli_foreman_discovery/discovery.rb:32
+msgid "Location"
+msgstr "Standort"
+
+# translation auto-copied from project Satellite6 Foreman Discovery, version 6.1, document foreman_discovery
+#: lib/hammer_cli_foreman_discovery/discovery.rb:42
+msgid "Fact"
+msgstr "Fakt"
+
+# translation auto-copied from project Red Hat Satelllite Provisioning Guide, version 6.1, document Configuring_Satellite_Services, author hpeters
+#: lib/hammer_cli_foreman_discovery/discovery.rb:43
+msgid "Value"
+msgstr "Wert"
+
+# translation auto-copied from project Satellite6 Hammer CLI Foreman, version 6.1, document hammer-cli-foreman
+#: lib/hammer_cli_foreman_discovery/discovery.rb:60
+msgid "Host deleted"
+msgstr "Host gelöscht"
+
+# translation auto-copied from project Satellite6 Hammer CLI Foreman, version 6.1, document hammer-cli-foreman
+#: lib/hammer_cli_foreman_discovery/discovery.rb:61
+msgid "Could not delete the host"
+msgstr "Host konnte nicht gelöscht werden"
+
+#: lib/hammer_cli_foreman_discovery/discovery.rb:69
+#: lib/hammer_cli_foreman_discovery/discovery.rb:123
+msgid "Host created"
+msgstr "Host erstellt"
+
+#: lib/hammer_cli_foreman_discovery/discovery.rb:70
+#: lib/hammer_cli_foreman_discovery/discovery.rb:124
+msgid "Could not create the host"
+msgstr "Host konnte nicht erstellt werden"
+
+#: lib/hammer_cli_foreman_discovery/discovery.rb:88
+msgid "Host parameters"
+msgstr "Hostparameter"
+
+#: lib/hammer_cli_foreman_discovery/discovery.rb:90
+msgid "Interface parameters"
+msgstr "Schnittstellenparameter"
+
+#: lib/hammer_cli_foreman_discovery/discovery.rb:99
+msgid "Enter the root password for the host:"
+msgstr "Geben Sie das Root-Passwort für den Host ein:"
+
+#: lib/hammer_cli_foreman_discovery/discovery.rb:122
+msgid "Auto provision a host"
+msgstr "Host automatisch bereitstellen"
+
+#: lib/hammer_cli_foreman_discovery/discovery.rb:132
+msgid "Reboot a host"
+msgstr "Host neu starten"
+
+#: lib/hammer_cli_foreman_discovery/discovery.rb:133
+msgid "Host reboot started"
+msgstr "Host wird neu gestartet"
+
+#: lib/hammer_cli_foreman_discovery/discovery.rb:134
+msgid "Could not reboot the host"
+msgstr "Host konnte nicht neu gestartet werden"
+
+#: lib/hammer_cli_foreman_discovery/discovery.rb:142
+msgid "Refresh the facts of a host"
+msgstr "Fakten eines Hosts aktualisieren"
+
+#: lib/hammer_cli_foreman_discovery/discovery.rb:143
+msgid "Host facts refreshed"
+msgstr "Hostfakten aktualisiert"
+
+#: lib/hammer_cli_foreman_discovery/discovery.rb:144
+msgid "Could not refresh the facts of the host"
+msgstr "Hostfakten konnten nicht aktualisiert werden"
+
+# translation auto-copied from project Satellite6 Hammer CLI Foreman, version 6.1, document hammer-cli-foreman
+#: lib/hammer_cli_foreman_discovery/discovery_rule.rb:25
 msgid "Priority"
 msgstr "Priorität"
 
+# translation auto-copied from project RH Access Plugin - django, version 1.0, document django, author hpeters
+#: lib/hammer_cli_foreman_discovery/discovery_rule.rb:26
 msgid "Search"
 msgstr "Suche"
 
+# translation auto-copied from project Red Hat Satelllite Provisioning Guide, version 6.1, document Glossary, author hpeters
+#: lib/hammer_cli_foreman_discovery/discovery_rule.rb:27
 msgid "Host Group"
 msgstr "Hostgruppe"
 
+#: lib/hammer_cli_foreman_discovery/discovery_rule.rb:28
 msgid "Hosts Limit"
-msgstr "Hosts-Limit"
+msgstr "Hostgrenze"
 
+# translation auto-copied from project Satellite6 Hammer CLI Katello, version 6.1, document hammer-cli-katello
+#: lib/hammer_cli_foreman_discovery/discovery_rule.rb:29
 msgid "Enabled"
 msgstr "Aktiviert"
 
+#: lib/hammer_cli_foreman_discovery/discovery_rule.rb:38
 msgid "Hostname template"
 msgstr "Hostnamenvorlage"
 
+#: lib/hammer_cli_foreman_discovery/discovery_rule.rb:46
 msgid "Rule created"
 msgstr "Regel erstellt"
 
+#: lib/hammer_cli_foreman_discovery/discovery_rule.rb:47
 msgid "Could not create the rule"
 msgstr "Regel konnte nicht erstellt werden"
 
+#: lib/hammer_cli_foreman_discovery/discovery_rule.rb:54
 msgid "Rule updated"
 msgstr "Regel aktualisiert"
 
+#: lib/hammer_cli_foreman_discovery/discovery_rule.rb:55
 msgid "Could not update the rule"
 msgstr "Regel konnte nicht aktualisiert werden"
 
+#: lib/hammer_cli_foreman_discovery/discovery_rule.rb:62
 msgid "Rule deleted"
 msgstr "Regel gelöscht"
 
+#: lib/hammer_cli_foreman_discovery/discovery_rule.rb:63
 msgid "Could not delete the rule"
 msgstr "Regel konnte nicht gelöscht werden"
+
+#: lib/hammer_cli_foreman_discovery.rb:7
+msgid "Manipulate discovered hosts."
+msgstr "Entdeckte Hosts bearbeiten."
+
+#: lib/hammer_cli_foreman_discovery.rb:11
+msgid "Manipulate discovered rules."
+msgstr "Entdeckte Regeln bearbeiten."
