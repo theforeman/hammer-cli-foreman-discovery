@@ -7,147 +7,200 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Foreman\n"
 "Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-03-19 15:06+0200\n"
 "PO-Revision-Date: 2015-03-22 13:12+0000\n"
 "Last-Translator: Lukáš Zapletal\n"
-"Language-Team: Chinese (Taiwan) (http://www.transifex.com/foreman/foreman/lang"
-"uage/zh_TW/)\n"
+"Language-Team: Chinese (Taiwan) (http://www.transifex.com/foreman/foreman/"
+"language/zh_TW/)\n"
+"Language: zh_TW\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: zh_TW\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-msgid "Manipulate discovered hosts."
-msgstr ""
-
-msgid "Manipulate discovered rules."
-msgstr ""
-
-msgid "ID"
-msgstr ""
-
-msgid "Name"
-msgstr "名稱"
-
-msgid "MAC"
-msgstr "MAC"
-
-msgid "Last report"
-msgstr "最後一份報告"
-
-msgid "CPUs"
-msgstr "CPU"
-
-msgid "Memory"
-msgstr "記憶體"
-
-msgid "Disk count"
-msgstr ""
-
-msgid "Disks size"
-msgstr ""
-
-msgid "Subnet"
-msgstr "子網路"
-
-msgid "Last Report"
-msgstr ""
-
-msgid "IP"
-msgstr "IP"
-
-msgid "Model"
-msgstr "型號"
-
-msgid "Organization"
-msgstr "組織"
-
-msgid "Location"
-msgstr "位置"
-
-msgid "Fact"
-msgstr "詳情"
-
-msgid "Value"
-msgstr "值"
-
-msgid "Host deleted"
-msgstr "已刪除主機"
-
-msgid "Could not delete the host"
-msgstr "無法刪除主機"
-
-msgid "Host created"
-msgstr "已建立主機"
-
-msgid "Could not create the host"
-msgstr "無法建立主機"
-
-msgid "Host parameters"
-msgstr ""
-
-msgid "Interface parameters"
-msgstr ""
-
-msgid "Enter the root password for the host:"
-msgstr ""
-
-msgid "Auto provision a host"
-msgstr ""
-
-msgid "Reboot a host"
-msgstr "重新啟動主機"
-
-msgid "Host reboot started"
-msgstr ""
-
-msgid "Could not reboot the host"
-msgstr ""
-
-msgid "Refresh the facts of a host"
-msgstr ""
-
-msgid "Host facts refreshed"
-msgstr ""
-
-msgid "Could not refresh the facts of the host"
-msgstr ""
-
+#: lib/hammer_cli_foreman_discovery/discovery_references.rb:6
 msgid "Hosts"
 msgstr "主機"
 
+# translation auto-copied from project NetworkManager, version 0.9.9.0, document NetworkManager, author tchuang
+#: lib/hammer_cli_foreman_discovery/discovery.rb:12
+#: lib/hammer_cli_foreman_discovery/discovery_rule.rb:23
+msgid "ID"
+msgstr "ID"
+
+#: lib/hammer_cli_foreman_discovery/discovery.rb:13
+#: lib/hammer_cli_foreman_discovery/discovery_rule.rb:24
+msgid "Name"
+msgstr "名稱"
+
+#: lib/hammer_cli_foreman_discovery/discovery.rb:14
+msgid "MAC"
+msgstr "MAC"
+
+#: lib/hammer_cli_foreman_discovery/discovery.rb:15
+msgid "Last report"
+msgstr "最後一份報告"
+
+#: lib/hammer_cli_foreman_discovery/discovery.rb:16
+msgid "CPUs"
+msgstr "CPU"
+
+#: lib/hammer_cli_foreman_discovery/discovery.rb:17
+msgid "Memory"
+msgstr "記憶體"
+
+# translation auto-copied from project Satellite6 Foreman Discovery, version 6.1, document foreman_discovery, author tchuang
+#: lib/hammer_cli_foreman_discovery/discovery.rb:18
+msgid "Disk count"
+msgstr "磁碟計數"
+
+# translation auto-copied from project Satellite6 Foreman Discovery, version 6.1, document foreman_discovery, author tchuang
+#: lib/hammer_cli_foreman_discovery/discovery.rb:19
+msgid "Disks size"
+msgstr "磁碟大小"
+
+#: lib/hammer_cli_foreman_discovery/discovery.rb:20
+msgid "Subnet"
+msgstr "子網路"
+
+#: lib/hammer_cli_foreman_discovery/discovery.rb:21
+msgid "Last Report"
+msgstr "最後一份報告"
+
+#: lib/hammer_cli_foreman_discovery/discovery.rb:29
+msgid "IP"
+msgstr "IP"
+
+#: lib/hammer_cli_foreman_discovery/discovery.rb:30
+msgid "Model"
+msgstr "型號"
+
+#: lib/hammer_cli_foreman_discovery/discovery.rb:31
+msgid "Organization"
+msgstr "組織"
+
+#: lib/hammer_cli_foreman_discovery/discovery.rb:32
+msgid "Location"
+msgstr "位置"
+
+#: lib/hammer_cli_foreman_discovery/discovery.rb:42
+msgid "Fact"
+msgstr "詳情"
+
+#: lib/hammer_cli_foreman_discovery/discovery.rb:43
+msgid "Value"
+msgstr "值"
+
+#: lib/hammer_cli_foreman_discovery/discovery.rb:60
+msgid "Host deleted"
+msgstr "已刪除主機"
+
+#: lib/hammer_cli_foreman_discovery/discovery.rb:61
+msgid "Could not delete the host"
+msgstr "無法刪除主機"
+
+#: lib/hammer_cli_foreman_discovery/discovery.rb:69
+#: lib/hammer_cli_foreman_discovery/discovery.rb:123
+msgid "Host created"
+msgstr "已建立主機"
+
+#: lib/hammer_cli_foreman_discovery/discovery.rb:70
+#: lib/hammer_cli_foreman_discovery/discovery.rb:124
+msgid "Could not create the host"
+msgstr "無法建立主機"
+
+#: lib/hammer_cli_foreman_discovery/discovery.rb:88
+msgid "Host parameters"
+msgstr "主機參數"
+
+#: lib/hammer_cli_foreman_discovery/discovery.rb:90
+msgid "Interface parameters"
+msgstr "介面卡參數"
+
+#: lib/hammer_cli_foreman_discovery/discovery.rb:99
+msgid "Enter the root password for the host:"
+msgstr "輸入主機的 root 密碼："
+
+#: lib/hammer_cli_foreman_discovery/discovery.rb:122
+msgid "Auto provision a host"
+msgstr "自動佈建主機"
+
+#: lib/hammer_cli_foreman_discovery/discovery.rb:132
+msgid "Reboot a host"
+msgstr "重新啟動主機"
+
+#: lib/hammer_cli_foreman_discovery/discovery.rb:133
+msgid "Host reboot started"
+msgstr "主機重新啟動"
+
+#: lib/hammer_cli_foreman_discovery/discovery.rb:134
+msgid "Could not reboot the host"
+msgstr "無法重新啟動主機"
+
+#: lib/hammer_cli_foreman_discovery/discovery.rb:142
+msgid "Refresh the facts of a host"
+msgstr "更新主機的詳情"
+
+#: lib/hammer_cli_foreman_discovery/discovery.rb:143
+msgid "Host facts refreshed"
+msgstr "主機詳情已更新"
+
+#: lib/hammer_cli_foreman_discovery/discovery.rb:144
+msgid "Could not refresh the facts of the host"
+msgstr "無法更新主機的詳情"
+
+#: lib/hammer_cli_foreman_discovery/discovery_rule.rb:25
 msgid "Priority"
 msgstr "優先順序"
 
+#: lib/hammer_cli_foreman_discovery/discovery_rule.rb:26
 msgid "Search"
 msgstr "搜尋"
 
+#: lib/hammer_cli_foreman_discovery/discovery_rule.rb:27
 msgid "Host Group"
 msgstr "主機群組"
 
+#: lib/hammer_cli_foreman_discovery/discovery_rule.rb:28
 msgid "Hosts Limit"
-msgstr ""
+msgstr "主機限制"
 
+#: lib/hammer_cli_foreman_discovery/discovery_rule.rb:29
 msgid "Enabled"
 msgstr "已啟用"
 
+#: lib/hammer_cli_foreman_discovery/discovery_rule.rb:38
 msgid "Hostname template"
-msgstr ""
+msgstr "主機名稱範本"
 
+#: lib/hammer_cli_foreman_discovery/discovery_rule.rb:46
 msgid "Rule created"
-msgstr ""
+msgstr "已建立規則"
 
+#: lib/hammer_cli_foreman_discovery/discovery_rule.rb:47
 msgid "Could not create the rule"
-msgstr ""
+msgstr "無法建立規則"
 
+#: lib/hammer_cli_foreman_discovery/discovery_rule.rb:54
 msgid "Rule updated"
-msgstr ""
+msgstr "已更新規則"
 
+#: lib/hammer_cli_foreman_discovery/discovery_rule.rb:55
 msgid "Could not update the rule"
-msgstr ""
+msgstr "無法更新規則"
 
+#: lib/hammer_cli_foreman_discovery/discovery_rule.rb:62
 msgid "Rule deleted"
-msgstr ""
+msgstr "已刪除規則"
 
+#: lib/hammer_cli_foreman_discovery/discovery_rule.rb:63
 msgid "Could not delete the rule"
-msgstr ""
+msgstr "無法刪除規則"
+
+#: lib/hammer_cli_foreman_discovery.rb:7
+msgid "Manipulate discovered hosts."
+msgstr "操作發現的主機。"
+
+#: lib/hammer_cli_foreman_discovery.rb:11
+msgid "Manipulate discovered rules."
+msgstr "操作發現的規則。"
