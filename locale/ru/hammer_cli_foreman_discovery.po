@@ -1,59 +1,71 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-# 
+#
 # Translators:
+# ypoyarko <ypoyarko@redhat.com>, 2015. #zanata
 msgid ""
 msgstr ""
-"Project-Id-Version: hammer_cli_foreman_discovery 0.0.2\n"
+"Project-Id-Version: hammer_cli_foreman_discovery 0.0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-03-04 09:52+0200\n"
-"PO-Revision-Date: 2015-03-17 10:44+0000\n"
-"Last-Translator: Lukáš Zapletal\n"
-"Language-Team: Russian (http://www.transifex.com/projects/p/foreman/language/ru/)\n"
+"POT-Creation-Date: 2015-03-19 15:06+0200\n"
+"PO-Revision-Date: 2015-04-27 07:55+0000\n"
+"Last-Translator: ypoyarko <ypoyarko@redhat.com>\n"
+"Language-Team: Russian (http://www.transifex.com/projects/p/foreman/language/"
+"ru/)\n"
+"Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: ru\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Generator: Zanata 3.6.0\n"
 
+# translation auto-copied from project Satellite6 Foreman, version 6.1, document foreman
 #: lib/hammer_cli_foreman_discovery/discovery_references.rb:6
 msgid "Hosts"
-msgstr ""
+msgstr "Узлы"
 
+# translation auto-copied from project subscription-manager, version 1.10.10, document keys
 #: lib/hammer_cli_foreman_discovery/discovery.rb:12
-#: lib/hammer_cli_foreman_discovery/discovery_rule.rb:28
+#: lib/hammer_cli_foreman_discovery/discovery_rule.rb:23
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 #: lib/hammer_cli_foreman_discovery/discovery.rb:13
-#: lib/hammer_cli_foreman_discovery/discovery_rule.rb:29
+#: lib/hammer_cli_foreman_discovery/discovery_rule.rb:24
 msgid "Name"
 msgstr "Имя"
 
+# translation auto-copied from project Satellite6 Hammer CLI Foreman, version 6.1, document hammer-cli-foreman
 #: lib/hammer_cli_foreman_discovery/discovery.rb:14
 msgid "MAC"
 msgstr "MAC"
 
+# translation auto-copied from project Satellite6 Hammer CLI Foreman, version 6.1, document hammer-cli-foreman
 #: lib/hammer_cli_foreman_discovery/discovery.rb:15
 msgid "Last report"
 msgstr "Последний отчет"
 
+# translation auto-copied from project Satellite6 Foreman Docker, version 6.1, document foreman_docker
 #: lib/hammer_cli_foreman_discovery/discovery.rb:16
 msgid "CPUs"
-msgstr ""
+msgstr "CPU"
 
+# translation auto-copied from project Satellite6 Foreman Docker, version 6.1, document foreman_docker
 #: lib/hammer_cli_foreman_discovery/discovery.rb:17
 msgid "Memory"
-msgstr ""
+msgstr "Память"
 
+# translation auto-copied from project Satellite6 Foreman Discovery, version 6.1, document foreman_discovery, author ypoyarko
 #: lib/hammer_cli_foreman_discovery/discovery.rb:18
 msgid "Disk count"
-msgstr ""
+msgstr "Число дисков"
 
+# translation auto-copied from project Satellite6 Foreman Discovery, version 6.1, document foreman_discovery, author ypoyarko
 #: lib/hammer_cli_foreman_discovery/discovery.rb:19
 msgid "Disks size"
-msgstr ""
+msgstr "Размер дисков"
 
 #: lib/hammer_cli_foreman_discovery/discovery.rb:20
 msgid "Subnet"
@@ -61,8 +73,9 @@ msgstr "Подсеть"
 
 #: lib/hammer_cli_foreman_discovery/discovery.rb:21
 msgid "Last Report"
-msgstr ""
+msgstr "Последний отчет"
 
+# translation auto-copied from project Satellite6 Hammer CLI Foreman, version 6.1, document hammer-cli-foreman
 #: lib/hammer_cli_foreman_discovery/discovery.rb:29
 msgid "IP"
 msgstr "IP"
@@ -77,126 +90,134 @@ msgstr "Организация"
 
 #: lib/hammer_cli_foreman_discovery/discovery.rb:32
 msgid "Location"
-msgstr "Расположение"
+msgstr "Рабочий участок"
 
+# translation auto-copied from project Satellite6 Foreman Discovery, version 6.1, document foreman_discovery
 #: lib/hammer_cli_foreman_discovery/discovery.rb:42
 msgid "Fact"
-msgstr ""
+msgstr "Аргумент"
 
+# translation auto-copied from project Red Hat Satelllite Provisioning Guide, version 6.1, document Configuring_Satellite_Services, author ypoyarko
 #: lib/hammer_cli_foreman_discovery/discovery.rb:43
 msgid "Value"
-msgstr ""
+msgstr "Значение"
 
+# translation auto-copied from project Satellite6 Hammer CLI Foreman, version 6.1, document hammer-cli-foreman
 #: lib/hammer_cli_foreman_discovery/discovery.rb:60
 msgid "Host deleted"
-msgstr ""
+msgstr "Хост удален"
 
+# translation auto-copied from project Satellite6 Hammer CLI Foreman, version 6.1, document hammer-cli-foreman
 #: lib/hammer_cli_foreman_discovery/discovery.rb:61
 msgid "Could not delete the host"
-msgstr ""
+msgstr "Не удалось удалить хост"
 
 #: lib/hammer_cli_foreman_discovery/discovery.rb:69
 #: lib/hammer_cli_foreman_discovery/discovery.rb:123
 msgid "Host created"
-msgstr "Хост создан"
+msgstr "Узел создан"
 
 #: lib/hammer_cli_foreman_discovery/discovery.rb:70
 #: lib/hammer_cli_foreman_discovery/discovery.rb:124
 msgid "Could not create the host"
-msgstr "Не удалось создать хост"
+msgstr "Не удалось создать узел"
 
 #: lib/hammer_cli_foreman_discovery/discovery.rb:88
 msgid "Host parameters"
-msgstr ""
+msgstr "Параметры узла"
 
 #: lib/hammer_cli_foreman_discovery/discovery.rb:90
 msgid "Interface parameters"
-msgstr ""
+msgstr "Параметры интерфейса"
 
 #: lib/hammer_cli_foreman_discovery/discovery.rb:99
 msgid "Enter the root password for the host:"
-msgstr ""
+msgstr "Введите пароль root:"
 
 #: lib/hammer_cli_foreman_discovery/discovery.rb:122
 msgid "Auto provision a host"
-msgstr ""
+msgstr "Автоматически инициализировать узел"
 
 #: lib/hammer_cli_foreman_discovery/discovery.rb:132
 msgid "Reboot a host"
-msgstr "Перезагрузить хост"
+msgstr "Перезагрузить"
 
 #: lib/hammer_cli_foreman_discovery/discovery.rb:133
 msgid "Host reboot started"
-msgstr ""
+msgstr "Узел будет перезагружен."
 
 #: lib/hammer_cli_foreman_discovery/discovery.rb:134
 msgid "Could not reboot the host"
-msgstr ""
+msgstr "Не удалось перезагрузить узел."
 
 #: lib/hammer_cli_foreman_discovery/discovery.rb:142
 msgid "Refresh the facts of a host"
-msgstr ""
+msgstr "Обновить факты"
 
 #: lib/hammer_cli_foreman_discovery/discovery.rb:143
 msgid "Host facts refreshed"
-msgstr ""
+msgstr "Факты сохранены"
 
 #: lib/hammer_cli_foreman_discovery/discovery.rb:144
 msgid "Could not refresh the facts of the host"
-msgstr ""
+msgstr "Не удалось обновить факты"
 
-#: lib/hammer_cli_foreman_discovery/discovery.rb:151
-msgid "Discovery related actions."
-msgstr ""
-
-#: lib/hammer_cli_foreman_discovery/discovery_rule.rb:30
+# translation auto-copied from project Satellite6 Hammer CLI Foreman, version 6.1, document hammer-cli-foreman
+#: lib/hammer_cli_foreman_discovery/discovery_rule.rb:25
 msgid "Priority"
-msgstr ""
+msgstr "Приоритет"
 
-#: lib/hammer_cli_foreman_discovery/discovery_rule.rb:31
+# translation auto-copied from project RH Access Plugin - django, version 1.0, document django, author ypoyarko
+#: lib/hammer_cli_foreman_discovery/discovery_rule.rb:26
 msgid "Search"
-msgstr ""
+msgstr "Поиск"
 
-#: lib/hammer_cli_foreman_discovery/discovery_rule.rb:32
+# translation auto-copied from project Red Hat Satelllite Provisioning Guide, version 6.1, document Glossary, author ypoyarko
+#: lib/hammer_cli_foreman_discovery/discovery_rule.rb:27
 msgid "Host Group"
-msgstr ""
+msgstr "Группа узлов"
 
-#: lib/hammer_cli_foreman_discovery/discovery_rule.rb:33
+#: lib/hammer_cli_foreman_discovery/discovery_rule.rb:28
 msgid "Hosts Limit"
-msgstr ""
+msgstr "Максимальное число узлов"
 
-#: lib/hammer_cli_foreman_discovery/discovery_rule.rb:34
+# translation auto-copied from project Satellite6 Hammer CLI Foreman, version 6.1, document hammer-cli-foreman
+#: lib/hammer_cli_foreman_discovery/discovery_rule.rb:29
 msgid "Enabled"
-msgstr ""
+msgstr "Включен"
 
-#: lib/hammer_cli_foreman_discovery/discovery_rule.rb:43
+#: lib/hammer_cli_foreman_discovery/discovery_rule.rb:38
 msgid "Hostname template"
-msgstr ""
+msgstr "Шаблон имен узлов"
 
-#: lib/hammer_cli_foreman_discovery/discovery_rule.rb:51
+#: lib/hammer_cli_foreman_discovery/discovery_rule.rb:46
 msgid "Rule created"
-msgstr ""
+msgstr "Правило создано"
 
-#: lib/hammer_cli_foreman_discovery/discovery_rule.rb:52
+#: lib/hammer_cli_foreman_discovery/discovery_rule.rb:47
 msgid "Could not create the rule"
-msgstr ""
+msgstr "Не удалось создать правило"
 
-#: lib/hammer_cli_foreman_discovery/discovery_rule.rb:59
+#: lib/hammer_cli_foreman_discovery/discovery_rule.rb:54
 msgid "Rule updated"
-msgstr ""
+msgstr "Правило обновлено"
 
-#: lib/hammer_cli_foreman_discovery/discovery_rule.rb:60
+#: lib/hammer_cli_foreman_discovery/discovery_rule.rb:55
 msgid "Could not update the rule"
-msgstr ""
+msgstr "Не удалось обновить правило"
 
-#: lib/hammer_cli_foreman_discovery/discovery_rule.rb:67
+#: lib/hammer_cli_foreman_discovery/discovery_rule.rb:62
 msgid "Rule deleted"
-msgstr ""
+msgstr "Правило удалено"
 
-#: lib/hammer_cli_foreman_discovery/discovery_rule.rb:68
+#: lib/hammer_cli_foreman_discovery/discovery_rule.rb:63
 msgid "Could not delete the rule"
-msgstr ""
+msgstr "Не удалось удалить правило"
 
-#: lib/hammer_cli_foreman_discovery/discovery_rule.rb:76
-msgid "Discovery rule actions."
-msgstr ""
+#: lib/hammer_cli_foreman_discovery.rb:7
+msgid "Manipulate discovered hosts."
+msgstr "Управление обнаруженными узлами"
+
+#: lib/hammer_cli_foreman_discovery.rb:11
+msgid "Manipulate discovered rules."
+msgstr "Управление обнаруженными правилами"

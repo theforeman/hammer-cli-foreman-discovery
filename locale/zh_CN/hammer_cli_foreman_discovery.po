@@ -1,59 +1,71 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-# 
+#
 # Translators:
+# Leah Liu <lliu@redhat.com>, 2015. #zanata
+# tfu <tfu@redhat.com>, 2015. #zanata
 msgid ""
 msgstr ""
-"Project-Id-Version: hammer_cli_foreman_discovery 0.0.2\n"
+"Project-Id-Version: hammer_cli_foreman_discovery 0.0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-03-04 09:52+0200\n"
-"PO-Revision-Date: 2015-03-17 10:44+0000\n"
-"Last-Translator: Lukáš Zapletal\n"
-"Language-Team: Chinese (China) (http://www.transifex.com/projects/p/foreman/language/zh_CN/)\n"
+"POT-Creation-Date: 2015-03-19 15:06+0200\n"
+"PO-Revision-Date: 2015-04-27 01:24+0000\n"
+"Last-Translator: Leah Liu <lliu@redhat.com>\n"
+"Language-Team: Chinese (China) (http://www.transifex.com/projects/p/foreman/"
+"language/zh_CN/)\n"
+"Language: zh-CN\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: zh_CN\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Zanata 3.6.0\n"
 
+# translation auto-copied from project Satellite6 Foreman, version 6.1, document foreman
 #: lib/hammer_cli_foreman_discovery/discovery_references.rb:6
 msgid "Hosts"
-msgstr ""
+msgstr "主机"
 
+# translation auto-copied from project subscription-manager, version 1.10.10, document keys
 #: lib/hammer_cli_foreman_discovery/discovery.rb:12
-#: lib/hammer_cli_foreman_discovery/discovery_rule.rb:28
+#: lib/hammer_cli_foreman_discovery/discovery_rule.rb:23
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 #: lib/hammer_cli_foreman_discovery/discovery.rb:13
-#: lib/hammer_cli_foreman_discovery/discovery_rule.rb:29
+#: lib/hammer_cli_foreman_discovery/discovery_rule.rb:24
 msgid "Name"
 msgstr "名称"
 
+# translation auto-copied from project Satellite6 Hammer CLI Foreman, version 6.1, document hammer-cli-foreman
 #: lib/hammer_cli_foreman_discovery/discovery.rb:14
 msgid "MAC"
 msgstr "MAC"
 
+# translation auto-copied from project Satellite6 Hammer CLI Foreman, version 6.1, document hammer-cli-foreman
 #: lib/hammer_cli_foreman_discovery/discovery.rb:15
 msgid "Last report"
 msgstr "最后的报告"
 
+# translation auto-copied from project Satellite6 Foreman Docker, version 6.1, document foreman_docker
 #: lib/hammer_cli_foreman_discovery/discovery.rb:16
 msgid "CPUs"
-msgstr ""
+msgstr "处理器"
 
+# translation auto-copied from project Satellite6 Foreman Docker, version 6.1, document foreman_docker
 #: lib/hammer_cli_foreman_discovery/discovery.rb:17
 msgid "Memory"
-msgstr ""
+msgstr "内存"
 
+# translation auto-copied from project Satellite6 Foreman Discovery, version 6.1, document foreman_discovery, author Leah Liu
 #: lib/hammer_cli_foreman_discovery/discovery.rb:18
 msgid "Disk count"
-msgstr ""
+msgstr "磁盘计数"
 
+# translation auto-copied from project Satellite6 Foreman Discovery, version 6.1, document foreman_discovery, author Leah Liu
 #: lib/hammer_cli_foreman_discovery/discovery.rb:19
 msgid "Disks size"
-msgstr ""
+msgstr "磁盘大小"
 
 #: lib/hammer_cli_foreman_discovery/discovery.rb:20
 msgid "Subnet"
@@ -61,8 +73,9 @@ msgstr "子网"
 
 #: lib/hammer_cli_foreman_discovery/discovery.rb:21
 msgid "Last Report"
-msgstr ""
+msgstr "最新报告"
 
+# translation auto-copied from project Satellite6 Hammer CLI Foreman, version 6.1, document hammer-cli-foreman
 #: lib/hammer_cli_foreman_discovery/discovery.rb:29
 msgid "IP"
 msgstr "IP"
@@ -79,21 +92,25 @@ msgstr "机构"
 msgid "Location"
 msgstr "位置"
 
+# translation auto-copied from project Satellite6 Foreman Discovery, version 6.1, document foreman_discovery
 #: lib/hammer_cli_foreman_discovery/discovery.rb:42
 msgid "Fact"
-msgstr ""
+msgstr "详情"
 
+# translation auto-copied from project Red Hat Satelllite Provisioning Guide, version 6.1, document Configuring_Satellite_Services, author Leah Liu
 #: lib/hammer_cli_foreman_discovery/discovery.rb:43
 msgid "Value"
-msgstr ""
+msgstr "数值"
 
+# translation auto-copied from project Satellite6 Hammer CLI Foreman, version 6.1, document hammer-cli-foreman
 #: lib/hammer_cli_foreman_discovery/discovery.rb:60
 msgid "Host deleted"
-msgstr ""
+msgstr "已删除主机"
 
+# translation auto-copied from project Satellite6 Hammer CLI Foreman, version 6.1, document hammer-cli-foreman
 #: lib/hammer_cli_foreman_discovery/discovery.rb:61
 msgid "Could not delete the host"
-msgstr ""
+msgstr "无法删除主机"
 
 #: lib/hammer_cli_foreman_discovery/discovery.rb:69
 #: lib/hammer_cli_foreman_discovery/discovery.rb:123
@@ -107,19 +124,19 @@ msgstr "无法生成主机"
 
 #: lib/hammer_cli_foreman_discovery/discovery.rb:88
 msgid "Host parameters"
-msgstr ""
+msgstr "主机参数"
 
 #: lib/hammer_cli_foreman_discovery/discovery.rb:90
 msgid "Interface parameters"
-msgstr ""
+msgstr "接口参数"
 
 #: lib/hammer_cli_foreman_discovery/discovery.rb:99
 msgid "Enter the root password for the host:"
-msgstr ""
+msgstr "为主机输入 root 密码："
 
 #: lib/hammer_cli_foreman_discovery/discovery.rb:122
 msgid "Auto provision a host"
-msgstr ""
+msgstr "自动供应主机"
 
 #: lib/hammer_cli_foreman_discovery/discovery.rb:132
 msgid "Reboot a host"
@@ -127,76 +144,80 @@ msgstr "重启主机"
 
 #: lib/hammer_cli_foreman_discovery/discovery.rb:133
 msgid "Host reboot started"
-msgstr ""
+msgstr "开始主机重启"
 
 #: lib/hammer_cli_foreman_discovery/discovery.rb:134
 msgid "Could not reboot the host"
-msgstr ""
+msgstr "无法重启主机"
 
 #: lib/hammer_cli_foreman_discovery/discovery.rb:142
 msgid "Refresh the facts of a host"
-msgstr ""
+msgstr "刷新主机详情"
 
 #: lib/hammer_cli_foreman_discovery/discovery.rb:143
 msgid "Host facts refreshed"
-msgstr ""
+msgstr "已刷新主机详情"
 
 #: lib/hammer_cli_foreman_discovery/discovery.rb:144
 msgid "Could not refresh the facts of the host"
-msgstr ""
+msgstr "无法刷新主机详情"
 
-#: lib/hammer_cli_foreman_discovery/discovery.rb:151
-msgid "Discovery related actions."
-msgstr ""
-
-#: lib/hammer_cli_foreman_discovery/discovery_rule.rb:30
+# translation auto-copied from project Satellite6 Hammer CLI Foreman, version 6.1, document hammer-cli-foreman
+#: lib/hammer_cli_foreman_discovery/discovery_rule.rb:25
 msgid "Priority"
-msgstr ""
+msgstr "优先权"
 
-#: lib/hammer_cli_foreman_discovery/discovery_rule.rb:31
+# translation auto-copied from project RH Access Plugin - django, version 1.0, document django, author tfu
+#: lib/hammer_cli_foreman_discovery/discovery_rule.rb:26
 msgid "Search"
-msgstr ""
+msgstr "搜索"
 
-#: lib/hammer_cli_foreman_discovery/discovery_rule.rb:32
+# translation auto-copied from project Red Hat Satelllite Provisioning Guide, version 6.1, document Glossary, author Leah Liu
+#: lib/hammer_cli_foreman_discovery/discovery_rule.rb:27
 msgid "Host Group"
-msgstr ""
+msgstr "主机组"
 
-#: lib/hammer_cli_foreman_discovery/discovery_rule.rb:33
+#: lib/hammer_cli_foreman_discovery/discovery_rule.rb:28
 msgid "Hosts Limit"
-msgstr ""
+msgstr "主机限制"
 
-#: lib/hammer_cli_foreman_discovery/discovery_rule.rb:34
+# translation auto-copied from project Satellite6 Hammer CLI Foreman, version 6.1, document hammer-cli-foreman
+#: lib/hammer_cli_foreman_discovery/discovery_rule.rb:29
 msgid "Enabled"
-msgstr ""
+msgstr "已启用"
 
-#: lib/hammer_cli_foreman_discovery/discovery_rule.rb:43
+#: lib/hammer_cli_foreman_discovery/discovery_rule.rb:38
 msgid "Hostname template"
-msgstr ""
+msgstr "主机名模板"
 
-#: lib/hammer_cli_foreman_discovery/discovery_rule.rb:51
+#: lib/hammer_cli_foreman_discovery/discovery_rule.rb:46
 msgid "Rule created"
-msgstr ""
+msgstr "已创建的规则"
 
-#: lib/hammer_cli_foreman_discovery/discovery_rule.rb:52
+#: lib/hammer_cli_foreman_discovery/discovery_rule.rb:47
 msgid "Could not create the rule"
-msgstr ""
+msgstr "无法创建规则"
 
-#: lib/hammer_cli_foreman_discovery/discovery_rule.rb:59
+#: lib/hammer_cli_foreman_discovery/discovery_rule.rb:54
 msgid "Rule updated"
-msgstr ""
+msgstr "已更新的规则"
 
-#: lib/hammer_cli_foreman_discovery/discovery_rule.rb:60
+#: lib/hammer_cli_foreman_discovery/discovery_rule.rb:55
 msgid "Could not update the rule"
-msgstr ""
+msgstr "无法更新规则"
 
-#: lib/hammer_cli_foreman_discovery/discovery_rule.rb:67
+#: lib/hammer_cli_foreman_discovery/discovery_rule.rb:62
 msgid "Rule deleted"
-msgstr ""
+msgstr "已删除的规则"
 
-#: lib/hammer_cli_foreman_discovery/discovery_rule.rb:68
+#: lib/hammer_cli_foreman_discovery/discovery_rule.rb:63
 msgid "Could not delete the rule"
-msgstr ""
+msgstr "无法删除规则"
 
-#: lib/hammer_cli_foreman_discovery/discovery_rule.rb:76
-msgid "Discovery rule actions."
-msgstr ""
+#: lib/hammer_cli_foreman_discovery.rb:7
+msgid "Manipulate discovered hosts."
+msgstr "修改发现的主机。"
+
+#: lib/hammer_cli_foreman_discovery.rb:11
+msgid "Manipulate discovered rules."
+msgstr "修改发现的规则。"
