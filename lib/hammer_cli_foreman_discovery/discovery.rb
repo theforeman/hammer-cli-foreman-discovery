@@ -15,6 +15,7 @@ module HammerCLIForemanDiscovery
         field :id, _("ID")
         field :name, _("Name")
         field :mac, _("MAC")
+        field :model_name, _("Model")
         field :last_report, _('Last report'), Fields::Date
         field :cpus, _('CPUs')
         field :memory, _('Memory')
