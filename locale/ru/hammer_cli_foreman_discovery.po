@@ -8,199 +8,149 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Foreman\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-03-19 15:06+0200\n"
 "PO-Revision-Date: 2015-07-02 10:43+0000\n"
 "Last-Translator: Vladimir Pavlov <v.pavlov@i-teco.ru>\n"
-"Language-Team: Russian (http://www.transifex.com/foreman/foreman/language/"
-"ru/)\n"
+"Language-Team: Russian (http://www.transifex.com/foreman/foreman/language/ru/)"
+"\n"
 "Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
-"%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n"
-"%100>=11 && n%100<=14)? 2 : 3);\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<="
+"4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n%100>=1"
+"1 && n%100<=14)? 2 : 3);\n"
 
-#: lib/hammer_cli_foreman_discovery/discovery_references.rb:6
-msgid "Hosts"
-msgstr "Узлы"
-
-#: lib/hammer_cli_foreman_discovery/discovery.rb:12
-#: lib/hammer_cli_foreman_discovery/discovery_rule.rb:23
-msgid "ID"
-msgstr "Код"
-
-#: lib/hammer_cli_foreman_discovery/discovery.rb:13
-#: lib/hammer_cli_foreman_discovery/discovery_rule.rb:24
-msgid "Name"
-msgstr "Имя"
-
-#: lib/hammer_cli_foreman_discovery/discovery.rb:14
-msgid "MAC"
-msgstr "MAC"
-
-#: lib/hammer_cli_foreman_discovery/discovery.rb:15
-msgid "Last report"
-msgstr "Последний отчет"
-
-#: lib/hammer_cli_foreman_discovery/discovery.rb:16
-msgid "CPUs"
-msgstr "CPU"
-
-#: lib/hammer_cli_foreman_discovery/discovery.rb:17
-msgid "Memory"
-msgstr "Память"
-
-#: lib/hammer_cli_foreman_discovery/discovery.rb:18
-msgid "Disk count"
-msgstr "Количество дисков"
-
-#: lib/hammer_cli_foreman_discovery/discovery.rb:19
-msgid "Disks size"
-msgstr "Размер диска"
-
-#: lib/hammer_cli_foreman_discovery/discovery.rb:20
-msgid "Subnet"
-msgstr "Подсеть"
-
-#: lib/hammer_cli_foreman_discovery/discovery.rb:21
-msgid "Last Report"
-msgstr "Последний отчет"
-
-#: lib/hammer_cli_foreman_discovery/discovery.rb:29
-msgid "IP"
-msgstr "IP"
-
-#: lib/hammer_cli_foreman_discovery/discovery.rb:30
-msgid "Model"
-msgstr "Модель"
-
-#: lib/hammer_cli_foreman_discovery/discovery.rb:31
-msgid "Organization"
-msgstr "Организация"
-
-#: lib/hammer_cli_foreman_discovery/discovery.rb:32
-msgid "Location"
-msgstr "Расположение"
-
-#: lib/hammer_cli_foreman_discovery/discovery.rb:42
-msgid "Fact"
-msgstr "Аргумент"
-
-#: lib/hammer_cli_foreman_discovery/discovery.rb:43
-msgid "Value"
-msgstr "Значение"
-
-#: lib/hammer_cli_foreman_discovery/discovery.rb:60
-msgid "Host deleted"
-msgstr "Узел удален"
-
-#: lib/hammer_cli_foreman_discovery/discovery.rb:61
-msgid "Could not delete the host"
-msgstr "Не удалось удалить узел"
-
-#: lib/hammer_cli_foreman_discovery/discovery.rb:69
-#: lib/hammer_cli_foreman_discovery/discovery.rb:123
-msgid "Host created"
-msgstr "Узел создан"
-
-#: lib/hammer_cli_foreman_discovery/discovery.rb:70
-#: lib/hammer_cli_foreman_discovery/discovery.rb:124
-msgid "Could not create the host"
-msgstr "Не удалось создать узел"
-
-#: lib/hammer_cli_foreman_discovery/discovery.rb:88
-msgid "Host parameters"
-msgstr "Параметры узла"
-
-#: lib/hammer_cli_foreman_discovery/discovery.rb:90
-msgid "Interface parameters"
-msgstr "Параметры интерфейса"
-
-#: lib/hammer_cli_foreman_discovery/discovery.rb:99
-msgid "Enter the root password for the host:"
-msgstr "Введите пароль суперпользователя для узла:"
-
-#: lib/hammer_cli_foreman_discovery/discovery.rb:122
-msgid "Auto provision a host"
-msgstr "Автоматическая подготовка узла"
-
-#: lib/hammer_cli_foreman_discovery/discovery.rb:132
-msgid "Reboot a host"
-msgstr "Перезагрузить узел"
-
-#: lib/hammer_cli_foreman_discovery/discovery.rb:133
-msgid "Host reboot started"
-msgstr "Узел будет перезагружен"
-
-#: lib/hammer_cli_foreman_discovery/discovery.rb:134
-msgid "Could not reboot the host"
-msgstr "Не удалось перезагрузить узел"
-
-#: lib/hammer_cli_foreman_discovery/discovery.rb:142
-msgid "Refresh the facts of a host"
-msgstr "Освежить факты узла"
-
-#: lib/hammer_cli_foreman_discovery/discovery.rb:143
-msgid "Host facts refreshed"
-msgstr "Факты узла освежены"
-
-#: lib/hammer_cli_foreman_discovery/discovery.rb:144
-msgid "Could not refresh the facts of the host"
-msgstr "Не удалось освежить факты узла"
-
-#: lib/hammer_cli_foreman_discovery/discovery_rule.rb:25
-msgid "Priority"
-msgstr "Приоритет"
-
-#: lib/hammer_cli_foreman_discovery/discovery_rule.rb:26
-msgid "Search"
-msgstr "Поиск"
-
-#: lib/hammer_cli_foreman_discovery/discovery_rule.rb:27
-msgid "Host Group"
-msgstr "Группа узлов"
-
-#: lib/hammer_cli_foreman_discovery/discovery_rule.rb:28
-msgid "Hosts Limit"
-msgstr "Ограничение узлов"
-
-#: lib/hammer_cli_foreman_discovery/discovery_rule.rb:29
-msgid "Enabled"
-msgstr "Включен"
-
-#: lib/hammer_cli_foreman_discovery/discovery_rule.rb:38
-msgid "Hostname template"
-msgstr "Шаблон имени узла"
-
-#: lib/hammer_cli_foreman_discovery/discovery_rule.rb:46
-msgid "Rule created"
-msgstr "Правило создано"
-
-#: lib/hammer_cli_foreman_discovery/discovery_rule.rb:47
-msgid "Could not create the rule"
-msgstr "Не удалось создать правило"
-
-#: lib/hammer_cli_foreman_discovery/discovery_rule.rb:54
-msgid "Rule updated"
-msgstr "Правило обновлено"
-
-#: lib/hammer_cli_foreman_discovery/discovery_rule.rb:55
-msgid "Could not update the rule"
-msgstr "Не удалось обновить правило"
-
-#: lib/hammer_cli_foreman_discovery/discovery_rule.rb:62
-msgid "Rule deleted"
-msgstr "Правило удалено"
-
-#: lib/hammer_cli_foreman_discovery/discovery_rule.rb:63
-msgid "Could not delete the rule"
-msgstr "Не удалось удалить правило"
-
-#: lib/hammer_cli_foreman_discovery.rb:7
 msgid "Manipulate discovered hosts."
 msgstr "Управление обнаруженными узлами."
 
-#: lib/hammer_cli_foreman_discovery.rb:11
 msgid "Manipulate discovered rules."
 msgstr "Управление обнаруженными правилами."
+
+msgid "ID"
+msgstr "Код"
+
+msgid "Name"
+msgstr "Имя"
+
+msgid "MAC"
+msgstr "MAC"
+
+msgid "Last report"
+msgstr "Последний отчет"
+
+msgid "CPUs"
+msgstr "CPU"
+
+msgid "Memory"
+msgstr "Память"
+
+msgid "Disk count"
+msgstr "Количество дисков"
+
+msgid "Disks size"
+msgstr "Размер диска"
+
+msgid "Subnet"
+msgstr "Подсеть"
+
+msgid "Last Report"
+msgstr "Последний отчет"
+
+msgid "IP"
+msgstr "IP"
+
+msgid "Model"
+msgstr "Модель"
+
+msgid "Organization"
+msgstr "Организация"
+
+msgid "Location"
+msgstr "Расположение"
+
+msgid "Fact"
+msgstr "Аргумент"
+
+msgid "Value"
+msgstr "Значение"
+
+msgid "Host deleted"
+msgstr "Узел удален"
+
+msgid "Could not delete the host"
+msgstr "Не удалось удалить узел"
+
+msgid "Host created"
+msgstr "Узел создан"
+
+msgid "Could not create the host"
+msgstr "Не удалось создать узел"
+
+msgid "Host parameters"
+msgstr "Параметры узла"
+
+msgid "Interface parameters"
+msgstr "Параметры интерфейса"
+
+msgid "Enter the root password for the host:"
+msgstr "Введите пароль суперпользователя для узла:"
+
+msgid "Auto provision a host"
+msgstr "Автоматическая подготовка узла"
+
+msgid "Reboot a host"
+msgstr "Перезагрузить узел"
+
+msgid "Host reboot started"
+msgstr "Узел будет перезагружен"
+
+msgid "Could not reboot the host"
+msgstr "Не удалось перезагрузить узел"
+
+msgid "Refresh the facts of a host"
+msgstr "Освежить факты узла"
+
+msgid "Host facts refreshed"
+msgstr "Факты узла освежены"
+
+msgid "Could not refresh the facts of the host"
+msgstr "Не удалось освежить факты узла"
+
+msgid "Hosts"
+msgstr "Узлы"
+
+msgid "Priority"
+msgstr "Приоритет"
+
+msgid "Search"
+msgstr "Поиск"
+
+msgid "Host Group"
+msgstr "Группа узлов"
+
+msgid "Hosts Limit"
+msgstr "Ограничение узлов"
+
+msgid "Enabled"
+msgstr "Включен"
+
+msgid "Hostname template"
+msgstr "Шаблон имени узла"
+
+msgid "Rule created"
+msgstr "Правило создано"
+
+msgid "Could not create the rule"
+msgstr "Не удалось создать правило"
+
+msgid "Rule updated"
+msgstr "Правило обновлено"
+
+msgid "Could not update the rule"
+msgstr "Не удалось обновить правило"
+
+msgid "Rule deleted"
+msgstr "Правило удалено"
+
+msgid "Could not delete the rule"
+msgstr "Не удалось удалить правило"

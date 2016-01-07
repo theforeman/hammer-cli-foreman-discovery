@@ -8,197 +8,147 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Foreman\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-03-19 15:06+0200\n"
 "PO-Revision-Date: 2015-04-05 12:11+0000\n"
 "Last-Translator: Shuji Yamada <uzy.exe@gmail.com>\n"
-"Language-Team: Japanese (http://www.transifex.com/foreman/foreman/language/"
-"ja/)\n"
+"Language-Team: Japanese (http://www.transifex.com/foreman/foreman/language/ja/"
+")\n"
 "Language: ja\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-#: lib/hammer_cli_foreman_discovery/discovery_references.rb:6
-msgid "Hosts"
-msgstr "ホスト"
-
-#: lib/hammer_cli_foreman_discovery/discovery.rb:12
-#: lib/hammer_cli_foreman_discovery/discovery_rule.rb:23
-msgid "ID"
-msgstr "ID"
-
-#: lib/hammer_cli_foreman_discovery/discovery.rb:13
-#: lib/hammer_cli_foreman_discovery/discovery_rule.rb:24
-msgid "Name"
-msgstr "名前"
-
-#: lib/hammer_cli_foreman_discovery/discovery.rb:14
-msgid "MAC"
-msgstr "MAC"
-
-#: lib/hammer_cli_foreman_discovery/discovery.rb:15
-msgid "Last report"
-msgstr "最終レポート"
-
-#: lib/hammer_cli_foreman_discovery/discovery.rb:16
-msgid "CPUs"
-msgstr "CPU"
-
-#: lib/hammer_cli_foreman_discovery/discovery.rb:17
-msgid "Memory"
-msgstr "メモリ"
-
-#: lib/hammer_cli_foreman_discovery/discovery.rb:18
-msgid "Disk count"
-msgstr "ディスク数"
-
-#: lib/hammer_cli_foreman_discovery/discovery.rb:19
-msgid "Disks size"
-msgstr "ディスク容量"
-
-#: lib/hammer_cli_foreman_discovery/discovery.rb:20
-msgid "Subnet"
-msgstr "サブネット"
-
-#: lib/hammer_cli_foreman_discovery/discovery.rb:21
-msgid "Last Report"
-msgstr "最後のレポート"
-
-#: lib/hammer_cli_foreman_discovery/discovery.rb:29
-msgid "IP"
-msgstr "IP アドレス"
-
-#: lib/hammer_cli_foreman_discovery/discovery.rb:30
-msgid "Model"
-msgstr "モデル"
-
-#: lib/hammer_cli_foreman_discovery/discovery.rb:31
-msgid "Organization"
-msgstr "組織"
-
-#: lib/hammer_cli_foreman_discovery/discovery.rb:32
-msgid "Location"
-msgstr "ロケーション"
-
-#: lib/hammer_cli_foreman_discovery/discovery.rb:42
-msgid "Fact"
-msgstr "ファクト"
-
-#: lib/hammer_cli_foreman_discovery/discovery.rb:43
-msgid "Value"
-msgstr "値"
-
-#: lib/hammer_cli_foreman_discovery/discovery.rb:60
-msgid "Host deleted"
-msgstr "ホストが削除されました"
-
-#: lib/hammer_cli_foreman_discovery/discovery.rb:61
-msgid "Could not delete the host"
-msgstr "ホストを削除できませんでした"
-
-#: lib/hammer_cli_foreman_discovery/discovery.rb:69
-#: lib/hammer_cli_foreman_discovery/discovery.rb:123
-msgid "Host created"
-msgstr "ホストが作成されました"
-
-#: lib/hammer_cli_foreman_discovery/discovery.rb:70
-#: lib/hammer_cli_foreman_discovery/discovery.rb:124
-msgid "Could not create the host"
-msgstr "ホストを作成できませんでした"
-
-#: lib/hammer_cli_foreman_discovery/discovery.rb:88
-msgid "Host parameters"
-msgstr "ホストパラメーター"
-
-#: lib/hammer_cli_foreman_discovery/discovery.rb:90
-msgid "Interface parameters"
-msgstr "インターフェースパラメーター"
-
-#: lib/hammer_cli_foreman_discovery/discovery.rb:99
-msgid "Enter the root password for the host:"
-msgstr "ホストのrootパスワードを入力します: "
-
-#: lib/hammer_cli_foreman_discovery/discovery.rb:122
-msgid "Auto provision a host"
-msgstr "ホストの自動プロビジョン"
-
-#: lib/hammer_cli_foreman_discovery/discovery.rb:132
-msgid "Reboot a host"
-msgstr "ホストの再起動"
-
-#: lib/hammer_cli_foreman_discovery/discovery.rb:133
-msgid "Host reboot started"
-msgstr "ホストの再起動が開始されました"
-
-#: lib/hammer_cli_foreman_discovery/discovery.rb:134
-msgid "Could not reboot the host"
-msgstr "ホストを再起動できませんでした"
-
-#: lib/hammer_cli_foreman_discovery/discovery.rb:142
-msgid "Refresh the facts of a host"
-msgstr "ホストのファクト更新"
-
-#: lib/hammer_cli_foreman_discovery/discovery.rb:143
-msgid "Host facts refreshed"
-msgstr "ホストのファクトをリフレッシュ"
-
-#: lib/hammer_cli_foreman_discovery/discovery.rb:144
-msgid "Could not refresh the facts of the host"
-msgstr "ホストのファクトをリフレッシュできません"
-
-#: lib/hammer_cli_foreman_discovery/discovery_rule.rb:25
-msgid "Priority"
-msgstr "優先度"
-
-#: lib/hammer_cli_foreman_discovery/discovery_rule.rb:26
-msgid "Search"
-msgstr "検索"
-
-#: lib/hammer_cli_foreman_discovery/discovery_rule.rb:27
-msgid "Host Group"
-msgstr "ホストグループ"
-
-#: lib/hammer_cli_foreman_discovery/discovery_rule.rb:28
-msgid "Hosts Limit"
-msgstr "ホスト制限"
-
-#: lib/hammer_cli_foreman_discovery/discovery_rule.rb:29
-msgid "Enabled"
-msgstr "有効化"
-
-#: lib/hammer_cli_foreman_discovery/discovery_rule.rb:38
-msgid "Hostname template"
-msgstr "ホスト名のテンプレート"
-
-#: lib/hammer_cli_foreman_discovery/discovery_rule.rb:46
-msgid "Rule created"
-msgstr "ルールが作成されました"
-
-#: lib/hammer_cli_foreman_discovery/discovery_rule.rb:47
-msgid "Could not create the rule"
-msgstr "ルールを作成できませんでした"
-
-#: lib/hammer_cli_foreman_discovery/discovery_rule.rb:54
-msgid "Rule updated"
-msgstr "ルールが更新されました"
-
-#: lib/hammer_cli_foreman_discovery/discovery_rule.rb:55
-msgid "Could not update the rule"
-msgstr "ルールを更新できませんでした"
-
-#: lib/hammer_cli_foreman_discovery/discovery_rule.rb:62
-msgid "Rule deleted"
-msgstr "ルールが削除されました"
-
-#: lib/hammer_cli_foreman_discovery/discovery_rule.rb:63
-msgid "Could not delete the rule"
-msgstr "ルールを削除できませんでした"
-
-#: lib/hammer_cli_foreman_discovery.rb:7
 msgid "Manipulate discovered hosts."
 msgstr "検出されたホストを操作します。"
 
-#: lib/hammer_cli_foreman_discovery.rb:11
 msgid "Manipulate discovered rules."
 msgstr "検出されたルールを操作します。"
+
+msgid "ID"
+msgstr "ID"
+
+msgid "Name"
+msgstr "名前"
+
+msgid "MAC"
+msgstr "MAC"
+
+msgid "Last report"
+msgstr "最終レポート"
+
+msgid "CPUs"
+msgstr "CPU"
+
+msgid "Memory"
+msgstr "メモリ"
+
+msgid "Disk count"
+msgstr "ディスク数"
+
+msgid "Disks size"
+msgstr "ディスク容量"
+
+msgid "Subnet"
+msgstr "サブネット"
+
+msgid "Last Report"
+msgstr "最後のレポート"
+
+msgid "IP"
+msgstr "IP アドレス"
+
+msgid "Model"
+msgstr "モデル"
+
+msgid "Organization"
+msgstr "組織"
+
+msgid "Location"
+msgstr "ロケーション"
+
+msgid "Fact"
+msgstr "ファクト"
+
+msgid "Value"
+msgstr "値"
+
+msgid "Host deleted"
+msgstr "ホストが削除されました"
+
+msgid "Could not delete the host"
+msgstr "ホストを削除できませんでした"
+
+msgid "Host created"
+msgstr "ホストが作成されました"
+
+msgid "Could not create the host"
+msgstr "ホストを作成できませんでした"
+
+msgid "Host parameters"
+msgstr "ホストパラメーター"
+
+msgid "Interface parameters"
+msgstr "インターフェースパラメーター"
+
+msgid "Enter the root password for the host:"
+msgstr "ホストのrootパスワードを入力します: "
+
+msgid "Auto provision a host"
+msgstr "ホストの自動プロビジョン"
+
+msgid "Reboot a host"
+msgstr "ホストの再起動"
+
+msgid "Host reboot started"
+msgstr "ホストの再起動が開始されました"
+
+msgid "Could not reboot the host"
+msgstr "ホストを再起動できませんでした"
+
+msgid "Refresh the facts of a host"
+msgstr "ホストのファクト更新"
+
+msgid "Host facts refreshed"
+msgstr "ホストのファクトをリフレッシュ"
+
+msgid "Could not refresh the facts of the host"
+msgstr "ホストのファクトをリフレッシュできません"
+
+msgid "Hosts"
+msgstr "ホスト"
+
+msgid "Priority"
+msgstr "優先度"
+
+msgid "Search"
+msgstr "検索"
+
+msgid "Host Group"
+msgstr "ホストグループ"
+
+msgid "Hosts Limit"
+msgstr "ホスト制限"
+
+msgid "Enabled"
+msgstr "有効化"
+
+msgid "Hostname template"
+msgstr "ホスト名のテンプレート"
+
+msgid "Rule created"
+msgstr "ルールが作成されました"
+
+msgid "Could not create the rule"
+msgstr "ルールを作成できませんでした"
+
+msgid "Rule updated"
+msgstr "ルールが更新されました"
+
+msgid "Could not update the rule"
+msgstr "ルールを更新できませんでした"
+
+msgid "Rule deleted"
+msgstr "ルールが削除されました"
+
+msgid "Could not delete the rule"
+msgstr "ルールを削除できませんでした"
