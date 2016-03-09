@@ -121,12 +121,12 @@ describe HammerCLIForemanDiscovery::DiscoveredHost do
     end
 
     context "parameters" do
-      it_should_accept "name", ["--name=host"]
+      it_should_accept "name", ["--name=mac52540068f9d6"]
       it_should_accept "id", ["--id=1"]
     end
 
     context "output" do
-      with_params ["--name=my5name.mydomain.net"] do
+      with_params ["--name=mac52540068f9d6"] do
         it_should_print_column "Fact"
         it_should_print_column "Value"
       end

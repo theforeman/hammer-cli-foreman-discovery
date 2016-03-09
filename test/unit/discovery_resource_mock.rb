@@ -14,16 +14,25 @@ module DiscoveryResourceMock
   end
 
   def self.facts_index
-    ResourceMocks.mock_action_call(:discovered_hosts, :show, {
-      "facts_hash" => {
-        "network_br180"=>"10.32.83.0",
-        "mtu_usb0"=>"1500",
-        "physicalprocessorcount"=>"1",
-        "rubyversion"=>"1.8.7"
-      },
-      "id" => 2,
-      "name" => "mac52540068f9d6"
-    })
+    ResourceMocks.mock_action_call(:fact_values, :index, {
+         "total"=>5604,
+         "subtotal"=>0,
+         "page"=>1,
+         "per_page"=>20,
+         "search"=>"",
+         "sort" => {
+             "by" => nil,
+             "order" => nil
+         },
+         "results"=>[{
+                         "some.host.com" => {
+                             "network_br180"=>"10.32.83.0",
+                             "mtu_usb0"=>"1500",
+                             "physicalprocessorcount"=>"1",
+                             "rubyversion"=>"1.8.7"
+                         }
+                     }]
+     })
   end
 
   def self.discovery_rules_index
