@@ -1,5 +1,6 @@
 require 'hammer_cli'
 require 'hammer_cli_foreman'
+require 'hammer_cli_foreman/fact'
 
 module HammerCLIForemanDiscovery
   def self.exception_handler_class
@@ -38,22 +39,19 @@ module HammerCLIForemanDiscovery
       build_options
     end
 
-    class FactsCommand < HammerCLIForeman::InfoCommand
+
+    class FactsCommand < HammerCLIForeman::AssociatedResourceListCommand
       command_name "facts"
+      resource :fact_values, :index
+      parent_resource :discovered_hosts
 
       output do
         field :fact, _("Fact")
         field :value, _("Value")
       end
 
-      def extend_data(facts_collection)
-        facts_collection['facts_hash'].collect do |fact, value|
-            { :fact => fact, :value => value }
-        end
-      end
-
-      def adapter
-        :table
+      def send_request
+        HammerCLIForeman::Fact::ListCommand.unhash_facts(super)
       end
 
       build_options
