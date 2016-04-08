@@ -16,13 +16,12 @@ module HammerCLIForemanDiscovery
         field :id, _("ID")
         field :name, _("Name")
         field :mac, _("MAC")
-        field :last_report, _('Last report'), Fields::Date
         field :cpus, _('CPUs')
         field :memory, _('Memory')
         field :disk_count, _('Disk count')
         field :disks_size, _('Disks size')
         field nil, _("Subnet"), Fields::SingleReference, :key => :subnet
-        field :last_report, _('Last Report'), Fields::Date
+        field :last_report, _('Last report'), Fields::Date
       end
 
       build_options
