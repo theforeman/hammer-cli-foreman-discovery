@@ -87,6 +87,8 @@ module HammerCLIForemanDiscovery
         option "--build", "BUILD", " ", bool_format
         bool_format[:format] = HammerCLI::Options::Normalizers::Bool.new
         option "--enabled", "ENABLED", " ", bool_format
+        bool_format[:format] = HammerCLI::Options::Normalizers::Bool.new
+        option "--overwrite", "OVERWRITE", " ", bool_format
 
         option "--parameters", "PARAMS", _("Host parameters"),
                     :format => HammerCLI::Options::Normalizers::KeyValueList.new
@@ -108,6 +110,7 @@ module HammerCLIForemanDiscovery
 
         params['discovered_host']['ptable_id'] = option_partition_table_id unless option_partition_table_id.nil?
         params['discovered_host']['root_pass'] = option_root_password unless option_root_password.nil?
+        params['discovered_host']['overwrite'] = option_overwrite unless option_overwrite.nil?
 
         if option_ask_root_password
           params['discovered_host']['root_pass'] = ask_password
