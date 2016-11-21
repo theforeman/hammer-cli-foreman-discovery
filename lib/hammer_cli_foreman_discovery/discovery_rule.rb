@@ -40,6 +40,7 @@ module HammerCLIForemanDiscovery
       output ListCommand.output_definition do
         field :hostname, _('Hostname template')
         HammerCLIForemanDiscovery::DiscoveryReferences.hosts(self)
+        HammerCLIForeman::References.taxonomies(self)
       end
 
       build_options

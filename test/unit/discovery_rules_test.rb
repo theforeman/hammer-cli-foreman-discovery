@@ -44,7 +44,7 @@ describe HammerCLIForemanDiscovery::DiscoveryRule do
     context "output" do
       with_params ["--id=1"] do
         it_should_print_n_records 1
-        it_should_print_columns ["ID", "Name", "Priority", "Search", "Host Group", "Hosts Limit", "Enabled", "Hostname template", "Hosts"]
+        it_should_print_columns ["ID", "Name", "Priority", "Search", "Host Group", "Hosts Limit", "Enabled", "Hostname template", "Hosts", "Locations", "Organizations"]
       end
     end
 
