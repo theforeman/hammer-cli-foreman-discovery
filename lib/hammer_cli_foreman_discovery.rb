@@ -8,7 +8,7 @@ module HammerCLIForemanDiscovery
                                            'HammerCLIForemanDiscovery::DiscoveredHost', 'hammer_cli_foreman_discovery/discovery'
     )
 
-    HammerCLI::MainCommand.lazy_subcommand('discovery_rule', _("Manipulate discovered rules."),
+    HammerCLI::MainCommand.lazy_subcommand('discovery-rule', _("Manipulate discovered rules."),
                                            'HammerCLIForemanDiscovery::DiscoveryRule', 'hammer_cli_foreman_discovery/discovery_rule'
     )
 
