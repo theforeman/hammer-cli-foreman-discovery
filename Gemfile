@@ -7,6 +7,10 @@ if RUBY_VERSION < '2.1.0'
   gem 'fast_gettext', '< 1.2.0'
 end
 
+if RUBY_VERSION < '2.1.0'
+  gem 'fast_gettext', '< 1.2.0'
+end
+
 group :test do
   gem 'rake', '~> 10.1.0'
   gem 'thor'
