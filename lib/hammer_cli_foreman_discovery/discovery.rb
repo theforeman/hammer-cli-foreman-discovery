@@ -53,6 +53,12 @@ module HammerCLIForemanDiscovery
         HammerCLIForeman::Fact::ListCommand.unhash_facts(super)
       end
 
+      def request_params
+        params = super
+        params['host_id'] = params.delete('discovered_host_id')
+        params
+      end
+
       build_options
     end
 
