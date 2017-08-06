@@ -139,6 +139,19 @@ module HammerCLIForemanDiscovery
       action :reboot
       command_name "reboot"
       desc _("Reboot a host")
+
+      option '--all', :flag, _("Reboot all discovered hosts")
+
+      def execute
+        if option_all?
+          resource.call(:reboot_all, {})
+          print_message(success_message) if success_message
+          HammerCLI::EX_OK
+        else
+          super
+        end
+      end
+
       success_message _("Host reboot started")
       failure_message _("Could not reboot the host")
 
