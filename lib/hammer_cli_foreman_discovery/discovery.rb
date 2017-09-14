@@ -129,6 +129,19 @@ module HammerCLIForemanDiscovery
       action :auto_provision
       command_name "auto-provision"
       desc _("Auto provision a host")
+
+      option '--all', :flag, _("Auto provision all discovered hosts")
+
+      def execute
+        if option_all?
+          resource.call(:auto_provision_all, {})
+          print_message _("Hosts created")
+          HammerCLI::EX_OK
+        else
+          super
+        end
+      end
+
       success_message _("Host created")
       failure_message _("Could not create the host")
 
