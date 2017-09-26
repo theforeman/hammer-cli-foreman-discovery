@@ -144,9 +144,18 @@ module HammerCLIForemanDiscovery
 
       def execute
         if option_all?
-          resource.call(:reboot_all, {})
-          print_message(success_message) if success_message
-          HammerCLI::EX_OK
+          begin
+            resource.call(:reboot_all, {})
+            if success_message
+              print_message(success_message)
+              HammerCLI::EX_OK
+            end
+          rescue RestClient::UnprocessableEntity => error
+            response = JSON.parse(error.response)
+            response = HammerCLIForeman.record_to_common_format(response) unless response.has_key?('message')
+            output.print_error(response['host_details'].map {|i| i['name'] + ": " + i['error'] }.join("\n"))
+            HammerCLI::EX_DATAERR
+          end
         else
           super
         end
