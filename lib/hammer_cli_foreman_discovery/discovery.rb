@@ -171,10 +171,8 @@ module HammerCLIForemanDiscovery
         if option_all?
           begin
             resource.call(:reboot_all, {})
-            if success_message
-              print_message(success_message)
-              HammerCLI::EX_OK
-            end
+            print_message _("Rebooting hosts")
+            HammerCLI::EX_OK
           rescue RestClient::UnprocessableEntity => error
             response = JSON.parse(error.response)
             response = HammerCLIForeman.record_to_common_format(response) unless response.has_key?('message')
