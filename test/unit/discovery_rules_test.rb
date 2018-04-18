@@ -74,7 +74,7 @@ describe HammerCLIForemanDiscovery::DiscoveryRule do
       it_should_accept "only hostgroup, name, search and priority", ["--hostgroup=example", "--name=rule", "--priority=1", "--search=cpu_count > 1"]
 
       with_params ["--name=rule", "--priority=1", "--search=cpu_count > 1"] do
-        it_should_call_action_and_test_params(:create) { |par| par["discovery_rule"]["priority"] == "1" }
+        it_should_call_action_and_test_params(:create) { |par| par["discovery_rule"]["priority"] == 1 }
         it_should_call_action_and_test_params(:create) { |par| par["discovery_rule"]["search"] == "cpu_count > 1" }
       end
     end
@@ -92,7 +92,7 @@ describe HammerCLIForemanDiscovery::DiscoveryRule do
 
       with_params ["--name=rule", "--priority=5", "--search=cpu_count <>> 1", "--hostgroup='test'", "--hostgroup-id=1", "--hosts-limit=1", "--enabled=true"] do
         it_should_call_action_and_test_params(:update) { |par| par["discovery_rule"]["name"] == "rule" }
-        it_should_call_action_and_test_params(:update) { |par| par["discovery_rule"]["priority"] == "5" }
+        it_should_call_action_and_test_params(:update) { |par| par["discovery_rule"]["priority"] == 5 }
         it_should_call_action_and_test_params(:update) { |par| par["discovery_rule"]["search"] == "cpu_count <>> 1" }
       end
     end
