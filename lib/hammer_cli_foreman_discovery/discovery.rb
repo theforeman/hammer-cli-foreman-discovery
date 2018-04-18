@@ -153,7 +153,7 @@ module HammerCLIForemanDiscovery
           rescue RestClient::UnprocessableEntity => error
             response = JSON.parse(error.response)
             response = HammerCLIForeman.record_to_common_format(response) unless response.has_key?('message')
-            output.print_error(response['host_details'].map {|i| i['name'] + ": " + i['error'] }.join("\n"))
+            output.print_error(failure_message, response['host_details'].map {|i| i['name'] + ": " + i['error'] }.join("\n"))
             HammerCLI::EX_DATAERR
           end
         else
