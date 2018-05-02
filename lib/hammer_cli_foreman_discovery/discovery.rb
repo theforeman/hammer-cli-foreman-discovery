@@ -111,6 +111,7 @@ module HammerCLIForemanDiscovery
       def request_params
         params = super
 
+        params['discovered_host']['host_parameters_attributes'] = parameter_attributes
         params['discovered_host']['ptable_id'] = option_partition_table_id unless option_partition_table_id.nil?
         params['discovered_host']['root_pass'] = option_root_password unless option_root_password.nil?
         params['discovered_host']['overwrite'] = option_overwrite unless option_overwrite.nil?
@@ -120,6 +121,17 @@ module HammerCLIForemanDiscovery
         end
 
         params
+      end
+
+      def parameter_attributes
+        return {} unless option_parameters
+        option_parameters.collect do |key, value|
+          if value.is_a? String
+            {"name"=>key, "value"=>value}
+          else
+            {"name"=>key, "value"=>value.inspect}
+          end
+        end
       end
 
       build_options
