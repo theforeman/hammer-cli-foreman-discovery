@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
   s.name        = "hammer_cli_foreman_discovery"
   s.version     = HammerCLIForemanDiscovery.version
   s.authors     = ["Ohad Levy", "Ori Rabin"]
-  s.license     = "GPL-3"
+  s.license     = "GPL-3.0-or-later"
   s.email       = ["ohadlevy@gmail.com"]
   s.homepage    = "https://github.com/theforeman/hammer-cli-foreman-discovery"
   s.summary     = "Foreman CLI plugin for managing discovery hosts in foreman"
