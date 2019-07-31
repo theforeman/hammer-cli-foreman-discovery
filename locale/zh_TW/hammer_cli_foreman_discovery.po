@@ -5,7 +5,7 @@
 # Translators:
 msgid ""
 msgstr ""
-"Project-Id-Version: hammer_cli_foreman_discovery 0.0.2\n"
+"Project-Id-Version: hammer_cli_foreman_discovery 1.0.0\n"
 "Report-Msgid-Bugs-To: \n"
 "PO-Revision-Date: 2015-03-22 13:12+0000\n"
 "Last-Translator: Lukáš Zapletal\n"
@@ -33,9 +33,6 @@ msgstr "名稱"
 msgid "MAC"
 msgstr "MAC"
 
-msgid "Last report"
-msgstr "最後一份報告"
-
 msgid "CPUs"
 msgstr "CPU"
 
@@ -53,7 +50,7 @@ msgstr "磁碟大小"
 msgid "Subnet"
 msgstr "子網路"
 
-msgid "Last Report"
+msgid "Last report"
 msgstr "最後一份報告"
 
 msgid "IP"
@@ -98,7 +95,21 @@ msgstr "輸入主機的 root 密碼："
 msgid "Auto provision a host"
 msgstr "自動佈建主機"
 
+msgid "Auto provision all discovered hosts"
+msgstr ""
+
+#, fuzzy
+msgid "Hosts created"
+msgstr "已建立主機"
+
 msgid "Reboot a host"
+msgstr "重新啟動主機"
+
+msgid "Reboot all discovered hosts"
+msgstr ""
+
+#, fuzzy
+msgid "Rebooting hosts"
 msgstr "重新啟動主機"
 
 msgid "Host reboot started"

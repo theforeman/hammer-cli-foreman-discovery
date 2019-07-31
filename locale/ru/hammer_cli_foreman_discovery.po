@@ -6,7 +6,7 @@
 # Vladimir Pavlov <v.pavlov@i-teco.ru>, 2015
 msgid ""
 msgstr ""
-"Project-Id-Version: hammer_cli_foreman_discovery 0.0.2\n"
+"Project-Id-Version: hammer_cli_foreman_discovery 1.0.0\n"
 "Report-Msgid-Bugs-To: \n"
 "PO-Revision-Date: 2015-07-02 10:43+0000\n"
 "Last-Translator: Vladimir Pavlov <v.pavlov@i-teco.ru>\n"
@@ -35,9 +35,6 @@ msgstr "Имя"
 msgid "MAC"
 msgstr "MAC"
 
-msgid "Last report"
-msgstr "Последний отчет"
-
 msgid "CPUs"
 msgstr "CPU"
 
@@ -53,7 +50,7 @@ msgstr "Размер диска"
 msgid "Subnet"
 msgstr "Подсеть"
 
-msgid "Last Report"
+msgid "Last report"
 msgstr "Последний отчет"
 
 msgid "IP"
@@ -98,7 +95,21 @@ msgstr "Введите пароль суперпользователя для у
 msgid "Auto provision a host"
 msgstr "Автоматическая подготовка узла"
 
+msgid "Auto provision all discovered hosts"
+msgstr ""
+
+#, fuzzy
+msgid "Hosts created"
+msgstr "Узел создан"
+
 msgid "Reboot a host"
+msgstr "Перезагрузить узел"
+
+msgid "Reboot all discovered hosts"
+msgstr ""
+
+#, fuzzy
+msgid "Rebooting hosts"
 msgstr "Перезагрузить узел"
 
 msgid "Host reboot started"

@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: hammer_cli_foreman_discovery 1.0.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-03-12 15:23-0400\n"
-"PO-Revision-Date: 2018-03-12 15:23-0400\n"
+"POT-Creation-Date: 2019-07-31 09:22+0200\n"
+"PO-Revision-Date: 2019-07-31 09:22+0200\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -97,12 +97,12 @@ msgid "Could not delete the host"
 msgstr ""
 
 #: ../lib/hammer_cli_foreman_discovery/discovery.rb:75
-#: ../lib/hammer_cli_foreman_discovery/discovery.rb:132
+#: ../lib/hammer_cli_foreman_discovery/discovery.rb:157
 msgid "Host created"
 msgstr ""
 
 #: ../lib/hammer_cli_foreman_discovery/discovery.rb:76
-#: ../lib/hammer_cli_foreman_discovery/discovery.rb:133
+#: ../lib/hammer_cli_foreman_discovery/discovery.rb:158
 msgid "Could not create the host"
 msgstr ""
 
@@ -118,35 +118,47 @@ msgstr ""
 msgid "Enter the root password for the host:"
 msgstr ""
 
-#: ../lib/hammer_cli_foreman_discovery/discovery.rb:131
+#: ../lib/hammer_cli_foreman_discovery/discovery.rb:143
 msgid "Auto provision a host"
 msgstr ""
 
-#: ../lib/hammer_cli_foreman_discovery/discovery.rb:141
+#: ../lib/hammer_cli_foreman_discovery/discovery.rb:145
+msgid "Auto provision all discovered hosts"
+msgstr ""
+
+#: ../lib/hammer_cli_foreman_discovery/discovery.rb:150
+msgid "Hosts created"
+msgstr ""
+
+#: ../lib/hammer_cli_foreman_discovery/discovery.rb:166
 msgid "Reboot a host"
 msgstr ""
 
-#: ../lib/hammer_cli_foreman_discovery/discovery.rb:143
+#: ../lib/hammer_cli_foreman_discovery/discovery.rb:168
 msgid "Reboot all discovered hosts"
 msgstr ""
 
-#: ../lib/hammer_cli_foreman_discovery/discovery.rb:164
+#: ../lib/hammer_cli_foreman_discovery/discovery.rb:174
+msgid "Rebooting hosts"
+msgstr ""
+
+#: ../lib/hammer_cli_foreman_discovery/discovery.rb:187
 msgid "Host reboot started"
 msgstr ""
 
-#: ../lib/hammer_cli_foreman_discovery/discovery.rb:165
+#: ../lib/hammer_cli_foreman_discovery/discovery.rb:188
 msgid "Could not reboot the host"
 msgstr ""
 
-#: ../lib/hammer_cli_foreman_discovery/discovery.rb:173
+#: ../lib/hammer_cli_foreman_discovery/discovery.rb:196
 msgid "Refresh the facts of a host"
 msgstr ""
 
-#: ../lib/hammer_cli_foreman_discovery/discovery.rb:174
+#: ../lib/hammer_cli_foreman_discovery/discovery.rb:197
 msgid "Host facts refreshed"
 msgstr ""
 
-#: ../lib/hammer_cli_foreman_discovery/discovery.rb:175
+#: ../lib/hammer_cli_foreman_discovery/discovery.rb:198
 msgid "Could not refresh the facts of the host"
 msgstr ""
 

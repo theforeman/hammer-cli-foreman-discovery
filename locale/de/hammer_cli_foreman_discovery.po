@@ -7,7 +7,7 @@
 # Ettore Atalan <atalanttore@googlemail.com>, 2015
 msgid ""
 msgstr ""
-"Project-Id-Version: hammer_cli_foreman_discovery 0.0.2\n"
+"Project-Id-Version: hammer_cli_foreman_discovery 1.0.0\n"
 "Report-Msgid-Bugs-To: \n"
 "PO-Revision-Date: 2015-06-18 19:38+0000\n"
 "Last-Translator: Christina Gurski <Gurski_christina@yahoo.de>\n"
@@ -33,9 +33,6 @@ msgstr "Name"
 msgid "MAC"
 msgstr "MAC"
 
-msgid "Last report"
-msgstr "Letzter Bericht"
-
 msgid "CPUs"
 msgstr "CPUs"
 
@@ -51,7 +48,7 @@ msgstr "Festplattengröße"
 msgid "Subnet"
 msgstr "Subnetz"
 
-msgid "Last Report"
+msgid "Last report"
 msgstr "Letzter Bericht"
 
 msgid "IP"
@@ -96,7 +93,21 @@ msgstr "Geben Sie das Root-Passwort für den Host ein:"
 msgid "Auto provision a host"
 msgstr "Host automatisch bereitstellen"
 
+msgid "Auto provision all discovered hosts"
+msgstr ""
+
+#, fuzzy
+msgid "Hosts created"
+msgstr "Host erstellt"
+
 msgid "Reboot a host"
+msgstr "Host neu starten"
+
+msgid "Reboot all discovered hosts"
+msgstr ""
+
+#, fuzzy
+msgid "Rebooting hosts"
 msgstr "Host neu starten"
 
 msgid "Host reboot started"

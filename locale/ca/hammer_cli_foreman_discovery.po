@@ -6,7 +6,7 @@
 # Robert Antoni Buj i Gelonch <rbuj@fedoraproject.org>, 2015
 msgid ""
 msgstr ""
-"Project-Id-Version: hammer_cli_foreman_discovery 0.0.2\n"
+"Project-Id-Version: hammer_cli_foreman_discovery 1.0.0\n"
 "Report-Msgid-Bugs-To: \n"
 "PO-Revision-Date: 2015-12-09 11:08+0000\n"
 "Last-Translator: Robert Antoni Buj i Gelonch <rbuj@fedoraproject.org>\n"
@@ -33,9 +33,6 @@ msgstr "Nom"
 msgid "MAC"
 msgstr "MAC"
 
-msgid "Last report"
-msgstr "Últim informe"
-
 msgid "CPUs"
 msgstr "Les CPU"
 
@@ -51,7 +48,7 @@ msgstr "Mida de disc"
 msgid "Subnet"
 msgstr "Subxarxa"
 
-msgid "Last Report"
+msgid "Last report"
 msgstr "Últim informe"
 
 msgid "IP"
@@ -96,7 +93,21 @@ msgstr "Introduïu la contrasenya de root per a l'amfitrió:"
 msgid "Auto provision a host"
 msgstr "Auto aprovisiona un amfitrió"
 
+msgid "Auto provision all discovered hosts"
+msgstr ""
+
+#, fuzzy
+msgid "Hosts created"
+msgstr "S'ha creat l'amfitrió"
+
 msgid "Reboot a host"
+msgstr "Reinicia un amfitrió"
+
+msgid "Reboot all discovered hosts"
+msgstr ""
+
+#, fuzzy
+msgid "Rebooting hosts"
 msgstr "Reinicia un amfitrió"
 
 msgid "Host reboot started"

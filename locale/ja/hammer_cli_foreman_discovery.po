@@ -6,7 +6,7 @@
 # Shuji Yamada <uzy.exe@gmail.com>, 2015
 msgid ""
 msgstr ""
-"Project-Id-Version: hammer_cli_foreman_discovery 0.0.2\n"
+"Project-Id-Version: hammer_cli_foreman_discovery 1.0.0\n"
 "Report-Msgid-Bugs-To: \n"
 "PO-Revision-Date: 2015-04-05 12:11+0000\n"
 "Last-Translator: Shuji Yamada <uzy.exe@gmail.com>\n"
@@ -33,9 +33,6 @@ msgstr "名前"
 msgid "MAC"
 msgstr "MAC"
 
-msgid "Last report"
-msgstr "最終レポート"
-
 msgid "CPUs"
 msgstr "CPU"
 
@@ -51,8 +48,8 @@ msgstr "ディスク容量"
 msgid "Subnet"
 msgstr "サブネット"
 
-msgid "Last Report"
-msgstr "最後のレポート"
+msgid "Last report"
+msgstr "最終レポート"
 
 msgid "IP"
 msgstr "IP アドレス"
@@ -96,7 +93,21 @@ msgstr "ホストのrootパスワードを入力します: "
 msgid "Auto provision a host"
 msgstr "ホストの自動プロビジョン"
 
+msgid "Auto provision all discovered hosts"
+msgstr ""
+
+#, fuzzy
+msgid "Hosts created"
+msgstr "ホストが作成されました"
+
 msgid "Reboot a host"
+msgstr "ホストの再起動"
+
+msgid "Reboot all discovered hosts"
+msgstr ""
+
+#, fuzzy
+msgid "Rebooting hosts"
 msgstr "ホストの再起動"
 
 msgid "Host reboot started"

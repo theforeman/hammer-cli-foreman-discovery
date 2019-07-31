@@ -5,7 +5,7 @@
 # Translators:
 msgid ""
 msgstr ""
-"Project-Id-Version: hammer_cli_foreman_discovery 0.0.2\n"
+"Project-Id-Version: hammer_cli_foreman_discovery 1.0.0\n"
 "Report-Msgid-Bugs-To: \n"
 "PO-Revision-Date: 2015-03-22 13:12+0000\n"
 "Last-Translator: Lukáš Zapletal\n"
@@ -32,9 +32,6 @@ msgstr "이름 "
 msgid "MAC"
 msgstr "MAC"
 
-msgid "Last report"
-msgstr "마지막 보고 "
-
 msgid "CPUs"
 msgstr "CPU"
 
@@ -52,7 +49,7 @@ msgstr "디스크 크기 "
 msgid "Subnet"
 msgstr "서브넷 "
 
-msgid "Last Report"
+msgid "Last report"
 msgstr "마지막 보고 "
 
 msgid "IP"
@@ -97,7 +94,21 @@ msgstr "호스트의 root 암호를 입력하십시오: "
 msgid "Auto provision a host"
 msgstr "호스트를 자동 프로비저닝"
 
+msgid "Auto provision all discovered hosts"
+msgstr ""
+
+#, fuzzy
+msgid "Hosts created"
+msgstr "호스트가 생성되었습니다 "
+
 msgid "Reboot a host"
+msgstr "호스트 재부팅 "
+
+msgid "Reboot all discovered hosts"
+msgstr ""
+
+#, fuzzy
+msgid "Rebooting hosts"
 msgstr "호스트 재부팅 "
 
 msgid "Host reboot started"

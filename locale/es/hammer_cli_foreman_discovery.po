@@ -6,7 +6,7 @@
 # Sergio Ocón <sergio.ocon@redhat.com>, 2015
 msgid ""
 msgstr ""
-"Project-Id-Version: hammer_cli_foreman_discovery 0.0.2\n"
+"Project-Id-Version: hammer_cli_foreman_discovery 1.0.0\n"
 "Report-Msgid-Bugs-To: \n"
 "PO-Revision-Date: 2015-05-19 09:24+0000\n"
 "Last-Translator: Sergio Ocón <sergio.ocon@redhat.com>\n"
@@ -33,9 +33,6 @@ msgstr "Nombre"
 msgid "MAC"
 msgstr "Dirección MAC"
 
-msgid "Last report"
-msgstr "Último informe"
-
 msgid "CPUs"
 msgstr "Procesadores"
 
@@ -51,7 +48,7 @@ msgstr "Tamaño de discos"
 msgid "Subnet"
 msgstr "Subred"
 
-msgid "Last Report"
+msgid "Last report"
 msgstr "Último informe"
 
 msgid "IP"
@@ -96,7 +93,21 @@ msgstr "Introduzca el password de root para el host:"
 msgid "Auto provision a host"
 msgstr "Provisionar un host automático"
 
+msgid "Auto provision all discovered hosts"
+msgstr ""
+
+#, fuzzy
+msgid "Hosts created"
+msgstr "El host se ha creado"
+
 msgid "Reboot a host"
+msgstr "Reiniciar un host"
+
+msgid "Reboot all discovered hosts"
+msgstr ""
+
+#, fuzzy
+msgid "Rebooting hosts"
 msgstr "Reiniciar un host"
 
 msgid "Host reboot started"

@@ -5,7 +5,7 @@
 # Translators:
 msgid ""
 msgstr ""
-"Project-Id-Version: hammer_cli_foreman_discovery 0.0.2\n"
+"Project-Id-Version: hammer_cli_foreman_discovery 1.0.0\n"
 "Report-Msgid-Bugs-To: \n"
 "PO-Revision-Date: 2015-03-22 13:12+0000\n"
 "Last-Translator: Lukáš Zapletal\n"
@@ -33,9 +33,6 @@ msgstr "Nome"
 msgid "MAC"
 msgstr "MAC"
 
-msgid "Last report"
-msgstr "Ultimo riporto"
-
 msgid "CPUs"
 msgstr "CPU"
 
@@ -53,8 +50,8 @@ msgstr "Dimensione dischi"
 msgid "Subnet"
 msgstr "Sottorete"
 
-msgid "Last Report"
-msgstr "Ultima notifica"
+msgid "Last report"
+msgstr "Ultimo riporto"
 
 msgid "IP"
 msgstr "IP"
@@ -98,7 +95,21 @@ msgstr "Inserire la password root per l'host:"
 msgid "Auto provision a host"
 msgstr "Esegui Auto Provision di un host"
 
+msgid "Auto provision all discovered hosts"
+msgstr ""
+
+#, fuzzy
+msgid "Hosts created"
+msgstr "Host creato"
+
 msgid "Reboot a host"
+msgstr "Riavvia un host"
+
+msgid "Reboot all discovered hosts"
+msgstr ""
+
+#, fuzzy
+msgid "Rebooting hosts"
 msgstr "Riavvia un host"
 
 msgid "Host reboot started"

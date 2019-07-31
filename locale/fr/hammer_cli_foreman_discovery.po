@@ -6,7 +6,7 @@
 # Claer <transiblu@claer.hammock.fr>, 2015
 msgid ""
 msgstr ""
-"Project-Id-Version: hammer_cli_foreman_discovery 0.0.2\n"
+"Project-Id-Version: hammer_cli_foreman_discovery 1.0.0\n"
 "Report-Msgid-Bugs-To: \n"
 "PO-Revision-Date: 2015-03-21 22:02+0000\n"
 "Last-Translator: Claer <transiblu@claer.hammock.fr>\n"
@@ -32,9 +32,6 @@ msgstr "Nom"
 msgid "MAC"
 msgstr "MAC"
 
-msgid "Last report"
-msgstr "Dernier rapport"
-
 msgid "CPUs"
 msgstr "CPUs"
 
@@ -50,7 +47,7 @@ msgstr "Taille des disques"
 msgid "Subnet"
 msgstr "Sous-Réseau"
 
-msgid "Last Report"
+msgid "Last report"
 msgstr "Dernier rapport"
 
 msgid "IP"
@@ -95,7 +92,21 @@ msgstr "Saisir le mot de passe root de l'hôte :"
 msgid "Auto provision a host"
 msgstr "Provisionner un hôte automatiquement"
 
+msgid "Auto provision all discovered hosts"
+msgstr ""
+
+#, fuzzy
+msgid "Hosts created"
+msgstr "Hôte créé"
+
 msgid "Reboot a host"
+msgstr "Redémarrage d'un hôte"
+
+msgid "Reboot all discovered hosts"
+msgstr ""
+
+#, fuzzy
+msgid "Rebooting hosts"
 msgstr "Redémarrage d'un hôte"
 
 msgid "Host reboot started"

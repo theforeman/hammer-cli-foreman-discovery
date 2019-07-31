@@ -56,10 +56,10 @@ extract-strings:
 
 reset-po:
 	# merging po files is unnecessary when using transifex.com
-	git checkout -- ../locale/*/*po
+	git checkout -- */$(DOMAIN).po
 
 tx-update: tx-pull extract-strings reset-po $(MOFILES)
 	# amend mo files
-	git add ../locale/*/LC_MESSAGES
+	git add */LC_MESSAGES
 	git commit -a --amend -m "i18n - extracting new, pulling from tx"
 	-echo Changes commited!
