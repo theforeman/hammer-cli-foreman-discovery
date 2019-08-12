@@ -100,7 +100,7 @@ module HammerCLIForemanDiscovery
         option "--provision-method", "METHOD", " ",
                     :format => HammerCLI::Options::Normalizers::Enum.new(['build', 'image'])
 
-        super :without => [:root_pass, :ptable_id, :puppet_class_ids]
+        super :without => [:root_pass, :ptable_id, :puppet_class_ids, :host_parameters_attributes]
       end
 
       def ask_password
@@ -135,6 +135,8 @@ module HammerCLIForemanDiscovery
       end
 
       build_options
+
+      extend_with(HammerCLIForeman::CommandExtensions::PuppetEnvironment.new)
     end
 
     class AutoProvisionCommand < HammerCLIForeman::SingleResourceCommand
