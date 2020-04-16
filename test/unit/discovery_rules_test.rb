@@ -1,5 +1,5 @@
 # using this before the require so test_helper resolves the correct foreman_api.json to use
-ENV['TEST_API_VERSION'] = '1.7'
+ENV['TEST_API_VERSION'] = '2.1'
 
 require File.join(Gem.loaded_specs['hammer_cli_foreman'].full_gem_path, 'test/unit/test_helper')
 require File.join(File.dirname(__FILE__), 'discovery_resource_mock')
