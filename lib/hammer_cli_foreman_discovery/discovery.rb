@@ -76,7 +76,6 @@ module HammerCLIForemanDiscovery
       failure_message _("Could not create the host")
 
       def self.build_options
-        option "--partition-table-id", "PARTITION_TABLE_ID", " "
         option "--root-password", "ROOT_PW", " "
         option "--ask-root-password", "ASK_ROOT_PW", " ",
                     :format => HammerCLI::Options::Normalizers::Bool.new
@@ -112,7 +111,7 @@ module HammerCLIForemanDiscovery
         params = super
 
         params['discovered_host']['host_parameters_attributes'] = parameter_attributes
-        params['discovered_host']['ptable_id'] = option_partition_table_id unless option_partition_table_id.nil?
+        params['discovered_host']['ptable_id'] = option_ptable_id unless option_ptable_id.nil?
         params['discovered_host']['root_pass'] = option_root_password unless option_root_password.nil?
         params['discovered_host']['overwrite'] = option_overwrite unless option_overwrite.nil?
 
