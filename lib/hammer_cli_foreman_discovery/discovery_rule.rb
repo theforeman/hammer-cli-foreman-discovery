@@ -10,7 +10,8 @@ module HammerCLIForemanDiscovery
   module CommonDiscoveryRuleUpdateOptions
 
     def self.included(base)
-      base.option "--hosts-limit", "HOSTS_LIMIT", " ", :attribute_name => :option_max_count
+      base.option "--hosts-limit", "HOSTS_LIMIT", _("Enables to limit maximum amount of provisioned hosts per rule"),
+                  :attribute_name => :option_max_count
       base.build_options :without => :max_count
     end
 
@@ -51,7 +52,6 @@ module HammerCLIForemanDiscovery
       failure_message _("Could not create the rule")
 
       include HammerCLIForemanDiscovery::CommonDiscoveryRuleUpdateOptions
-      build_options
     end
 
     class UpdateCommand < HammerCLIForeman::UpdateCommand
@@ -59,7 +59,6 @@ module HammerCLIForemanDiscovery
       failure_message _("Could not update the rule")
 
       include HammerCLIForemanDiscovery::CommonDiscoveryRuleUpdateOptions
-      build_options
     end
 
     class DeleteCommand < HammerCLIForeman::DeleteCommand

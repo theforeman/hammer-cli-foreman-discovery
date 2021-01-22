@@ -1,5 +1,5 @@
 # using this before the require so test_helper resolves the correct foreman_api.json to use
-ENV['TEST_API_VERSION'] = '1.7'
+ENV['TEST_API_VERSION'] = '2.4'
 
 require File.join(Gem.loaded_specs['hammer_cli_foreman'].full_gem_path, 'test/unit/test_helper')
 require File.join(File.dirname(__FILE__), 'discovery_resource_mock')
@@ -66,12 +66,16 @@ describe HammerCLIForemanDiscovery::DiscoveryRule do
     let(:cmd) { HammerCLIForemanDiscovery::DiscoveryRule::CreateCommand.new("", ctx) }
 
     context "parameters" do
-      it_should_accept "name, priority, search, hostgroup, hostgroup-id, hosts_limit and enabled",
-                       ["--name=rule", "--priority=1", "--search=cpu_count > 1", "--hostgroup='test'", "--hostgroup-id=1", "--hosts-limit=1", "--enabled=true"]
+      it_should_accept "name, priority, search, hostgroup, hostgroup-id, hosts-limit, locations, organizations and enabled",
+                       ["--name=rule", "--priority=1", "--search='cpu_count > 1'",
+                        "--hostgroup='test'", "--hostgroup-id=1", "--hosts-limit=1",
+                        "--enabled=true", "--organization-ids=1", "--location-ids=1"]
       it_should_fail_with "Error: Could not find hostgroup, please set one of options --hostgroup, --hostgroup-id",
                           ["--priority=1", "--search=cpu_count > 1", "--hosts-limit=1", "--enabled=false"]
 
-      it_should_accept "only hostgroup, name, search and priority", ["--hostgroup=example", "--name=rule", "--priority=1", "--search=cpu_count > 1"]
+      it_should_accept "only hostgroup, name, search, location-ids, organization-ids and priority",
+                       ["--hostgroup=example", "--name=rule", "--priority=1", "--search='cpu_count > 1'",
+                        "--location-ids=1", "--organization-ids=1"]
 
       with_params ["--name=rule", "--priority=1", "--search=cpu_count > 1"] do
         it_should_call_action_and_test_params(:create) { |par| par["discovery_rule"]["priority"] == 1 }
