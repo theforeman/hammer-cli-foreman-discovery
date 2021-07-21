@@ -66,13 +66,13 @@ describe HammerCLIForemanDiscovery::DiscoveredHost do
     let(:cmd) { HammerCLIForemanDiscovery::DiscoveredHost::ProvisionCommand.new("", ctx) }
 
     context "parameters" do
-      it_should_accept "name, environment_id, architecture_id, domain_id, puppet_proxy_id, operatingsystem_id and more",
-                       ["--name=host", "--environment-id=1", "--architecture-id=1", "--domain-id=1", "--puppet-proxy-id=1", "--operatingsystem-id=1",
+      it_should_accept "name, puppet_environment_id, architecture_id, domain_id, puppet_proxy_id, operatingsystem_id and more",
+                       ["--name=host", "--puppet-environment-id=1", "--architecture-id=1", "--domain-id=1", "--puppet-proxy-id=1", "--operatingsystem-id=1",
                         "--ip=1.2.3.4", "--mac=11:22:33:44:55:66", "--medium-id=1", "--partition-table-id=1", "--subnet-id=1",
                         "--sp-subnet-id=1", "--model-id=1", "--hostgroup-id=1", "--owner-id=1", '--puppet-ca-proxy-id=1', '--puppetclass-ids',
                         "--root-password=pwd", "--ask-root-password=false", "--provision-method=build"]
 
-      with_params ["--name=host", "--environment-id=1", "--architecture-id=1", "--domain-id=1", "--puppet-proxy-id=1", "--operatingsystem-id=1",
+      with_params ["--name=host", "--puppet-environment-id=1", "--architecture-id=1", "--domain-id=1", "--puppet-proxy-id=1", "--operatingsystem-id=1",
                    "--ip=1.2.3.4", "--mac=11:22:33:44:55:66", "--medium-id=1", "--partition-table-id=1", "--subnet-id=1",
                    "--sp-subnet-id=1", "--model-id=1", "--hostgroup-id=1", "--owner-id=1", '--puppet-ca-proxy-id=1', '--puppetclass-ids',
                    "--root-password=pwd", "--ask-root-password=false", "--provision-method=build", "--managed=true", "--build=true", "--enabled=true"] do
