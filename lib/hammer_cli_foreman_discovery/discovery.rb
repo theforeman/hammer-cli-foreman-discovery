@@ -79,8 +79,6 @@ module HammerCLIForemanDiscovery
         option "--root-password", "ROOT_PW", " "
         option "--ask-root-password", "ASK_ROOT_PW", " ",
                     :format => HammerCLI::Options::Normalizers::Bool.new
-        option "--puppetclass-ids", "PUPPETCLASS_IDS", " ",
-                    :format => HammerCLI::Options::Normalizers::List.new
 
         bool_format           = {}
         bool_format[:format] = HammerCLI::Options::Normalizers::Bool.new
@@ -99,7 +97,7 @@ module HammerCLIForemanDiscovery
         option "--provision-method", "METHOD", " ",
                     :format => HammerCLI::Options::Normalizers::Enum.new(['build', 'image'])
 
-        super :without => [:root_pass, :ptable_id, :puppet_class_ids, :host_parameters_attributes]
+        super :without => [:root_pass, :ptable_id, :host_parameters_attributes]
       end
 
       def ask_password
@@ -134,8 +132,6 @@ module HammerCLIForemanDiscovery
       end
 
       build_options
-
-      extend_with(HammerCLIForeman::CommandExtensions::PuppetEnvironment.new)
     end
 
     class AutoProvisionCommand < HammerCLIForeman::SingleResourceCommand
