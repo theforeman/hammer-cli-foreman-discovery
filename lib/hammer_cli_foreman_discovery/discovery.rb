@@ -75,32 +75,25 @@ module HammerCLIForemanDiscovery
       success_message _("Host created")
       failure_message _("Could not create the host")
 
-      def self.build_options
-        option "--root-password", "ROOT_PW", " "
-        option "--ask-root-password", "ASK_ROOT_PW", " ",
-                    :format => HammerCLI::Options::Normalizers::Bool.new
-        option "--puppetclass-ids", "PUPPETCLASS_IDS", " ",
-                    :format => HammerCLI::Options::Normalizers::List.new
+      option "--root-password", "ROOT_PW", " "
+      option "--ask-root-password", "ASK_ROOT_PW", " ",
+                  :format => HammerCLI::Options::Normalizers::Bool.new
+      bool_format           = {}
+      bool_format[:format] = HammerCLI::Options::Normalizers::Bool.new
+      option "--managed", "MANAGED", " ", bool_format
+      bool_format[:format] = HammerCLI::Options::Normalizers::Bool.new
+      option "--build", "BUILD", " ", bool_format
+      bool_format[:format] = HammerCLI::Options::Normalizers::Bool.new
+      option "--enabled", "ENABLED", " ", bool_format
+      bool_format[:format] = HammerCLI::Options::Normalizers::Bool.new
+      option "--overwrite", "OVERWRITE", " ", bool_format
 
-        bool_format           = {}
-        bool_format[:format] = HammerCLI::Options::Normalizers::Bool.new
-        option "--managed", "MANAGED", " ", bool_format
-        bool_format[:format] = HammerCLI::Options::Normalizers::Bool.new
-        option "--build", "BUILD", " ", bool_format
-        bool_format[:format] = HammerCLI::Options::Normalizers::Bool.new
-        option "--enabled", "ENABLED", " ", bool_format
-        bool_format[:format] = HammerCLI::Options::Normalizers::Bool.new
-        option "--overwrite", "OVERWRITE", " ", bool_format
-
-        option "--parameters", "PARAMS", _("Host parameters"),
-                    :format => HammerCLI::Options::Normalizers::KeyValueList.new
-        option "--interface", "INTERFACE", _("Interface parameters"), :multivalued => true,
-                    :format => HammerCLI::Options::Normalizers::KeyValueList.new
-        option "--provision-method", "METHOD", " ",
-                    :format => HammerCLI::Options::Normalizers::Enum.new(['build', 'image'])
-
-        super :without => [:root_pass, :ptable_id, :puppet_class_ids, :host_parameters_attributes]
-      end
+      option "--parameters", "PARAMS", _("Host parameters"),
+                  :format => HammerCLI::Options::Normalizers::KeyValueList.new
+      option "--interface", "INTERFACE", _("Interface parameters"), :multivalued => true,
+                  :format => HammerCLI::Options::Normalizers::KeyValueList.new
+      option "--provision-method", "METHOD", " ",
+                  :format => HammerCLI::Options::Normalizers::Enum.new(['build', 'image'])
 
       def ask_password
         prompt = _("Enter the root password for the host:") + '_'
@@ -133,9 +126,22 @@ module HammerCLIForemanDiscovery
         end
       end
 
-      build_options
+      build_options without: %i[
+        root_pass ptable_id host_parameters_attributes
+        puppet_class_ids environment_id puppet_proxy_id puppet_ca_proxy_id
+      ] do |o|
+        # TODO: Until the API is cleaned up
+        o.expand.except(:environments)
+      end
 
-      extend_with(HammerCLIForeman::CommandExtensions::PuppetEnvironment.new)
+      if defined?(HammerCLIForemanPuppet)
+        require 'hammer_cli_foreman_discovery/command_extensions/provision_with_puppet'
+        extend_with(HammerCLIForemanDiscovery::CommandExtensions::ProvisionWithPuppet.new)
+        require 'hammer_cli_foreman_puppet/command_extensions/environment'
+        require 'hammer_cli_foreman_puppet/command_extensions/host'
+        extend_with(HammerCLIForemanPuppet::CommandExtensions::PuppetEnvironment.new)
+        extend_with(HammerCLIForemanPuppet::CommandExtensions::HostPuppetProxy.new(only: :option_family))
+      end
     end
 
     class AutoProvisionCommand < HammerCLIForeman::SingleResourceCommand
