@@ -3,161 +3,163 @@
 # This file is distributed under the same license as the hammer_cli_foreman_discovery package.
 #
 # Translators:
+# Pavel Borecki <pavel.borecki@gmail.com>, 2018,2020
 msgid ""
 msgstr ""
 "Project-Id-Version: hammer_cli_foreman_discovery 1.1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-07-31 09:22+0200\n"
 "PO-Revision-Date: 2015-01-21 10:30+0000\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: Chinese (China) (http://app.transifex.com/foreman/foreman/"
-"language/zh_CN/)\n"
+"Last-Translator: Pavel Borecki <pavel.borecki@gmail.com>, 2018,2020\n"
+"Language-Team: Czech (Czech Republic) (http://app.transifex.com/foreman/"
+"foreman/language/cs_CZ/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: zh_CN\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
+"Language: cs_CZ\n"
+"Plural-Forms: nplurals=4; plural=(n == 1 && n % 1 == 0) ? 0 : (n >= 2 && n "
+"<= 4 && n % 1 == 0) ? 1: (n % 1 != 0 ) ? 2 : 3;\n"
 
 msgid "Manipulate discovered hosts."
-msgstr "处理发现的主机。"
+msgstr ""
 
 msgid "Manipulate discovered rules."
-msgstr "处理发现的规则。"
+msgstr ""
 
 msgid "ID"
-msgstr "ID"
+msgstr "Identifikátor"
 
 msgid "Name"
-msgstr "名称"
+msgstr "Název"
 
 msgid "MAC"
-msgstr "MAC"
+msgstr "MAC adresa"
 
 msgid "CPUs"
-msgstr "CPU"
+msgstr "Procesory"
 
 msgid "Memory"
-msgstr "内存"
+msgstr "Operační paměť"
 
 msgid "Disk count"
-msgstr "磁盘数"
+msgstr "Počet jednotek úložiště"
 
 msgid "Disks size"
-msgstr "磁盘大小"
+msgstr "Velikost jednotek úložiště"
 
 msgid "Subnet"
-msgstr "子网"
+msgstr "Podsíť"
 
 msgid "Last report"
-msgstr "最后的报告"
+msgstr "Poslední hlášení"
 
 msgid "IP"
-msgstr "IP"
+msgstr "IP adresa"
 
 msgid "Model"
-msgstr "模型"
+msgstr "Model"
 
 msgid "Organization"
-msgstr "机构"
+msgstr "Organizace"
 
 msgid "Location"
-msgstr "位置"
+msgstr "Umístění"
 
 msgid "Fact"
-msgstr "事实"
+msgstr "Fakt"
 
 msgid "Value"
-msgstr "值"
+msgstr "Hodnota"
 
 msgid "Host deleted"
-msgstr "删除主机"
+msgstr "Stroj smazán"
 
 msgid "Could not delete the host"
-msgstr "无法删除主机"
+msgstr "Stroj se nedaří smazat"
 
 msgid "Host created"
-msgstr "创建主机"
+msgstr "Stroj vytvořen"
 
 msgid "Could not create the host"
-msgstr "无法创建主机"
+msgstr "Stroj se nedaří "
 
 msgid "Host parameters"
-msgstr "主机参数"
+msgstr "Parametry stroje"
 
 msgid "Interface parameters"
-msgstr "接口参数"
+msgstr "Parametry rozhraní"
 
 msgid "Enter the root password for the host:"
-msgstr "输入主机的 root 密码："
+msgstr "Zadejte heslo ke správcovskému (root) účtu pro stroj:"
 
 msgid "Auto provision a host"
-msgstr "自动置备主机"
+msgstr ""
 
 msgid "Auto provision all discovered hosts"
-msgstr "自动置备所有发现的主机"
+msgstr ""
 
 msgid "Hosts created"
-msgstr "创建的主机"
+msgstr "Stroje vytvořeny"
 
 msgid "Reboot a host"
-msgstr "重启主机"
+msgstr "Restartovat stroj"
 
 msgid "Reboot all discovered hosts"
-msgstr "重启所有发现主机"
+msgstr "Restartovat všechny objevené stroje"
 
 msgid "Rebooting hosts"
-msgstr "正在重启主机"
+msgstr "Restartování strojů"
 
 msgid "Host reboot started"
-msgstr "主机重启已开始"
+msgstr "Restart stroje zahájen"
 
 msgid "Could not reboot the host"
-msgstr "无法重启主机"
+msgstr ""
 
 msgid "Refresh the facts of a host"
-msgstr "更新主机的详情"
+msgstr ""
 
 msgid "Host facts refreshed"
-msgstr "主机详情更新"
+msgstr ""
 
 msgid "Could not refresh the facts of the host"
-msgstr "无法更新主机详情"
+msgstr ""
 
 msgid "Hosts"
-msgstr "主机"
+msgstr "Stroje"
 
 msgid "Priority"
-msgstr "优先"
+msgstr "Priorita"
 
 msgid "Search"
-msgstr "搜索"
+msgstr "Hledat"
 
 msgid "Host Group"
-msgstr "主机组"
+msgstr "Skupina strojů"
 
 msgid "Hosts Limit"
-msgstr "主机限制"
+msgstr ""
 
 msgid "Enabled"
-msgstr "启用"
+msgstr "Zapnuto"
 
 msgid "Hostname template"
-msgstr "主机名模板"
+msgstr "Šablona názvu stroje"
 
 msgid "Rule created"
-msgstr "创建规则"
+msgstr "Pravidlo vytvořeno"
 
 msgid "Could not create the rule"
-msgstr "无法创建规则"
+msgstr "Pravidlo se nedaří vytvořit"
 
 msgid "Rule updated"
-msgstr "更新规则"
+msgstr "Pravidlo aktualizováno"
 
 msgid "Could not update the rule"
-msgstr "无法更新规则"
+msgstr "Pravidlo se nedaří aktualizovat"
 
 msgid "Rule deleted"
-msgstr "删除规则"
+msgstr "Pravidlo smazáno"
 
 msgid "Could not delete the rule"
-msgstr "无法删除规则"
+msgstr "Pravidlo se nedaří smazat"

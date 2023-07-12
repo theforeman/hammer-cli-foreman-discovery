@@ -1,20 +1,21 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
+# This file is distributed under the same license as the hammer_cli_foreman_discovery package.
 #
 # Translators:
 msgid ""
 msgstr ""
-"Project-Id-Version: hammer_cli_foreman_discovery 1.0.0\n"
+"Project-Id-Version: hammer_cli_foreman_discovery 1.1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2015-03-22 13:12+0000\n"
-"Last-Translator: Lukáš Zapletal\n"
-"Language-Team: Chinese (Taiwan) (http://www.transifex.com/foreman/foreman/lang"
-"uage/zh_TW/)\n"
-"Language: zh_TW\n"
+"POT-Creation-Date: 2019-07-31 09:22+0200\n"
+"PO-Revision-Date: 2015-01-21 10:30+0000\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: Chinese (Taiwan) (http://app.transifex.com/foreman/foreman/"
+"language/zh_TW/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: zh_TW\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 msgid "Manipulate discovered hosts."
@@ -23,7 +24,6 @@ msgstr "操作發現的主機。"
 msgid "Manipulate discovered rules."
 msgstr "操作發現的規則。"
 
-# translation auto-copied from project NetworkManager, version 0.9.9.0, document NetworkManager, author tchuang
 msgid "ID"
 msgstr "ID"
 
@@ -39,11 +39,9 @@ msgstr "CPU"
 msgid "Memory"
 msgstr "記憶體"
 
-# translation auto-copied from project Satellite6 Foreman Discovery, version 6.1, document foreman_discovery, author tchuang
 msgid "Disk count"
 msgstr "磁碟計數"
 
-# translation auto-copied from project Satellite6 Foreman Discovery, version 6.1, document foreman_discovery, author tchuang
 msgid "Disks size"
 msgstr "磁碟大小"
 
@@ -98,9 +96,8 @@ msgstr "自動佈建主機"
 msgid "Auto provision all discovered hosts"
 msgstr ""
 
-#, fuzzy
 msgid "Hosts created"
-msgstr "已建立主機"
+msgstr ""
 
 msgid "Reboot a host"
 msgstr "重新啟動主機"
@@ -108,9 +105,8 @@ msgstr "重新啟動主機"
 msgid "Reboot all discovered hosts"
 msgstr ""
 
-#, fuzzy
 msgid "Rebooting hosts"
-msgstr "重新啟動主機"
+msgstr ""
 
 msgid "Host reboot started"
 msgstr "主機重新啟動"

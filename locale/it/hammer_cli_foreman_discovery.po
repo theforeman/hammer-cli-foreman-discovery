@@ -1,21 +1,23 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
+# This file is distributed under the same license as the hammer_cli_foreman_discovery package.
 #
 # Translators:
 msgid ""
 msgstr ""
-"Project-Id-Version: hammer_cli_foreman_discovery 1.0.0\n"
+"Project-Id-Version: hammer_cli_foreman_discovery 1.1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2015-03-22 13:12+0000\n"
-"Last-Translator: Lukáš Zapletal\n"
-"Language-Team: Italian (http://www.transifex.com/foreman/foreman/language/it/)"
-"\n"
-"Language: it\n"
+"POT-Creation-Date: 2019-07-31 09:22+0200\n"
+"PO-Revision-Date: 2015-01-21 10:30+0000\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: Italian (http://app.transifex.com/foreman/foreman/language/"
+"it/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language: it\n"
+"Plural-Forms: nplurals=3; plural=n == 1 ? 0 : n != 0 && n % 1000000 == 0 ? "
+"1 : 2;\n"
 
 msgid "Manipulate discovered hosts."
 msgstr "Manipolazione host rilevati."
@@ -23,7 +25,6 @@ msgstr "Manipolazione host rilevati."
 msgid "Manipulate discovered rules."
 msgstr "Manipolazione regole rilevate."
 
-# translation auto-copied from project subscription-manager, version 1.10.10, document keys
 msgid "ID"
 msgstr "ID"
 
@@ -39,11 +40,9 @@ msgstr "CPU"
 msgid "Memory"
 msgstr "Memoria"
 
-# translation auto-copied from project Satellite6 Foreman Discovery, version 6.1, document foreman_discovery, author fvalen
 msgid "Disk count"
 msgstr "Conteggio disco"
 
-# translation auto-copied from project Satellite6 Foreman Discovery, version 6.1, document foreman_discovery, author fvalen
 msgid "Disks size"
 msgstr "Dimensione dischi"
 
@@ -98,9 +97,8 @@ msgstr "Esegui Auto Provision di un host"
 msgid "Auto provision all discovered hosts"
 msgstr ""
 
-#, fuzzy
 msgid "Hosts created"
-msgstr "Host creato"
+msgstr ""
 
 msgid "Reboot a host"
 msgstr "Riavvia un host"
@@ -108,9 +106,8 @@ msgstr "Riavvia un host"
 msgid "Reboot all discovered hosts"
 msgstr ""
 
-#, fuzzy
 msgid "Rebooting hosts"
-msgstr "Riavvia un host"
+msgstr ""
 
 msgid "Host reboot started"
 msgstr "Riavvio host iniziato."

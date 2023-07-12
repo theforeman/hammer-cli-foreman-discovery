@@ -1,22 +1,24 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
+# This file is distributed under the same license as the hammer_cli_foreman_discovery package.
 #
 # Translators:
-# Sergio Ocón <sergio.ocon@redhat.com>, 2015
+# Sergio Ocón-Cárdenas <sergio.ocon@redhat.com>, 2015
 msgid ""
 msgstr ""
-"Project-Id-Version: hammer_cli_foreman_discovery 1.0.0\n"
+"Project-Id-Version: hammer_cli_foreman_discovery 1.1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2015-05-19 09:24+0000\n"
-"Last-Translator: Sergio Ocón <sergio.ocon@redhat.com>\n"
-"Language-Team: Spanish (http://www.transifex.com/foreman/foreman/language/es/)"
-"\n"
-"Language: es\n"
+"POT-Creation-Date: 2019-07-31 09:22+0200\n"
+"PO-Revision-Date: 2015-01-21 10:30+0000\n"
+"Last-Translator: Sergio Ocón-Cárdenas <sergio.ocon@redhat.com>, 2015\n"
+"Language-Team: Spanish (http://app.transifex.com/foreman/foreman/language/"
+"es/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language: es\n"
+"Plural-Forms: nplurals=3; plural=n == 1 ? 0 : n != 0 && n % 1000000 == 0 ? "
+"1 : 2;\n"
 
 msgid "Manipulate discovered hosts."
 msgstr "Manipular los hosts descubiertos."
@@ -31,10 +33,10 @@ msgid "Name"
 msgstr "Nombre"
 
 msgid "MAC"
-msgstr "Dirección MAC"
+msgstr "MAC"
 
 msgid "CPUs"
-msgstr "Procesadores"
+msgstr "CPU"
 
 msgid "Memory"
 msgstr "Memoria"
@@ -55,16 +57,16 @@ msgid "IP"
 msgstr "IP"
 
 msgid "Model"
-msgstr "Modelo"
+msgstr "Modelado"
 
 msgid "Organization"
 msgstr "Organización"
 
 msgid "Location"
-msgstr "Lugares"
+msgstr "Ubicación"
 
 msgid "Fact"
-msgstr "Dato"
+msgstr "Hecho"
 
 msgid "Value"
 msgstr "Valor"
@@ -76,7 +78,7 @@ msgid "Could not delete the host"
 msgstr "No se pudo borrar el host"
 
 msgid "Host created"
-msgstr "El host se ha creado"
+msgstr "Host creado"
 
 msgid "Could not create the host"
 msgstr "No se pudo crear el host"
@@ -88,27 +90,25 @@ msgid "Interface parameters"
 msgstr "Parámetros de la interfaz"
 
 msgid "Enter the root password for the host:"
-msgstr "Introduzca el password de root para el host:"
+msgstr "Introduzca la contraseña de root para el host:"
 
 msgid "Auto provision a host"
 msgstr "Provisionar un host automático"
 
 msgid "Auto provision all discovered hosts"
-msgstr ""
+msgstr "Aprovisionamiento automático de todos los hosts detectados"
 
-#, fuzzy
 msgid "Hosts created"
-msgstr "El host se ha creado"
+msgstr "Hosts creados"
 
 msgid "Reboot a host"
 msgstr "Reiniciar un host"
 
 msgid "Reboot all discovered hosts"
-msgstr ""
+msgstr "Reiniciar todos los hosts detectados"
 
-#, fuzzy
 msgid "Rebooting hosts"
-msgstr "Reiniciar un host"
+msgstr "Reiniciando hosts"
 
 msgid "Host reboot started"
 msgstr "Comenzó el reinicio del host"
@@ -153,13 +153,13 @@ msgid "Could not create the rule"
 msgstr "No se pudo crear la regla"
 
 msgid "Rule updated"
-msgstr "Se actualizó la pauta"
+msgstr "Ha sido actualizada la regla"
 
 msgid "Could not update the rule"
-msgstr "No se pudo actualizar la pauta"
+msgstr "No se pudo actualizar la regla"
 
 msgid "Rule deleted"
-msgstr "La pauta se borró"
+msgstr "Ha sido borrada la regla"
 
 msgid "Could not delete the rule"
-msgstr "No se pudo borrar la pauta"
+msgstr "No se pudo borrar la regla"
