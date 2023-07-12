@@ -1,19 +1,21 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
+# This file is distributed under the same license as the hammer_cli_foreman_discovery package.
 #
 # Translators:
 msgid ""
 msgstr ""
-"Project-Id-Version: hammer_cli_foreman_discovery 1.0.0\n"
+"Project-Id-Version: hammer_cli_foreman_discovery 1.1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2015-03-22 13:12+0000\n"
-"Last-Translator: Lukáš Zapletal\n"
-"Language-Team: Korean (http://www.transifex.com/foreman/foreman/language/ko/)\n"
-"Language: ko\n"
+"POT-Creation-Date: 2019-07-31 09:22+0200\n"
+"PO-Revision-Date: 2015-01-21 10:30+0000\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: Korean (http://app.transifex.com/foreman/foreman/language/"
+"ko/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: ko\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 msgid "Manipulate discovered hosts."
@@ -22,7 +24,6 @@ msgstr "검색된 호스트를 조정합니다."
 msgid "Manipulate discovered rules."
 msgstr "검색된 규칙을 조정합니다."
 
-# translation auto-copied from project subscription-manager, version 1.10.10, document keys
 msgid "ID"
 msgstr "ID"
 
@@ -38,11 +39,9 @@ msgstr "CPU"
 msgid "Memory"
 msgstr "메모리 "
 
-# translation auto-copied from project Satellite6 Foreman Discovery, version 6.1, document foreman_discovery, author eukim
 msgid "Disk count"
 msgstr "디스크 수 "
 
-# translation auto-copied from project Satellite6 Foreman Discovery, version 6.1, document foreman_discovery, author eukim
 msgid "Disks size"
 msgstr "디스크 크기 "
 
@@ -97,9 +96,8 @@ msgstr "호스트를 자동 프로비저닝"
 msgid "Auto provision all discovered hosts"
 msgstr ""
 
-#, fuzzy
 msgid "Hosts created"
-msgstr "호스트가 생성되었습니다 "
+msgstr ""
 
 msgid "Reboot a host"
 msgstr "호스트 재부팅 "
@@ -107,9 +105,8 @@ msgstr "호스트 재부팅 "
 msgid "Reboot all discovered hosts"
 msgstr ""
 
-#, fuzzy
 msgid "Rebooting hosts"
-msgstr "호스트 재부팅 "
+msgstr ""
 
 msgid "Host reboot started"
 msgstr "호스트 재부팅을 시작했습니다"

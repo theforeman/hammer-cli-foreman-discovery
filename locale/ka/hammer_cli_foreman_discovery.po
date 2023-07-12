@@ -1,0 +1,163 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the hammer_cli_foreman_discovery package.
+#
+# Translators:
+msgid ""
+msgstr ""
+"Project-Id-Version: hammer_cli_foreman_discovery 1.1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-07-31 09:22+0200\n"
+"PO-Revision-Date: 2015-01-21 10:30+0000\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: Georgian (http://app.transifex.com/foreman/foreman/language/"
+"ka/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: ka\n"
+"Plural-Forms: nplurals=2; plural=(n!=1);\n"
+
+msgid "Manipulate discovered hosts."
+msgstr "აღმოჩენილი ჰოსტების მართვა."
+
+msgid "Manipulate discovered rules."
+msgstr "აღმოჩენილი ჰოსტების მართვა."
+
+msgid "ID"
+msgstr "ID"
+
+msgid "Name"
+msgstr "სახელი"
+
+msgid "MAC"
+msgstr "MAC"
+
+msgid "CPUs"
+msgstr "CPU"
+
+msgid "Memory"
+msgstr "მეხსიერება"
+
+msgid "Disk count"
+msgstr "დისკების რაოდენობა"
+
+msgid "Disks size"
+msgstr "დისკების ზომები"
+
+msgid "Subnet"
+msgstr "ქვექსელი"
+
+msgid "Last report"
+msgstr "ბოლო ანგარიშის დრო"
+
+msgid "IP"
+msgstr "IP"
+
+msgid "Model"
+msgstr "მოდელი"
+
+msgid "Organization"
+msgstr "ორგანიზაცია"
+
+msgid "Location"
+msgstr "მდებარეობა"
+
+msgid "Fact"
+msgstr "ფაქტი"
+
+msgid "Value"
+msgstr "მნიშვნელობა"
+
+msgid "Host deleted"
+msgstr "ჰოსტი წაშლილია"
+
+msgid "Could not delete the host"
+msgstr "ჰოსტის წაშლის შეცდომა"
+
+msgid "Host created"
+msgstr "ჰოსტი შეიქმნა"
+
+msgid "Could not create the host"
+msgstr "ჰოსტის შექმნის შეცდომა"
+
+msgid "Host parameters"
+msgstr "ჰოსტის პარამეტრები"
+
+msgid "Interface parameters"
+msgstr "ინტერფეისის პარამეტრები"
+
+msgid "Enter the root password for the host:"
+msgstr "ჰოსტის root პაროლი:"
+
+msgid "Auto provision a host"
+msgstr "ჰოსტის სამუშაოდ ავტომატური მომზადება"
+
+msgid "Auto provision all discovered hosts"
+msgstr "ყველა აღმოჩენილი ჰოსტის სამუშაოდ ავტომატური მომზადება"
+
+msgid "Hosts created"
+msgstr "ჰოსტების შეიქმნა"
+
+msgid "Reboot a host"
+msgstr "ჰოსტის გადატვირთვა"
+
+msgid "Reboot all discovered hosts"
+msgstr "ყველა აღმოჩენილი ჰოსტის გადატვირთვა"
+
+msgid "Rebooting hosts"
+msgstr "ჰოსტების გადატვირთვა"
+
+msgid "Host reboot started"
+msgstr "ჰოსტის გადატვირთვა დაწყებულია"
+
+msgid "Could not reboot the host"
+msgstr "ჰოსტის გადატვირთვის შეცდომა"
+
+msgid "Refresh the facts of a host"
+msgstr "ჰოსტის ფაქტების განახლება"
+
+msgid "Host facts refreshed"
+msgstr "ჰოსტის ფაილები განახლდა"
+
+msgid "Could not refresh the facts of the host"
+msgstr "ჰოსტის ფაქტების განახლების შეცდომა"
+
+msgid "Hosts"
+msgstr "ჰოსტები"
+
+msgid "Priority"
+msgstr "პრიორიტეტი"
+
+msgid "Search"
+msgstr "_ძებნა"
+
+msgid "Host Group"
+msgstr "ჰოსტების ჯგუფი"
+
+msgid "Hosts Limit"
+msgstr "ჰოსტების ლიმიტი"
+
+msgid "Enabled"
+msgstr "ჩართულია"
+
+msgid "Hostname template"
+msgstr "ჰოსტის სახელის შაბლონი"
+
+msgid "Rule created"
+msgstr "წესი შეიქმნა"
+
+msgid "Could not create the rule"
+msgstr "წესის შექმნის შეცდომა"
+
+msgid "Rule updated"
+msgstr "წესი განახლდა"
+
+msgid "Could not update the rule"
+msgstr "წესის განახლების შეცდომა"
+
+msgid "Rule deleted"
+msgstr "წესი წაიშალა"
+
+msgid "Could not delete the rule"
+msgstr "წესის წაშლის შეცდომა"

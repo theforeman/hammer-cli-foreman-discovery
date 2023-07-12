@@ -1,21 +1,25 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
+# This file is distributed under the same license as the hammer_cli_foreman_discovery package.
 #
 # Translators:
 # Christina Gurski <Gurski_christina@yahoo.de>, 2015
 # Ettore Atalan <atalanttore@googlemail.com>, 2015
+# Martin Zimmermann <martin.zimmermann@gmx.com>, 2018
+# pdolinic, 2021
 msgid ""
 msgstr ""
-"Project-Id-Version: hammer_cli_foreman_discovery 1.0.0\n"
+"Project-Id-Version: hammer_cli_foreman_discovery 1.1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2015-06-18 19:38+0000\n"
-"Last-Translator: Christina Gurski <Gurski_christina@yahoo.de>\n"
-"Language-Team: German (http://www.transifex.com/foreman/foreman/language/de/)\n"
-"Language: de\n"
+"POT-Creation-Date: 2019-07-31 09:22+0200\n"
+"PO-Revision-Date: 2015-01-21 10:30+0000\n"
+"Last-Translator: pdolinic, 2021\n"
+"Language-Team: German (http://app.transifex.com/foreman/foreman/language/"
+"de/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: de\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 msgid "Manipulate discovered hosts."
@@ -61,7 +65,7 @@ msgid "Organization"
 msgstr "Organisation"
 
 msgid "Location"
-msgstr "Ort"
+msgstr "Standort"
 
 msgid "Fact"
 msgstr "Fakt"
@@ -94,21 +98,19 @@ msgid "Auto provision a host"
 msgstr "Host automatisch bereitstellen"
 
 msgid "Auto provision all discovered hosts"
-msgstr ""
+msgstr "Automatische Bereitstellung aller erkannten Hosts"
 
-#, fuzzy
 msgid "Hosts created"
-msgstr "Host erstellt"
+msgstr "Hosts erstellt"
 
 msgid "Reboot a host"
-msgstr "Host neu starten"
+msgstr "Host neustarten"
 
 msgid "Reboot all discovered hosts"
-msgstr ""
+msgstr "Alle entdeckte Hosts neu starten"
 
-#, fuzzy
 msgid "Rebooting hosts"
-msgstr "Host neu starten"
+msgstr "Hosts neu starten"
 
 msgid "Host reboot started"
 msgstr "Host wird neu gestartet"
