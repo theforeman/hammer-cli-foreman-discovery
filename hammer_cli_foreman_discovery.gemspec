@@ -21,6 +21,7 @@ DESC
   s.extra_rdoc_files = Dir['LICENSE', 'README*']
   s.require_paths = ["lib"]
 
-  s.add_dependency "hammer_cli_foreman", ">= 0.1.2"
-  s.add_development_dependency 'rake'
+  s.add_dependency 'hammer_cli_foreman', '~> 3.10'
+
+  s.required_ruby_version = '>= 2.7', '< 4'
 end
