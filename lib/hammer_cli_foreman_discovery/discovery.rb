@@ -126,9 +126,8 @@ module HammerCLIForemanDiscovery
         end
       end
 
-      build_options without: %i[
-        root_pass ptable_id host_parameters_attributes
-        puppet_class_ids environment_id puppet_proxy_id puppet_ca_proxy_id
+      build_options without: [
+        :root_pass, :ptable_id, :host_parameters_attributes, :puppet_class_ids, :environment_id, :puppet_proxy_id, :puppet_ca_proxy_id
       ] do |o|
         # TODO: Until the API is cleaned up
         o.expand.except(:environments)

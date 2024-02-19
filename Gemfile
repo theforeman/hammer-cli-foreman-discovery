@@ -13,6 +13,10 @@ group :test do
   gem 'simplecov'
   gem 'mocha'
   gem 'ci_reporter', '>= 1.6.3', "< 2.0.0", :require => false
+  gem 'rubocop', '~> 1.57.0'
+  gem 'rubocop-minitest', '~> 0.9.0'
+  gem 'rubocop-performance', '~> 1.5.2'
+  gem 'rubocop-rails', '~> 2.7.1'
 end
 
 # load local gemfile

@@ -17,3 +17,14 @@ require "hammer_cli_foreman_discovery/version"
 require "hammer_cli_foreman_discovery/i18n"
 require "hammer_cli/i18n/find_task"
 HammerCLI::I18n::FindTask.define(HammerCLIForemanDiscovery::I18n::LocaleDomain.new, HammerCLIForemanDiscovery.version.to_s)
+
+begin
+  require 'rubocop/rake_task'
+  RuboCop::RakeTask.new
+rescue StandardError => _e
+  puts 'Rubocop not loaded.'
+end
+
+task :default do
+  Rake::Task['rubocop'].execute
+end
