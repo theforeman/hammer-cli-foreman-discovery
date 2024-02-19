@@ -9,26 +9,26 @@ describe HammerCLIForemanDiscovery::DiscoveredHost do
 
   include CommandTestHelper
 
-  context "ListCommand" do
+  describe "ListCommand" do
     let(:cmd) { HammerCLIForemanDiscovery::DiscoveredHost::ListCommand.new("", ctx) }
 
     before :each do
       DiscoveryResourceMock.discovered_hosts_index
     end
 
-    context "parameters" do
+    describe "parameters" do
       it_should_accept "no arguments"
       it_should_accept_search_params
     end
 
-    context "output" do
+    describe "output" do
       let(:expected_record_count) { cmd.resource.call(:index).length }
       it_should_print_n_records
       it_should_print_columns ["ID", "Name", "MAC", "Last report", "Subnet", "CPUs", "Memory", "Disk count", "Disks size"]
     end
   end
 
-  context "InfoCommand" do
+  describe "InfoCommand" do
 
     let(:cmd) { HammerCLIForemanDiscovery::DiscoveredHost::InfoCommand.new("", ctx) }
 
@@ -36,12 +36,12 @@ describe HammerCLIForemanDiscovery::DiscoveredHost do
       cmd.stubs(:get_parameters).returns([])
     end
 
-    context "parameters" do
+    describe "parameters" do
       it_should_accept "id", ["--id=1"]
       it_should_accept "name", ["--name=host"]
     end
 
-    context "output" do
+    describe "output" do
       with_params ["--id=1"] do
         it_should_print_n_records 1
         it_should_print_columns ["ID", "Name", "MAC", "Last report", "Subnet", "CPUs", "Memory", "Disk count", "Disks size", "Organization", "Location"]
@@ -51,21 +51,21 @@ describe HammerCLIForemanDiscovery::DiscoveredHost do
 
   end
 
-  context "DeleteCommand" do
+  describe "DeleteCommand" do
 
     let(:cmd) { HammerCLIForemanDiscovery::DiscoveredHost::DeleteCommand.new("", ctx) }
 
-    context "parameters" do
+    describe "parameters" do
       it_should_accept "name", ["--name=host"]
       it_should_accept "id", ["--id=1"]
     end
 
   end
 
-  context "ProvisionCommand" do
+  describe "ProvisionCommand" do
     let(:cmd) { HammerCLIForemanDiscovery::DiscoveredHost::ProvisionCommand.new("", ctx) }
 
-    context "parameters" do
+    describe "parameters" do
       it_should_accept "name, architecture_id, domain_id, operatingsystem_id and more",
                        ["--name=host", "--architecture-id=1", "--domain-id=1", "--operatingsystem-id=1",
                         "--ip=1.2.3.4", "--mac=11:22:33:44:55:66", "--medium-id=1", "--partition-table-id=1", "--subnet-id=1",
@@ -84,35 +84,35 @@ describe HammerCLIForemanDiscovery::DiscoveredHost do
     end
   end
 
-  context "AutoProvisionCommand" do
+  describe "AutoProvisionCommand" do
 
     let(:cmd) { HammerCLIForemanDiscovery::DiscoveredHost::AutoProvisionCommand.new("", ctx) }
 
-    context "parameters" do
+    describe "parameters" do
       it_should_accept "name", ["--name=host"]
       it_should_accept "id", ["--id=1"]
     end
 
   end
 
-  context "RebootCommand" do
+  describe "RebootCommand" do
     let(:cmd) { HammerCLIForemanDiscovery::DiscoveredHost::RebootCommand.new("", ctx) }
-    context "parameters" do
+    describe "parameters" do
       it_should_accept "name", ["--name=host"]
       it_should_accept "id", ["--id=1"]
     end
   end
 
-  context "RefreshFactsCommand" do
+  describe "RefreshFactsCommand" do
     let(:cmd) { HammerCLIForemanDiscovery::DiscoveredHost::RefreshFactsCommand.new("", ctx) }
 
-    context "parameters" do
+    describe "parameters" do
       it_should_accept "name", ["--name=host"]
       it_should_accept "id", ["--id=1"]
     end
   end
 
-  context "FactsCommand" do
+  describe "FactsCommand" do
 
     let(:cmd) { HammerCLIForemanDiscovery::DiscoveredHost::FactsCommand.new("", ctx) }
 
@@ -120,12 +120,12 @@ describe HammerCLIForemanDiscovery::DiscoveredHost do
       DiscoveryResourceMock.facts_index
     end
 
-    context "parameters" do
+    describe "parameters" do
       it_should_accept "name", ["--name=mac52540068f9d6"]
       it_should_accept "id", ["--id=1"]
     end
 
-    context "output" do
+    describe "output" do
       with_params ["--name=mac52540068f9d6"] do
         it_should_print_column "Fact"
         it_should_print_column "Value"
