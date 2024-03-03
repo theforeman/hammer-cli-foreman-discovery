@@ -6,7 +6,6 @@ require File.join(File.dirname(__FILE__), 'discovery_resource_mock')
 require 'hammer_cli_foreman_discovery/discovery'
 
 describe HammerCLIForemanDiscovery::DiscoveredHost do
-
   include CommandTestHelper
 
   describe "ListCommand" do
@@ -29,7 +28,6 @@ describe HammerCLIForemanDiscovery::DiscoveredHost do
   end
 
   describe "InfoCommand" do
-
     let(:cmd) { HammerCLIForemanDiscovery::DiscoveredHost::InfoCommand.new("", ctx) }
 
     before :each do
@@ -45,21 +43,18 @@ describe HammerCLIForemanDiscovery::DiscoveredHost do
       with_params ["--id=1"] do
         it_should_print_n_records 1
         it_should_print_columns ["ID", "Name", "MAC", "Last report", "Subnet", "CPUs", "Memory", "Disk count", "Disks size", "Organization", "Location"]
-        it_should_print_columns ["IP", "Model"]
+        it_should_print_columns %w[IP Model]
       end
     end
-
   end
 
   describe "DeleteCommand" do
-
     let(:cmd) { HammerCLIForemanDiscovery::DiscoveredHost::DeleteCommand.new("", ctx) }
 
     describe "parameters" do
       it_should_accept "name", ["--name=host"]
       it_should_accept "id", ["--id=1"]
     end
-
   end
 
   describe "ProvisionCommand" do
@@ -85,14 +80,12 @@ describe HammerCLIForemanDiscovery::DiscoveredHost do
   end
 
   describe "AutoProvisionCommand" do
-
     let(:cmd) { HammerCLIForemanDiscovery::DiscoveredHost::AutoProvisionCommand.new("", ctx) }
 
     describe "parameters" do
       it_should_accept "name", ["--name=host"]
       it_should_accept "id", ["--id=1"]
     end
-
   end
 
   describe "RebootCommand" do
@@ -113,7 +106,6 @@ describe HammerCLIForemanDiscovery::DiscoveredHost do
   end
 
   describe "FactsCommand" do
-
     let(:cmd) { HammerCLIForemanDiscovery::DiscoveredHost::FactsCommand.new("", ctx) }
 
     before(:each) do
@@ -132,5 +124,4 @@ describe HammerCLIForemanDiscovery::DiscoveredHost do
       end
     end
   end
-
 end

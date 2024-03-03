@@ -4,11 +4,10 @@ require 'hammer_cli_foreman/fact'
 
 module HammerCLIForemanDiscovery
   def self.exception_handler_class
-       HammerCLIForeman::ExceptionHandler
+    HammerCLIForeman::ExceptionHandler
   end
 
   class DiscoveredHost < HammerCLIForeman::Command
-
     resource :discovered_hosts
 
     class ListCommand < HammerCLIForeman::ListCommand
@@ -37,7 +36,6 @@ module HammerCLIForemanDiscovery
 
       build_options
     end
-
 
     class FactsCommand < HammerCLIForeman::AssociatedResourceListCommand
       command_name "facts"
@@ -77,8 +75,8 @@ module HammerCLIForemanDiscovery
 
       option "--root-password", "ROOT_PW", " "
       option "--ask-root-password", "ASK_ROOT_PW", " ",
-                  :format => HammerCLI::Options::Normalizers::Bool.new
-      bool_format           = {}
+             :format => HammerCLI::Options::Normalizers::Bool.new
+      bool_format = {}
       bool_format[:format] = HammerCLI::Options::Normalizers::Bool.new
       option "--managed", "MANAGED", " ", bool_format
       bool_format[:format] = HammerCLI::Options::Normalizers::Bool.new
@@ -89,14 +87,14 @@ module HammerCLIForemanDiscovery
       option "--overwrite", "OVERWRITE", " ", bool_format
 
       option "--parameters", "PARAMS", _("Host parameters"),
-                  :format => HammerCLI::Options::Normalizers::KeyValueList.new
+             :format => HammerCLI::Options::Normalizers::KeyValueList.new
       option "--interface", "INTERFACE", _("Interface parameters"), :multivalued => true,
-                  :format => HammerCLI::Options::Normalizers::KeyValueList.new
+                                                                    :format => HammerCLI::Options::Normalizers::KeyValueList.new
       option "--provision-method", "METHOD", " ",
-                  :format => HammerCLI::Options::Normalizers::Enum.new(['build', 'image'])
+             :format => HammerCLI::Options::Normalizers::Enum.new(%w[build image])
 
       def ask_password
-        prompt = _("Enter the root password for the host:") + '_'
+        prompt = "#{_('Enter the root password for the host:')}_"
         ask(prompt) { |q| q.echo = false }
       end
 
@@ -119,16 +117,15 @@ module HammerCLIForemanDiscovery
         return {} unless option_parameters
         option_parameters.collect do |key, value|
           if value.is_a? String
-            {"name"=>key, "value"=>value}
+            { "name" => key, "value" => value }
           else
-            {"name"=>key, "value"=>value.inspect}
+            { "name" => key, "value" => value.inspect }
           end
         end
       end
 
-      build_options without: %i[
-        root_pass ptable_id host_parameters_attributes
-        puppet_class_ids environment_id puppet_proxy_id puppet_ca_proxy_id
+      build_options without: [
+        :root_pass, :ptable_id, :host_parameters_attributes, :puppet_class_ids, :environment_id, :puppet_proxy_id, :puppet_ca_proxy_id
       ] do |o|
         # TODO: Until the API is cleaned up
         o.expand.except(:environments)
@@ -180,10 +177,10 @@ module HammerCLIForemanDiscovery
             resource.call(:reboot_all, {})
             print_message _("Rebooting hosts")
             HammerCLI::EX_OK
-          rescue RestClient::UnprocessableEntity => error
-            response = JSON.parse(error.response)
-            response = HammerCLIForeman.record_to_common_format(response) unless response.has_key?('message')
-            output.print_error(response['host_details'].map {|i| i['name'] + ": " + i['error'] }.join("\n"))
+          rescue RestClient::UnprocessableEntity => e
+            response = JSON.parse(e.response)
+            response = HammerCLIForeman.record_to_common_format(response) unless response.key?('message')
+            output.print_error(response['host_details'].map { |i| "#{i['name']}: #{i['error']}" }.join("\n"))
             HammerCLI::EX_DATAERR
           end
         else
@@ -208,5 +205,4 @@ module HammerCLIForemanDiscovery
     end
     autoload_subcommands
   end
-
 end

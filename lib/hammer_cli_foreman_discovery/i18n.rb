@@ -2,9 +2,7 @@ require 'hammer_cli/i18n'
 
 module HammerCLIForemanDiscovery
   module I18n
-
     class LocaleDomain < HammerCLI::I18n::LocaleDomain
-
       def translated_files
         Dir.glob(File.join(File.dirname(__FILE__), '../**/*.rb'))
       end
@@ -17,7 +15,6 @@ module HammerCLIForemanDiscovery
         'hammer_cli_foreman_discovery'
       end
     end
-
   end
 end
 

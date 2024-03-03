@@ -18,7 +18,7 @@ module HammerCLIForemanDiscovery
         description: _('Puppet environment. Required if host is managed and value is not inherited from host group'),
         deprecation: _("Use %s instead") % '--puppet-environment[-id]',
         deprecated: { '--environment' => _("Use %s instead") % '--puppet-environment[-id]',
-                      '--environment-id' => _("Use %s instead") % '--puppet-environment[-id]'}
+                      '--environment-id' => _("Use %s instead") % '--puppet-environment[-id]' }
       ) do
         parent '--environment-id', 'ENVIRONMENT_ID', _(''),
                format: HammerCLI::Options::Normalizers::Number.new,
@@ -33,7 +33,6 @@ module HammerCLIForemanDiscovery
         parent '--puppet-proxy-id', 'PUPPET_PROXY_ID', _(''),
                format: HammerCLI::Options::Normalizers::Number.new,
                attribute_name: :option_puppet_proxy_id
-
       end
       option_family(
         aliased_resource: 'puppet_ca_proxy'
@@ -41,7 +40,6 @@ module HammerCLIForemanDiscovery
         parent '--puppet-ca-proxy-id', 'PUPPET_CA_PROXY_ID', _(''),
                format: HammerCLI::Options::Normalizers::Number.new,
                attribute_name: :option_puppet_ca_proxy_id
-
       end
 
       request_params do |params, command_object|

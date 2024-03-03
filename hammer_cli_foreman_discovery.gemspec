@@ -1,5 +1,4 @@
-# -*- coding: utf-8 -*-
-$:.unshift(File.expand_path('../lib', __FILE__))
+$LOAD_PATH.unshift(File.expand_path('lib', __dir__))
 
 # Maintain your gem's version:
 require "hammer_cli_foreman_discovery/version"
@@ -13,9 +12,9 @@ Gem::Specification.new do |s|
   s.email       = ["ohadlevy@gmail.com"]
   s.homepage    = "https://github.com/theforeman/hammer-cli-foreman-discovery"
   s.summary     = "Foreman CLI plugin for managing discovery hosts in foreman"
-  s.description = <<DESC
-Contains the code for managing host discovery in foreman(results and progress) in the Hammer CLI.
-DESC
+  s.description = <<~DESC
+    Contains the code for managing host discovery in foreman(results and progress) in the Hammer CLI.
+  DESC
 
   s.files = Dir['{lib,locale,config}/**/*', 'LICENSE', 'README*']
   s.extra_rdoc_files = Dir['LICENSE', 'README*']

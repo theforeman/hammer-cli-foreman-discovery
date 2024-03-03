@@ -8,21 +8,17 @@ module HammerCLIForemanDiscovery
   end
 
   module CommonDiscoveryRuleUpdateOptions
-
     def self.included(base)
       base.option "--hosts-limit", "HOSTS_LIMIT", _("Enables to limit maximum amount of provisioned hosts per rule"),
                   :attribute_name => :option_max_count
       base.build_options :without => :max_count
     end
-
   end
 
   class DiscoveryRule < HammerCLIForeman::Command
-
     resource :discovery_rules
 
     class ListCommand < HammerCLIForeman::ListCommand
-
       output do
         field :id, _("ID")
         field :name, _("Name")
@@ -37,7 +33,6 @@ module HammerCLIForemanDiscovery
     end
 
     class InfoCommand < HammerCLIForeman::InfoCommand
-
       output ListCommand.output_definition do
         field :hostname, _('Hostname template')
         HammerCLIForemanDiscovery::DiscoveryReferences.hosts(self)
@@ -70,5 +65,4 @@ module HammerCLIForemanDiscovery
 
     autoload_subcommands
   end
-
 end
