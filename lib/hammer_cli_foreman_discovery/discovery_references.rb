@@ -1,5 +1,4 @@
 module HammerCLIForemanDiscovery
-
   module DiscoveryReferences
     def self.hosts(dsl)
       dsl.build do

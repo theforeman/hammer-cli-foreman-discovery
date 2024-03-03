@@ -6,7 +6,6 @@ require File.join(File.dirname(__FILE__), 'discovery_resource_mock')
 require 'hammer_cli_foreman_discovery/discovery_rule'
 
 describe HammerCLIForemanDiscovery::DiscoveryRule do
-
   include CommandTestHelper
 
   describe "ListCommand" do
@@ -29,7 +28,6 @@ describe HammerCLIForemanDiscovery::DiscoveryRule do
   end
 
   describe "InfoCommand" do
-
     let(:cmd) { HammerCLIForemanDiscovery::DiscoveryRule::InfoCommand.new("", ctx) }
 
     before :each do
@@ -47,22 +45,18 @@ describe HammerCLIForemanDiscovery::DiscoveryRule do
         it_should_print_columns ["ID", "Name", "Priority", "Search", "Host Group", "Hosts Limit", "Enabled", "Hostname template", "Hosts", "Locations", "Organizations"]
       end
     end
-
   end
 
   describe "DeleteCommand" do
-
     let(:cmd) { HammerCLIForemanDiscovery::DiscoveryRule::DeleteCommand.new("", ctx) }
 
     describe "parameters" do
       it_should_accept "name", ["--name=rule"]
       it_should_accept "id", ["--id=1"]
     end
-
   end
 
   describe "CreateCommand" do
-
     let(:cmd) { HammerCLIForemanDiscovery::DiscoveryRule::CreateCommand.new("", ctx) }
 
     describe "parameters" do
@@ -85,7 +79,6 @@ describe HammerCLIForemanDiscovery::DiscoveryRule do
   end
 
   describe "UpdateCommand" do
-
     let(:cmd) { HammerCLIForemanDiscovery::DiscoveryRule::UpdateCommand.new("", ctx) }
 
     describe "parameters" do
@@ -101,5 +94,4 @@ describe HammerCLIForemanDiscovery::DiscoveryRule do
       end
     end
   end
-
 end
