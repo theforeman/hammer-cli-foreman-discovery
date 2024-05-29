@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require File.join(Gem.loaded_specs['hammer_cli_foreman'].full_gem_path, 'test/unit/apipie_resource_mock')
 
 module DiscoveryResourceMock
@@ -21,16 +23,16 @@ module DiscoveryResourceMock
                                      "search" => "",
                                      "sort" => {
                                        "by" => nil,
-                                       "order" => nil
+                                       "order" => nil,
                                      },
                                      "results" => [{
                                        "some.host.com" => {
                                          "network_br180" => "10.32.83.0",
                                          "mtu_usb0" => "1500",
                                          "physicalprocessorcount" => "1",
-                                         "rubyversion" => "1.8.7"
-                                       }
-                                     }]
+                                         "rubyversion" => "1.8.7",
+                                       },
+                                     }],
                                    })
   end
 

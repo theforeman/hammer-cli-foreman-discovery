@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module HammerCLIForemanDiscovery
   module CommandExtensions
     class ProvisionWithPuppet < HammerCLI::CommandExtensions

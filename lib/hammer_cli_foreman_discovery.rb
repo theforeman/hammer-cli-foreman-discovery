@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module HammerCLIForemanDiscovery
   require 'hammer_cli_foreman_discovery/version'
 

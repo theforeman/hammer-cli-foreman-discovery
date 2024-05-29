@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'hammer_cli'
 require 'hammer_cli_foreman'
 require 'hammer_cli_foreman/fact'
@@ -106,9 +108,7 @@ module HammerCLIForemanDiscovery
         params['discovered_host']['root_pass'] = option_root_password unless option_root_password.nil?
         params['discovered_host']['overwrite'] = option_overwrite unless option_overwrite.nil?
 
-        if option_ask_root_password
-          params['discovered_host']['root_pass'] = ask_password
-        end
+        params['discovered_host']['root_pass'] = ask_password if option_ask_root_password
 
         params
       end
@@ -124,8 +124,8 @@ module HammerCLIForemanDiscovery
         end
       end
 
-      build_options without: [
-        :root_pass, :ptable_id, :host_parameters_attributes, :puppet_class_ids, :environment_id, :puppet_proxy_id, :puppet_ca_proxy_id
+      build_options without: %i[
+        root_pass ptable_id host_parameters_attributes puppet_class_ids environment_id puppet_proxy_id puppet_ca_proxy_id
       ] do |o|
         # TODO: Until the API is cleaned up
         o.expand.except(:environments)

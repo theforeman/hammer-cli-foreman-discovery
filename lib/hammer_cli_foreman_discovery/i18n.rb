@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'hammer_cli/i18n'
 
 module HammerCLIForemanDiscovery

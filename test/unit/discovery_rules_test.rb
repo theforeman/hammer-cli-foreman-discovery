@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # using this before the require so test_helper resolves the correct foreman_api.json to use
 ENV['TEST_API_VERSION'] = '2.4'
 
