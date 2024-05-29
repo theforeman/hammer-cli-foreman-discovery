@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module HammerCLIForemanDiscovery
   module DiscoveryReferences
     def self.hosts(dsl)

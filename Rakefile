@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'rake/testtask'
 require 'bundler/gem_tasks'
 
@@ -24,5 +26,5 @@ rescue LoadError
   task default: :test
 else
   RuboCop::RakeTask.new
-  task default: [:rubocop, :test]
+  task default: %i[rubocop test]
 end
