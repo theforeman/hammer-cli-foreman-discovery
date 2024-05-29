@@ -1,12 +1,11 @@
-require:
-  - rubocop-performance
-  - rubocop-minitest
+inherit_from: .rubocop_todo.yml
+
+inherit_gem:
+  theforeman-rubocop:
+    - strictest.yml
 
 AllCops:
-  NewCops: enable
-
-Layout/EmptyLineAfterGuardClause:
-  Enabled: false
+  TargetRubyVersion: 2.7
 
 Layout/LineLength:
   Enabled: false
@@ -14,20 +13,11 @@ Layout/LineLength:
 Metrics:
   Enabled: false
 
-Style/FormatStringToken:
-  EnforcedStyle: template
-
 Style/HashSyntax:
   EnforcedStyle: no_mixed_keys
 
 Style/SymbolArray:
   EnforcedStyle: brackets
-
-Style/Documentation:
-  Enabled: false
-
-Style/GuardClause:
-  Enabled: false
 
 Style/StringLiterals:
   Enabled: false
@@ -36,7 +26,4 @@ Style/FrozenStringLiteralComment:
   Enabled: false
 
 Style/IfUnlessModifier:
-  Enabled: false
-
-Gemspec/RequireMFA:
   Enabled: false
