@@ -5,7 +5,7 @@
 # Translators:
 msgid ""
 msgstr ""
-"Project-Id-Version: hammer_cli_foreman_discovery 1.1.0\n"
+"Project-Id-Version: hammer_cli_foreman_discovery 1.3.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-07-31 09:22+0200\n"
 "PO-Revision-Date: 2015-01-21 10:30+0000\n"
@@ -52,7 +52,7 @@ msgid "Last report"
 msgstr "마지막 보고 "
 
 msgid "IP"
-msgstr "IP "
+msgstr "IP"
 
 msgid "Model"
 msgstr "모델 "
@@ -94,19 +94,19 @@ msgid "Auto provision a host"
 msgstr "호스트를 자동 프로비저닝"
 
 msgid "Auto provision all discovered hosts"
-msgstr ""
+msgstr "검색된 모든 호스트를 자동으로 프로비저닝함"
 
 msgid "Hosts created"
-msgstr ""
+msgstr "호스트 생성됨"
 
 msgid "Reboot a host"
 msgstr "호스트 재부팅 "
 
 msgid "Reboot all discovered hosts"
-msgstr ""
+msgstr "검색된 모든 호스트를 재부팅합니다."
 
 msgid "Rebooting hosts"
-msgstr ""
+msgstr "호스트 재부팅"
 
 msgid "Host reboot started"
 msgstr "호스트 재부팅을 시작했습니다"
