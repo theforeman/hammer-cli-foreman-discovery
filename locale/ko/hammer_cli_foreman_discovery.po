@@ -37,16 +37,16 @@ msgid "CPUs"
 msgstr "CPU"
 
 msgid "Memory"
-msgstr "메모리 "
+msgstr "메모리"
 
 msgid "Disk count"
-msgstr "디스크 수 "
+msgstr "디스크 수"
 
 msgid "Disks size"
-msgstr "디스크 크기 "
+msgstr "디스크 크기"
 
 msgid "Subnet"
-msgstr "서브넷 "
+msgstr "서브넷"
 
 msgid "Last report"
 msgstr "마지막 보고 "
@@ -61,7 +61,7 @@ msgid "Organization"
 msgstr "조직 "
 
 msgid "Location"
-msgstr "위치 "
+msgstr "위치"
 
 msgid "Fact"
 msgstr "정보 "
@@ -133,13 +133,13 @@ msgid "Search"
 msgstr "검색 "
 
 msgid "Host Group"
-msgstr "호스트 그룹 "
+msgstr "호스트 그룹"
 
 msgid "Hosts Limit"
 msgstr "호스트 제한"
 
 msgid "Enabled"
-msgstr "활성화됨 "
+msgstr "활성화됨"
 
 msgid "Hostname template"
 msgstr "호스트 이름 템플릿"
