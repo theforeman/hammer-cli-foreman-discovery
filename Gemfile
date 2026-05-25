@@ -10,7 +10,7 @@ gem 'rake', '~> 13.0'
 group :test do
   gem 'minitest', '~> 5.18'
   gem 'minitest-spec-context'
-  gem 'mocha'
+  gem 'mocha', '~> 2.0'
   gem 'simplecov'
   gem 'theforeman-rubocop', '~> 0.1.0'
   gem 'thor'
