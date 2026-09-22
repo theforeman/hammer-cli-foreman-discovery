@@ -5,9 +5,9 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: hammer_cli_foreman_discovery 1.3.1\n"
+"Project-Id-Version: hammer_cli_foreman_discovery 1.4.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-07-31 09:22+0200\n"
+"POT-Creation-Date: 2026-09-22 19:26+0200\n"
 "PO-Revision-Date: 2019-07-31 09:22+0200\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -21,6 +21,20 @@ msgid "Manipulate discovered hosts."
 msgstr ""
 
 msgid "Manipulate discovered rules."
+msgstr ""
+
+msgid "List of Puppet class ids"
+msgstr ""
+
+msgid ""
+"Puppet environment. Required if host is managed and value is not inherited "
+"from host group"
+msgstr ""
+
+msgid "Use %s instead"
+msgstr ""
+
+msgid "Environment name"
 msgstr ""
 
 msgid "ID"
@@ -123,6 +137,9 @@ msgid "Could not refresh the facts of the host"
 msgstr ""
 
 msgid "Hosts"
+msgstr ""
+
+msgid "Enables to limit maximum amount of provisioned hosts per rule"
 msgstr ""
 
 msgid "Priority"
