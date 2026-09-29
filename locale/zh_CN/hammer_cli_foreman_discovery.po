@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: hammer_cli_foreman_discovery 1.4.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-07-31 09:22+0200\n"
+"POT-Creation-Date: 2026-09-22 19:26+0200\n"
 "PO-Revision-Date: 2015-01-21 10:30+0000\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: Chinese (China) (http://app.transifex.com/foreman/foreman/"
@@ -23,6 +23,20 @@ msgstr "处理发现的主机。"
 
 msgid "Manipulate discovered rules."
 msgstr "处理发现的规则。"
+
+msgid "List of Puppet class ids"
+msgstr "Puppet 类 id 列表"
+
+msgid ""
+"Puppet environment. Required if host is managed and value is not inherited "
+"from host group"
+msgstr "Puppet 环境。如果主机是受管的且值没有从主机组继承，则是必须项。"
+
+msgid "Use %s instead"
+msgstr "使用 %s 代替"
+
+msgid "Environment name"
+msgstr "環境名稱"
 
 msgid "ID"
 msgstr "ID"
@@ -125,6 +139,9 @@ msgstr "无法更新主机详情"
 
 msgid "Hosts"
 msgstr "主机"
+
+msgid "Enables to limit maximum amount of provisioned hosts per rule"
+msgstr "启用以限制每个规则的置备主机的最大数量"
 
 msgid "Priority"
 msgstr "优先"

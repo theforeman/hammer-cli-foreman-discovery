@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: hammer_cli_foreman_discovery 1.4.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-07-31 09:22+0200\n"
+"POT-Creation-Date: 2026-09-22 19:26+0200\n"
 "PO-Revision-Date: 2015-01-21 10:30+0000\n"
 "Last-Translator: Sergio Ocón-Cárdenas, 2015\n"
 "Language-Team: Spanish (http://app.transifex.com/foreman/foreman/language/"
@@ -25,6 +25,20 @@ msgstr "Manipular los hosts descubiertos."
 
 msgid "Manipulate discovered rules."
 msgstr "Manipular las reglas descubiertas."
+
+msgid "List of Puppet class ids"
+msgstr ""
+
+msgid ""
+"Puppet environment. Required if host is managed and value is not inherited "
+"from host group"
+msgstr ""
+
+msgid "Use %s instead"
+msgstr "Use %s en su lugar"
+
+msgid "Environment name"
+msgstr "Nombre de entorno"
 
 msgid "ID"
 msgstr "ID"
@@ -127,6 +141,9 @@ msgstr "No se pudo actualizar los detalles del host"
 
 msgid "Hosts"
 msgstr "Hosts"
+
+msgid "Enables to limit maximum amount of provisioned hosts per rule"
+msgstr ""
 
 msgid "Priority"
 msgstr "Prioridad"
