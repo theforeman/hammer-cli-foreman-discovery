@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: hammer_cli_foreman_discovery 1.4.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-07-31 09:22+0200\n"
+"POT-Creation-Date: 2026-09-22 19:26+0200\n"
 "PO-Revision-Date: 2015-01-21 10:30+0000\n"
 "Last-Translator: Ewoud Kohl van Wijngaarden "
 "<ewoud+transifex@kohlvanwijngaarden.nl>, 2025\n"
@@ -27,6 +27,22 @@ msgstr "Manipuler les hôtes détectés."
 
 msgid "Manipulate discovered rules."
 msgstr "Manipuler les règles détectées."
+
+msgid "List of Puppet class ids"
+msgstr "Liste des identifiants de classes Puppet"
+
+msgid ""
+"Puppet environment. Required if host is managed and value is not inherited "
+"from host group"
+msgstr ""
+"Environnement Puppet. Requis si l'hôte est géré et que la valeur n'est pas "
+"héritée du groupe d'hôtes."
+
+msgid "Use %s instead"
+msgstr "Utilisez plutôt %s"
+
+msgid "Environment name"
+msgstr "Nom de l'environnement"
 
 msgid "ID"
 msgstr "ID"
@@ -92,7 +108,7 @@ msgid "Interface parameters"
 msgstr "Paramètres d'interface"
 
 msgid "Enter the root password for the host:"
-msgstr "Saisir le mot de passe root de l'hôte:"
+msgstr "Saisir le mot de passe root de l'hôte :"
 
 msgid "Auto provision a host"
 msgstr "Provisionner un hôte automatiquement"
@@ -122,13 +138,16 @@ msgid "Refresh the facts of a host"
 msgstr "Rafraichir les facts d'un hôte"
 
 msgid "Host facts refreshed"
-msgstr "Facts de l'hôte rafraichis"
+msgstr "Facts de l'hôte "
 
 msgid "Could not refresh the facts of the host"
 msgstr "Impossible de rafraîchir les facts de l'hôte"
 
 msgid "Hosts"
 msgstr "Hôtes"
+
+msgid "Enables to limit maximum amount of provisioned hosts per rule"
+msgstr "permet de limiter le nombre maximal d'hôtes provisionnés par règle"
 
 msgid "Priority"
 msgstr "Priorité"

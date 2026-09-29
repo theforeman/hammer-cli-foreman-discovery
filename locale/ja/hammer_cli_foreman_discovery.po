@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: hammer_cli_foreman_discovery 1.4.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-07-31 09:22+0200\n"
+"POT-Creation-Date: 2026-09-22 19:26+0200\n"
 "PO-Revision-Date: 2015-01-21 10:30+0000\n"
 "Last-Translator: 山田 修司 🍣 Shuji Yamada <uzy.exe@gmail.com>, 2015\n"
 "Language-Team: Japanese (http://app.transifex.com/foreman/foreman/language/"
@@ -25,6 +25,22 @@ msgstr "検出されたホストを操作します。"
 
 msgid "Manipulate discovered rules."
 msgstr "検出されたルールを操作します。"
+
+msgid "List of Puppet class ids"
+msgstr "Puppet クラス ID の一覧"
+
+msgid ""
+"Puppet environment. Required if host is managed and value is not inherited "
+"from host group"
+msgstr ""
+"Puppet 環境。ホストが管理されており、値がホストグループから継承されていない場"
+"合に必須です"
+
+msgid "Use %s instead"
+msgstr "代わりに %s を使用する"
+
+msgid "Environment name"
+msgstr "環境名"
 
 msgid "ID"
 msgstr "ID"
@@ -127,6 +143,9 @@ msgstr "ホストのファクトをリフレッシュできませんでした"
 
 msgid "Hosts"
 msgstr "ホスト"
+
+msgid "Enables to limit maximum amount of provisioned hosts per rule"
+msgstr "ルールごとにプロビジョニングされるホストの最大数の制限を有効化します"
 
 msgid "Priority"
 msgstr "優先度"
