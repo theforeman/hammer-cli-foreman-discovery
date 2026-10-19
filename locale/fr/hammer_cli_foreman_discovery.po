@@ -138,7 +138,7 @@ msgid "Refresh the facts of a host"
 msgstr "Rafraichir les facts d'un hôte"
 
 msgid "Host facts refreshed"
-msgstr "Facts de l'hôte "
+msgstr "Facts de l'hôte rafraichis"
 
 msgid "Could not refresh the facts of the host"
 msgstr "Impossible de rafraîchir les facts de l'hôte"
