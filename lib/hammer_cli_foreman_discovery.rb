@@ -5,6 +5,7 @@ module HammerCLIForemanDiscovery
 
   begin
     require 'hammer_cli_foreman_discovery/discovery_references'
+    require 'hammer_cli_foreman_discovery/subnet_extensions'
 
     HammerCLI::MainCommand.lazy_subcommand('discovery', _("Manipulate discovered hosts."),
                                            'HammerCLIForemanDiscovery::DiscoveredHost', 'hammer_cli_foreman_discovery/discovery')
